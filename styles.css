@@ -1037,6 +1037,31 @@ section {
 }
 
 /* ======================================
+   MODERN STRETCHED SECTIONS (1280px Content Width)
+   ====================================== */
+section,
+.hero,
+.service-page-hero,
+.service-page-content {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+@media (min-width: 1344px) {
+
+    section,
+    .hero,
+    .service-page-hero,
+    .service-page-content,
+    .breadcrumb,
+    .footer-grid,
+    .footer-bottom {
+        padding-left: calc(50% - 640px) !important;
+        padding-right: calc(50% - 640px) !important;
+    }
+}
+
+/* ======================================
    RESPONSIVE
    ====================================== */
 @media (max-width: 968px) {

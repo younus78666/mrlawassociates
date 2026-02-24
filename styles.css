@@ -315,7 +315,7 @@ body.scrolled-down .navbar {
     border-radius: var(--radius-lg);
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 180px);
+    grid-template-columns: repeat(4, 180px);
     gap: 2rem;
     opacity: 0;
     pointer-events: none;

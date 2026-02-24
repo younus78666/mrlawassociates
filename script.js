@@ -47,10 +47,23 @@ function initNavigation() {
         });
     }
 
-    // Navbar scroll state
+    // Navbar scroll state & Top Bar Hiding
     if (navbar) {
+        let lastScrollY = window.scrollY;
         window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
+            const currentScrollY = window.scrollY;
+
+            // Toggle frosted glass navbar style
+            navbar.classList.toggle('scrolled', currentScrollY > 50);
+
+            // Hide Top Bar strictly when scrolling down past 50px
+            if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+                document.body.classList.add('scrolled-down');
+            } else {
+                document.body.classList.remove('scrolled-down');
+            }
+
+            lastScrollY = currentScrollY;
         }, { passive: true });
     }
 

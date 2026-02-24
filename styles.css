@@ -132,7 +132,72 @@ a {
 }
 
 /* ======================================
-   NAVBAR
+   TOP BAR (Above Header)
+   ====================================== */
+.top-bar {
+    background: var(--text-primary);
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    padding: 8px 0;
+    width: 100%;
+    position: relative;
+    z-index: 101;
+    transition: transform 0.3s ease;
+}
+
+.top-bar-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-left,
+.top-bar-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.top-contact {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.top-contact-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.top-contact-link:hover {
+    color: var(--accent-gold-light);
+}
+
+.top-contact-link.highlight {
+    color: var(--accent-gold-light);
+    font-weight: 600;
+}
+
+.top-bar .icon {
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* Hide top bar on scroll via class injected by JS */
+body.scrolled-down .top-bar {
+    transform: translateY(-100%);
+    position: absolute;
+}
+
+/* ======================================
+   NAVBAR & HEADER
    ====================================== */
 .navbar {
     position: fixed;
@@ -144,7 +209,13 @@ a {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-glass);
-    transition: var(--transition);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar shifts up when body gets scrolled-down class to hide the top bar cleanly */
+body.scrolled-down .navbar {
+    transform: translateY(-38px);
+    /* Height of the top bar */
 }
 
 .navbar.scrolled {
@@ -187,11 +258,31 @@ a {
     border: none;
     cursor: pointer;
     font-family: inherit;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+/* Amazing animated underline effect */
+.nav-links>a::after,
+.dropdown-trigger::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-gold-dark);
+    transition: width 0.3s ease;
 }
 
 .nav-links>a:hover,
 .dropdown-trigger:hover {
-    color: var(--accent-gold-light);
+    color: var(--accent-gold-dark);
+}
+
+.nav-links>a:hover::after,
+.nav-dropdown:hover .dropdown-trigger::after {
+    width: 100%;
 }
 
 /* Dropdown */
@@ -1069,6 +1160,16 @@ section,
     .nav-links,
     .nav-buttons .btn {
         display: none;
+    }
+
+    .top-bar {
+        display: none;
+        /* Hide top bar on mobile to save space */
+    }
+
+    body.scrolled-down .navbar {
+        transform: translateY(0);
+        /* Reset transform on mobile */
     }
 
     .mobile-menu-btn {

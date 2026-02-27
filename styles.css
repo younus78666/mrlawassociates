@@ -10476,7 +10476,7 @@ select:focus-visible {
 .wa-widget {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 9999;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -10527,7 +10527,7 @@ select:focus-visible {
 .wa-popup {
     position: absolute;
     bottom: 80px;
-    right: 0;
+    left: 0;
     width: 320px;
     background: white;
     border-radius: 16px;
@@ -10702,12 +10702,12 @@ select:focus-visible {
 @media (max-width: 480px) {
     .wa-widget {
         bottom: 15px;
-        right: 15px;
+        left: 15px;
     }
-    
+
     .wa-popup {
         width: min(calc(100% - 30px), 320px);
-        right: 0;
+        left: 0;
     }
     
     .wa-float-btn {

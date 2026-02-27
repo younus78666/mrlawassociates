@@ -1,7 +1,7 @@
 # =============================================================================
 # MR LAW ASSOCIATES - ROBOTS.TXT
 # Lawyer in Karachi | Legal Services Pakistan
-# Last Updated: 2026-02-25
+# Last Updated: 2026-02-27
 # =============================================================================
 
 # Allow all search engines
@@ -11,9 +11,6 @@ User-agent: *
 # MAIN SITEMAPS
 # -----------------------------------------------------------------------------
 Sitemap: https://mrlawassociates.com/sitemap.xml
-Sitemap: https://mrlawassociates.com/sitemap-services.xml
-Sitemap: https://mrlawassociates.com/sitemap-locations.xml
-Sitemap: https://mrlawassociates.com/sitemap-blog.xml
 
 # -----------------------------------------------------------------------------
 # ALLOW - Main Content (Crawl Priority)

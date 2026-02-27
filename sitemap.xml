@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--
+    MR Law Associates - Sitemap Index
+    Generated: 2026-02-27
+-->
+
+<sitemap>
+    <loc>https://mrlawassociates.com/sitemap-main.xml</loc>
+    <lastmod>2026-02-27</lastmod>
+</sitemap>
+
+<sitemap>
+    <loc>https://mrlawassociates.com/sitemap-services.xml</loc>
+    <lastmod>2026-02-25</lastmod>
+</sitemap>
+
+<sitemap>
+    <loc>https://mrlawassociates.com/sitemap-locations.xml</loc>
+    <lastmod>2026-02-25</lastmod>
+</sitemap>
+
+<sitemap>
+    <loc>https://mrlawassociates.com/sitemap-blog.xml</loc>
+    <lastmod>2026-02-25</lastmod>
+</sitemap>
+
+</sitemapindex>

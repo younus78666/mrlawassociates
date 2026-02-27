@@ -16,7 +16,7 @@
     --font-serif: 'Playfair Display', serif;
 
     /* Layout */
-    --max-width: 1280px;
+    --max-width: 1440px;
     --radius-lg: 16px;
     --radius-sm: 8px;
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -7493,15 +7493,14 @@ article.service-main > div.reveal > div {
    ====================================== */
 
 /* Large Desktop */
-@media (min-width: 1344px) {
+@media (min-width: 1504px) {
     section,
     .hero,
     .service-page-hero,
-    .service-page-content,
     .footer-grid,
     .footer-bottom {
-        padding-left: calc(50% - 640px) !important;
-        padding-right: calc(50% - 640px) !important;
+        padding-left: calc(50% - 720px) !important;
+        padding-right: calc(50% - 720px) !important;
     }
 }
 

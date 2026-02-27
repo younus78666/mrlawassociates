@@ -719,21 +719,30 @@ function initWhatsAppWidget() {
     }
 
     let isOpen = false;
+    const isMobile = window.innerWidth <= 768;
 
-    // Show popup after delay
-    setTimeout(() => {
-        if (popup && !isOpen) {
-            popup.classList.add('active');
-            isOpen = true;
-        }
-    }, CONFIG.popupDelay);
+    // On mobile: skip popup, button redirects directly to WhatsApp
+    if (isMobile) {
+        floatBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            window.open(`https://wa.me/${CONFIG.phone}?text=Hello Advocate Reema, I need legal assistance.`, '_blank', 'noopener,noreferrer');
+        });
+    } else {
+        // Desktop: Show popup after delay
+        setTimeout(() => {
+            if (popup && !isOpen) {
+                popup.classList.add('active');
+                isOpen = true;
+            }
+        }, CONFIG.popupDelay);
 
-    // Toggle popup on float button click
-    floatBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        popup.classList.toggle('active');
-        isOpen = popup.classList.contains('active');
-    });
+        // Toggle popup on float button click
+        floatBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            popup.classList.toggle('active');
+            isOpen = popup.classList.contains('active');
+        });
+    }
 
     // Close popup on close button click
     closeBtn.addEventListener('click', (e) => {

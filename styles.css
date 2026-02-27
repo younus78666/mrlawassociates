@@ -10698,15 +10698,16 @@ select:focus-visible {
 }
 
 /* Mobile responsive */
+@media (max-width: 768px) {
+    .wa-popup {
+        display: none !important;
+    }
+}
+
 @media (max-width: 480px) {
     .wa-widget {
         bottom: 15px;
         left: 15px;
-    }
-
-    .wa-popup {
-        width: min(calc(100% - 30px), 320px);
-        left: 0;
     }
     
     .wa-float-btn {

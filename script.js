@@ -67,7 +67,9 @@ function gtag_report_phone_conversion(url) {
         }
     };
     gtag('event', 'conversion', {
-        'send_to': 'AW-16610551759/iTSzCI2LwMwZEM_Pw_A9',
+        'send_to': 'AW-16610551759/ppMvCKbdzP8bEM_Pw_A9',
+        'value': 1.0,
+        'currency': 'PKR',
         'event_callback': callback
     });
     return false;

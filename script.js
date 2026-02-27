@@ -23,35 +23,119 @@ function processBatch(items, processFn, batchSize = 5, delay = 0) {
     processNextBatch();
 }
 
+// ======================================
+// Google Ads Conversion Tracking
+// ======================================
+function initGoogleAdsTracking() {
+    // Ensure gtag is available
+    if (typeof gtag === 'undefined') {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function() { dataLayer.push(arguments); };
+        gtag('js', new Date());
+    }
+
+    // Load Google Ads gtag.js if not already loaded
+    if (!document.querySelector('script[src*="AW-16610551759"]')) {
+        var gadsScript = document.createElement('script');
+        gadsScript.async = true;
+        gadsScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16610551759';
+        document.head.appendChild(gadsScript);
+    }
+
+    // Configure Google Ads tag
+    gtag('config', 'AW-16610551759');
+}
+
+// Conversion tracking functions
+function gtag_report_whatsapp_conversion(url) {
+    var callback = function () {
+        if (typeof url !== 'undefined') {
+            window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-16610551759/d-BtCJCLwMwZEM_Pw_A9',
+        'event_callback': callback
+    });
+    return false;
+}
+
+function gtag_report_phone_conversion(url) {
+    var callback = function () {
+        if (typeof url !== 'undefined') {
+            window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-16610551759/iTSzCI2LwMwZEM_Pw_A9',
+        'event_callback': callback
+    });
+    return false;
+}
+
+// Attach conversion tracking to all WhatsApp and phone links
+function attachConversionTracking() {
+    // WhatsApp links
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+        if (link.dataset.conversionAttached) return;
+        link.dataset.conversionAttached = 'true';
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            gtag_report_whatsapp_conversion(this.href);
+        });
+    });
+    // Phone links (tel:)
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        if (link.dataset.conversionAttached) return;
+        link.dataset.conversionAttached = 'true';
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            gtag_report_phone_conversion(this.href);
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Google Ads conversion tracking
+    initGoogleAdsTracking();
+
     // Priority 1: Load critical components immediately
-    loadComponent('/components/header.html', 'header-placeholder', initNavigation);
-    loadComponent('/components/footer.html', 'footer-placeholder');
-    
+    loadComponent('/components/header.html', 'header-placeholder', () => {
+        initNavigation();
+        attachConversionTracking(); // Track WA links in header
+    });
+    loadComponent('/components/footer.html', 'footer-placeholder', () => {
+        attachConversionTracking(); // Track WA links in footer
+    });
+
+    // Track WhatsApp links already in the page
+    attachConversionTracking();
+
     // Priority 2: Setup reveal animations (critical for UX)
     setupRevealAnimations();
-    
+
     // Priority 3: Initialize footer year (fast operation)
     initFooterYear();
-    
+
     // Defer non-critical initializations to improve LCP and FID
     yieldToMain(() => {
         // Initialize Testimonials filtering
         initTestimonialsFilter();
-        
+
         // Initialize FAQ functionality
         initFAQ();
-        
+
         // Initialize Reviews page functionality
         initReviews();
-        
+
         // Initialize Random Reviews on any page
         initRandomReviews();
     });
-    
+
     // Defer WhatsApp widget (lowest priority - not needed for initial paint)
     yieldToMain(() => {
         initWhatsAppWidget();
+        attachConversionTracking(); // Track WA link in widget
     }, 2000);
 });
 

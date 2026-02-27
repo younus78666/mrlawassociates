@@ -10706,8 +10706,7 @@ select:focus-visible {
     }
     
     .wa-popup {
-        width: calc(100vw - 30px);
-        max-width: 320px;
+        width: min(calc(100% - 30px), 320px);
         right: 0;
     }
     

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"Test-NetConnection -ComputerName localhost -Port 3000 -InformationLevel Quiet\")",
+      "Bash(curl -s http://127.0.0.1:3000/)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://127.0.0.1:3000/components/header.html)",
+      "Bash(curl -s http://127.0.0.1:3000/styles.css)",
+      "Bash(python -c \":*)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}

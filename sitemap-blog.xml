@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- 
+    MR Law Associates - Blog Sitemap
+    Generated: 2026-02-25
+    Total URLs: 11
+-->
+
+<!-- Main Blog Page -->
+<url>
+    <loc>https://mrlawassociates.com/blog/</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+</url>
+
+<!-- Blog Posts - Family Law -->
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/how-to-file-khula-pakistan.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>How to File Khula in Pakistan: Complete Legal Guide</news:title>
+    </news:news>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/divorce-procedure-pakistan.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>Divorce Procedure in Pakistan: Step-by-Step Guide</news:title>
+    </news:news>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/child-custody-laws-pakistan.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>Child Custody Laws in Pakistan: Mother's Rights</news:title>
+    </news:news>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/court-marriage-process-karachi.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>Court Marriage Process in Karachi: Complete Guide</news:title>
+    </news:news>
+</url>
+
+<!-- Blog Posts - Criminal Law -->
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/bail-application-pakistan.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>Bail Application in Pakistan: Process and Requirements</news:title>
+    </news:news>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/fir-registration-defense.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>FIR Registration in Pakistan: Your Rights</news:title>
+    </news:news>
+</url>
+
+<!-- Blog Posts - Property Law -->
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/property-dispute-resolution-karachi.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>Property Dispute Resolution in Karachi</news:title>
+    </news:news>
+</url>
+
+<!-- Blog Posts - Corporate Law -->
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/company-registration-pakistan.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>Company Registration in Pakistan: Complete Guide</news:title>
+    </news:news>
+</url>
+
+<!-- Blog Posts - Documentation -->
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/nadra-documentation-guide.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>NADRA Documentation Guide: Birth, Marriage, Death</news:title>
+    </news:news>
+</url>
+
+<!-- Blog Posts - General Legal -->
+<url>
+    <loc>https://mrlawassociates.com/blog/posts/legal-notice-importance.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+        <news:publication>
+            <news:name>MR Law Associates</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2026-02-25</news:publication_date>
+        <news:title>Legal Notice in Pakistan: Importance and Format</news:title>
+    </news:news>
+</url>
+
+</urlset>

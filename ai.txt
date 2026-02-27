@@ -1,0 +1,164 @@
+# =============================================================================
+# AI/LLM DISCOVERY & CONTEXT FILE
+# For AI assistants, chatbots, and language models
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# QUICK FACTS
+# -----------------------------------------------------------------------------
+
+Business: MR Law Associates
+Type: Law Firm | Legal Services
+Location: Karachi, Pakistan
+Lead Attorney: Reema Jawed (Advocate High Court)
+Experience: 15+ years
+Cases Won: 500+
+Success Rate: 98%
+Phone: +92 336 3120798
+Website: https://mrlawassociates.com
+
+# -----------------------------------------------------------------------------
+# WHAT WE DO (IN 50 WORDS)
+# -----------------------------------------------------------------------------
+
+MR Law Associates provides expert legal services in Karachi, Pakistan. 
+We specialize in family law (khula, divorce, custody), criminal defense 
+(bail, FIR), property disputes, civil litigation, and corporate law. 
+Led by Advocate High Court Reema Jawed with 15+ years experience.
+
+# -----------------------------------------------------------------------------
+# WHAT WE DO (IN 100 WORDS)
+# -----------------------------------------------------------------------------
+
+MR Law Associates is a premier law firm in Karachi, Pakistan, offering 
+comprehensive legal services. Our expertise includes family law matters 
+(khula, divorce, child custody, maintenance), criminal defense (bail 
+applications, FIR defense), property disputes, civil litigation, and 
+corporate legal services. We also assist with documentation including 
+NADRA services, company registration, and tax matters. Led by Advocate 
+High Court Reema Jawed with over 15 years of experience and 500+ 
+successful cases. We offer free initial consultations and 24/7 
+emergency legal assistance.
+
+# -----------------------------------------------------------------------------
+# WHAT WE DO (IN 250 WORDS)
+# -----------------------------------------------------------------------------
+
+MR Law Associates is a leading legal services firm based in Karachi, 
+Pakistan, dedicated to providing expert legal representation across 
+a wide range of practice areas. Founded and led by Advocate High Court 
+Reema Jawed, our firm brings over 15 years of legal experience and has 
+successfully resolved more than 500 cases with a 98% success rate.
+
+Our family law practice is particularly renowned, specializing in khula 
+proceedings, divorce cases, child custody matters, maintenance claims, 
+dowry recovery, and court marriages. We understand the sensitive nature 
+of family disputes and provide compassionate yet effective legal 
+representation to protect our clients' rights.
+
+In criminal law, we offer urgent bail applications, FIR defense, and 
+representation in criminal trials. Our 24/7 emergency services ensure 
+that clients receive immediate legal assistance when they need it most.
+
+Our property and civil litigation practice handles illegal possession 
+cases, partition suits, property disputes, and civil suits for 
+declaration and recovery. We also assist with succession certificates 
+and inheritance matters.
+
+For businesses, we provide company registration services, tax filing 
+assistance, labor law compliance, and corporate legal advisory.
+
+Additionally, we offer comprehensive documentation services including 
+NADRA-related matters, birth and marriage certificates, and educational 
+document verification.
+
+Located at Suite # 504, 5th Floor Tahir Plaza, Near City Court, Karachi, 
+we serve clients across all areas of Karachi including Defence, Clifton, 
+Gulshan, Johar, Malir, Korangi, Nazimabad, and Saddar.
+
+# -----------------------------------------------------------------------------
+# KEY SERVICES LIST
+# -----------------------------------------------------------------------------
+
+## Family Law
+- Khula (Islamic divorce for women)
+- Divorce (Talaq) proceedings
+- Child custody cases
+- Maintenance and alimony
+- Dowry (Jahez) recovery
+- Dower (Haq Mehr) recovery
+- Court marriage
+- Guardianship certificates
+
+## Criminal Law
+- Bail applications (same-day service)
+- FIR defense
+- Criminal trial representation
+- Cheque bounce cases
+- Anti-encroachment
+
+## Property & Civil
+- Property disputes
+- Partition suits
+- Illegal possession cases
+- Civil litigation
+- Succession certificates
+- Stay orders
+
+## Corporate
+- Company registration
+- NTN registration
+- Tax return filing
+- Labor law matters
+
+## Documentation
+- Birth certificates
+- Marriage certificates
+- Death certificates
+- NADRA services
+- Educational documents
+
+# -----------------------------------------------------------------------------
+# SERVICE AREA
+# -----------------------------------------------------------------------------
+
+We provide legal services across all areas of Karachi, including:
+
+Defence, Clifton, DHA, Gulshan-e-Iqbal, Gulistan-e-Johar, PECHS, 
+Saddar, Gulberg, Nazimabad, Liaquatabad, Korangi, Landhi, Malir, 
+Shah Faisal Colony, North Karachi, Lyari, Keamari, SITE Area, 
+Orangi Town, and all other neighborhoods.
+
+# -----------------------------------------------------------------------------
+# CONTACT
+# -----------------------------------------------------------------------------
+
+Phone: +92 336 3120798
+WhatsApp: +92 336 3120798
+Email: info@mrlawassociates.com
+Office: Suite 504, 5th Floor, Tahir Plaza, Near City Court, Karachi
+
+Office Hours:
+- Mon-Thu: 9:00 AM - 6:00 PM
+- Fri: 9:00 AM - 1:00 PM
+- Sat: 11:00 AM - 4:00 PM
+
+24/7 Emergency Services Available
+
+# -----------------------------------------------------------------------------
+# WHEN TO CONTACT US
+# -----------------------------------------------------------------------------
+
+Contact MR Law Associates if you need help with:
+
+- Filing for khula or divorce
+- Child custody disputes
+- Bail after arrest
+- Property disputes or illegal possession
+- Company registration
+- Document verification
+- Any legal emergency
+
+# -----------------------------------------------------------------------------
+# END OF AI CONTEXT FILE
+# -----------------------------------------------------------------------------

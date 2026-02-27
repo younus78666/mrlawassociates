@@ -1,0 +1,35 @@
+/* TEAM */
+
+Lead Attorney: Reema Jawed
+Title: Advocate High Court
+Location: Karachi, Pakistan
+Contact: +92 336 3120798
+
+Firm: MR Law Associates
+Established: 2010
+Location: Suite 504, 5th Floor Tahir Plaza, Near City Court, Karachi
+
+/* THANKS */
+
+To all our clients who trusted us with their legal matters.
+To the Karachi Bar Association and Sindh High Court Bar Association
+for maintaining professional standards.
+
+/* SITE */
+
+Last update: 2026-02-25
+Language: English / Urdu
+Doctype: HTML5
+Standards: HTML5, CSS3, ES6+
+
+/* TECHNOLOGY */
+
+Static Site: HTML5, CSS3, JavaScript
+Fonts: Inter, Playfair Display
+Icons: SVG
+Hosting: Static hosting
+
+/* LEGAL */
+
+All content © 2026 MR Law Associates
+All rights reserved.

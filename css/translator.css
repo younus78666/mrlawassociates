@@ -1,0 +1,799 @@
+/**
+ * MR Law Associates - Translation System Styles
+ */
+
+/* ======================================
+   LANGUAGE SWITCHER - TOP BAR
+   ====================================== */
+
+.lang-switcher-topbar {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.lang-btn-topbar {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(196, 155, 107, 0.3);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn-topbar:hover {
+    background: rgba(196, 155, 107, 0.2);
+    border-color: rgba(196, 155, 107, 0.5);
+}
+
+.lang-btn-topbar svg {
+    flex-shrink: 0;
+}
+
+.lang-menu-topbar {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 140px;
+    background: #2D2420;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(196, 155, 107, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1002;
+    overflow: hidden;
+}
+
+.lang-menu-topbar.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option-topbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8125rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.lang-option-topbar:hover {
+    background: rgba(196, 155, 107, 0.15);
+}
+
+.lang-option-topbar.active {
+    background: rgba(196, 155, 107, 0.25);
+    font-weight: 600;
+}
+
+.lang-icon-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold-dark) 100%);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* ======================================
+   LANGUAGE SWITCHER - STICKY FLOATING (BOTTOM LEFT)
+   ====================================== */
+
+.lang-switcher-sticky {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+body.rtl .lang-switcher-sticky {
+    left: auto;
+    right: 20px;
+}
+
+.lang-btn-sticky {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold-dark) 100%);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(196, 155, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+.lang-btn-sticky:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(196, 155, 107, 0.5);
+}
+
+.lang-btn-sticky svg {
+    flex-shrink: 0;
+}
+
+.lang-label {
+    white-space: nowrap;
+}
+
+.lang-menu-sticky {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    min-width: 180px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(196, 155, 107, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10000;
+    overflow: hidden;
+}
+
+body.rtl .lang-menu-sticky {
+    left: auto;
+    right: 0;
+}
+
+.lang-menu-sticky.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option-sticky {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.lang-option-sticky:hover {
+    background: rgba(196, 155, 107, 0.08);
+}
+
+.lang-option-sticky.active {
+    background: rgba(196, 155, 107, 0.12);
+    font-weight: 600;
+}
+
+.lang-flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold-dark) 100%);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* ======================================
+   LANGUAGE SWITCHER - NAV BUTTONS
+   ====================================== */
+
+.language-switcher-wrapper {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.language-switcher {
+    position: relative;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.875rem;
+    background: rgba(196, 155, 107, 0.1);
+    border: 1px solid rgba(196, 155, 107, 0.2);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+    background: rgba(196, 155, 107, 0.15);
+    border-color: rgba(196, 155, 107, 0.3);
+}
+
+.lang-toggle svg {
+    flex-shrink: 0;
+}
+
+#currentLang {
+    font-weight: 600;
+    min-width: 24px;
+    text-align: center;
+}
+
+/* Language Menu Dropdown */
+.lang-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 180px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(196, 155, 107, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.lang-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.lang-option:hover {
+    background: rgba(196, 155, 107, 0.08);
+}
+
+.lang-option.active {
+    background: rgba(196, 155, 107, 0.12);
+    font-weight: 600;
+}
+
+.lang-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold-dark) 100%);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* ======================================
+   GOOGLE TRANSLATE WIDGET OVERRIDE
+   ====================================== */
+
+.skiptranslate,
+#goog-gt-tt,
+.goog-te-banner-frame,
+#goog-gt-vt,
+.goog-te-balloon-frame,
+#goog-gt-votingForm,
+#goog-gt-votingClosed,
+.goog-te-menu,
+.goog-te-menu-frame {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
+.goog-text-highlight {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* ======================================
+   RTL (Right-to-Left) SUPPORT FOR URDU
+   ====================================== */
+
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Preserve LTR for technical content */
+.ltr-content,
+.phone-number,
+.email-address,
+.date,
+.time,
+[data-preserve-ltr] {
+    direction: ltr !important;
+    unicode-bidi: embed !important;
+    text-align: left !important;
+}
+
+/* inline-block only on child spans, not on parent flex containers like .top-link or .btn */
+.phone-number,
+.email-address,
+.date,
+.time,
+[data-preserve-ltr] {
+    display: inline-block;
+}
+
+/* Force LTR on phone number spans */
+.phone-number {
+    unicode-bidi: embed !important;
+    direction: ltr !important;
+}
+
+/* Ensure phone links don't flip */
+a[href^="tel:"] {
+    unicode-bidi: embed;
+    direction: ltr !important;
+}
+
+a[href^="tel:"] .phone-number {
+    display: inline-block;
+}
+
+body.rtl .nav-container {
+    flex-direction: row-reverse;
+}
+
+body.rtl .nav-links {
+    flex-direction: row-reverse;
+}
+
+body.rtl .top-bar-content {
+    flex-direction: row-reverse;
+}
+
+body.rtl .top-bar-left,
+body.rtl .top-bar-right {
+    flex-direction: row-reverse;
+}
+
+/* Preserve phone numbers in top bar */
+body.rtl .top-link,
+body.rtl .top-link .phone-number {
+    direction: ltr !important;
+    unicode-bidi: embed;
+}
+
+body.rtl .lang-menu,
+body.rtl .lang-menu-topbar {
+    right: auto;
+    left: 0;
+}
+
+body.rtl .hero-content-wrapper,
+body.rtl .detail-grid,
+body.rtl .service-grid,
+body.rtl .blog-grid {
+    direction: rtl;
+}
+
+body.rtl .service-card,
+body.rtl .blog-card,
+body.rtl .testimonial-card {
+    text-align: right;
+}
+
+body.rtl .service-features li,
+body.rtl .check-list li {
+    padding-left: 0;
+    padding-right: 1.25rem;
+}
+
+body.rtl .service-features li::before,
+body.rtl .check-list li::before {
+    left: auto;
+    right: 0;
+}
+
+body.rtl .location-item {
+    flex-direction: row-reverse;
+}
+
+/* Preserve phone numbers in location section */
+body.rtl .location-item .ltr-content,
+body.rtl .location-item p {
+    direction: ltr !important;
+    unicode-bidi: embed;
+    text-align: left;
+}
+
+body.rtl .footer-grid-premium {
+    direction: rtl;
+}
+
+body.rtl .dropdown-col {
+    text-align: right;
+}
+
+body.rtl .mobile-menu-panel {
+    right: auto;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+body.rtl .mobile-menu-panel.active {
+    transform: translateX(0);
+}
+
+/* Preserve phone numbers in CTA buttons */
+body.rtl .cta-btn-primary,
+body.rtl .cta-btn-secondary {
+    flex-direction: row-reverse;
+}
+
+body.rtl .cta-btn-primary span:not(.phone-icon),
+body.rtl .cta-emergency-link {
+    direction: ltr !important;
+    unicode-bidi: embed;
+}
+
+/* Stats numbers - preserve LTR */
+body.rtl .stat-number,
+body.rtl .stats-value,
+body.rtl .summary-rating,
+body.rtl .testimonial-card__stars {
+    direction: ltr !important;
+    unicode-bidi: embed;
+}
+
+/* Form inputs - preserve LTR for email/phone */
+body.rtl input[type="tel"],
+body.rtl input[type="email"] {
+    direction: ltr !important;
+    text-align: left;
+}
+
+/* ======================================
+   URDU FONT ENHANCEMENTS
+   ====================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
+
+body.rtl,
+body.rtl h1,
+body.rtl h2,
+body.rtl h3,
+body.rtl h4,
+body.rtl p,
+body.rtl li,
+body.rtl a,
+body.rtl span {
+    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Nafees', serif;
+}
+
+body.rtl h1,
+body.rtl h2,
+body.rtl h3,
+body.rtl h4 {
+    line-height: 1.6;
+}
+
+body.rtl p,
+body.rtl li {
+    line-height: 2;
+}
+
+/* ======================================
+   ROMAN URDU STYLES
+   ====================================== */
+
+body.roman-urdu {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+body.roman-urdu .hero-title,
+body.roman-urdu .section-header h2 {
+    font-family: var(--font-serif);
+}
+
+/* ======================================
+   RESPONSIVE ADJUSTMENTS
+   ====================================== */
+
+@media (max-width: 1024px) {
+    .language-switcher-wrapper {
+        margin-right: 0.5rem;
+    }
+
+    .lang-toggle {
+        padding: 0.5rem;
+    }
+
+    .lang-toggle span:not(#currentLang) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hide nav switcher on mobile, show sticky instead */
+    .language-switcher-wrapper {
+        display: none;
+    }
+
+    /* Sticky switcher adjustments for mobile */
+    .lang-switcher-sticky {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    body.rtl .lang-switcher-sticky {
+        left: auto;
+        right: 15px;
+    }
+
+    .lang-btn-sticky {
+        padding: 0.6rem;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+    }
+
+    .lang-btn-sticky .lang-label {
+        display: none;
+    }
+
+    .lang-menu-sticky {
+        min-width: 160px;
+    }
+
+    /* Top bar switcher - smaller on mobile */
+    .lang-btn-topbar {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .lang-switcher-topbar {
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Even smaller top bar on very small screens */
+    .lang-btn-topbar span {
+        display: none;
+    }
+
+    .lang-btn-topbar {
+        padding: 0.25rem;
+    }
+}
+
+/* ======================================
+   FOOTER RTL SUPPORT
+   ====================================== */
+
+body.rtl .footer-grid-premium {
+    direction: rtl;
+}
+
+body.rtl .footer-brand-col {
+    align-items: flex-end;
+}
+
+body.rtl .footer-logo {
+    flex-direction: row-reverse;
+}
+
+body.rtl .footer-logo .logo-icon {
+    margin-right: 0;
+    margin-left: 0.75rem;
+}
+
+body.rtl .logo-text {
+    text-align: right;
+}
+
+body.rtl .logo-tagline {
+    text-align: right;
+}
+
+body.rtl .logo-text {
+    text-align: right;
+}
+
+body.rtl .footer-desc-premium {
+    text-align: right;
+}
+
+body.rtl .footer-social {
+    justify-content: flex-end;
+}
+
+body.rtl .social-link {
+    margin-right: 0;
+    margin-left: 0.75rem;
+}
+
+body.rtl .social-link:last-child {
+    margin-left: 0;
+}
+
+body.rtl .footer-contact-cards {
+    direction: rtl;
+}
+
+body.rtl .contact-card {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+body.rtl .contact-card-icon {
+    margin-right: 0;
+    margin-left: 0.75rem;
+}
+
+body.rtl .contact-card-content {
+    text-align: right;
+}
+
+body.rtl .footer-links-col {
+    text-align: right;
+}
+
+body.rtl .footer-col-title::after {
+    left: auto;
+    right: 0;
+}
+
+body.rtl .footer-links-list a {
+    flex-direction: row-reverse;
+}
+
+body.rtl .footer-links-list a::before {
+    margin-right: 0;
+    margin-left: 0.5rem;
+    border-left: 4px solid transparent;
+    border-right: 4px solid var(--footer-gold);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+body.rtl .footer-links-list a:hover {
+    padding-left: 0;
+    padding-right: 0.75rem;
+}
+
+body.rtl .footer-links-list a:hover {
+    padding-left: 0;
+    padding-right: 0.5rem;
+}
+
+body.rtl .disclaimer-content {
+    flex-direction: row-reverse;
+}
+
+body.rtl .disclaimer-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+body.rtl .disclaimer-text {
+    text-align: right;
+}
+
+body.rtl .disclaimer-links {
+    justify-content: flex-end;
+}
+
+body.rtl .footer-bottom-content {
+    text-align: right;
+}
+
+body.rtl .footer-bottom-content .copyright,
+body.rtl .footer-bottom-content .credits {
+    text-align: right;
+}
+
+body.rtl .back-to-top {
+    right: auto;
+    left: 0;
+}
+
+/* Mobile footer RTL */
+@media (max-width: 991px) {
+    body.rtl .footer-brand-col {
+        align-items: center;
+    }
+    
+    body.rtl .footer-desc-premium {
+        text-align: center;
+    }
+    
+    body.rtl .footer-social {
+        justify-content: center;
+    }
+    
+    body.rtl .footer-links-col {
+        text-align: center;
+    }
+    
+    body.rtl .footer-links-list a {
+        justify-content: center;
+    }
+    
+    body.rtl .disclaimer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    body.rtl .disclaimer-icon {
+        margin-left: 0;
+        margin-bottom: 0.75rem;
+    }
+    
+    body.rtl .disclaimer-text {
+        text-align: center;
+    }
+    
+    body.rtl .disclaimer-links {
+        justify-content: center;
+    }
+}
+
+/* ======================================
+   LOADING STATE
+   ====================================== */
+
+.translating {
+    opacity: 0.7;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}

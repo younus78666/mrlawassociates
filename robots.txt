@@ -1,0 +1,226 @@
+# =============================================================================
+# MR LAW ASSOCIATES - ROBOTS.TXT
+# Lawyer in Karachi | Legal Services Pakistan
+# Last Updated: 2026-02-25
+# =============================================================================
+
+# Allow all search engines
+User-agent: *
+
+# -----------------------------------------------------------------------------
+# MAIN SITEMAPS
+# -----------------------------------------------------------------------------
+Sitemap: https://mrlawassociates.com/sitemap.xml
+Sitemap: https://mrlawassociates.com/sitemap-services.xml
+Sitemap: https://mrlawassociates.com/sitemap-locations.xml
+Sitemap: https://mrlawassociates.com/sitemap-blog.xml
+
+# -----------------------------------------------------------------------------
+# ALLOW - Main Content (Crawl Priority)
+# -----------------------------------------------------------------------------
+Allow: /
+Allow: /about/
+Allow: /services/
+Allow: /location/
+Allow: /blog/
+Allow: /contact/
+Allow: /faq/
+Allow: /reviews/
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# -----------------------------------------------------------------------------
+# DISALLOW - Private/Technical Pages
+# -----------------------------------------------------------------------------
+
+# Admin and system files
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /config/
+Disallow: /tmp/
+Disallow: /temp/
+
+# Development and test files
+Disallow: /test/
+Disallow: /testing/
+Disallow: /dev/
+Disallow: /development/
+Disallow: /staging/
+
+# Search and filter results (prevent duplicate content)
+Disallow: /search/
+Disallow: /*?s=
+Disallow: /*?search=
+Disallow: /*?filter=
+Disallow: /*?sort=
+
+# User-specific pages
+Disallow: /login/
+Disallow: /logout/
+Disallow: /register/
+Disallow: /account/
+Disallow: /profile/
+Disallow: /dashboard/
+
+# Utility pages
+Disallow: /404.html
+Disallow: /500.html
+Disallow: /error/
+
+# -----------------------------------------------------------------------------
+# CRAWL-RATE OPTIMIZATION
+# -----------------------------------------------------------------------------
+
+# Googlebot - Priority crawling
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Googlebot-News (if applicable)
+User-agent: Googlebot-News
+Allow: /blog/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 2
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Baidu (Chinese search engine)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 3
+
+# Yandex (Russian search engine)
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3
+
+# -----------------------------------------------------------------------------
+# AI/LLM CRAWLERS - Controlled Access
+# -----------------------------------------------------------------------------
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+Allow: /blog/
+Allow: /about/
+Allow: /services/
+Disallow: /contact/
+Disallow: /privacy/
+
+# OpenAI User Agent (for browsing)
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+Allow: /blog/
+Allow: /about/
+Allow: /services/
+Disallow: /contact/
+Disallow: /privacy/
+
+# Google Extended (for AI training)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Allow: /
+Allow: /blog/
+Allow: /about/
+Allow: /services/
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# -----------------------------------------------------------------------------
+# ARCHIVE/BACKUP SERVICES
+# -----------------------------------------------------------------------------
+
+# Archive.org Wayback Machine
+User-agent: ia_archiver
+Allow: /
+
+# -----------------------------------------------------------------------------
+# SEO TOOLS
+# -----------------------------------------------------------------------------
+
+# Ahrefs
+User-agent: AhrefsBot
+Allow: /
+
+# SEMrush
+User-agent: SemrushBot
+Allow: /
+
+# Moz
+User-agent: DotBot
+Allow: /
+
+# Screaming Frog
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# -----------------------------------------------------------------------------
+# SECURITY - BLOCK BAD BOTS
+# -----------------------------------------------------------------------------
+
+# Block known malicious crawlers
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot/6.1
+Disallow: /
+
+User-agent: SemrushBot/7~bl
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Block scrapers
+User-agent: scrapy
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: Python-urllib
+Disallow: /
+
+# -----------------------------------------------------------------------------
+# HOST INFORMATION
+# -----------------------------------------------------------------------------
+Host: mrlawassociates.com

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- 
+    MR Law Associates - Locations Sitemap
+    Generated: 2026-02-25
+    Total URLs: 13
+-->
+
+<!-- Main Locations Page -->
+<url>
+    <loc>https://mrlawassociates.com/location/</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+        <image:loc>https://mrlawassociates.com/assets/logo-icon.png</image:loc>
+        <image:title>MR Law Associates - Serving All Areas of Karachi</image:title>
+    </image:image>
+</url>
+
+<!-- Premium Areas -->
+<url>
+    <loc>https://mrlawassociates.com/location/clifton-dha.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/location/defence.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/location/pechs.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<!-- Central Karachi -->
+<url>
+    <loc>https://mrlawassociates.com/location/saddar.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/location/gulberg.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/location/nazimabad.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<!-- East Karachi -->
+<url>
+    <loc>https://mrlawassociates.com/location/gulshan-johar.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/location/korangi.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<!-- West Karachi -->
+<url>
+    <loc>https://mrlawassociates.com/location/lyari.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/location/keamari.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+</url>
+
+<url>
+    <loc>https://mrlawassociates.com/location/orangi.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+</url>
+
+<!-- Other Areas -->
+<url>
+    <loc>https://mrlawassociates.com/location/malir.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+</urlset>

@@ -1,0 +1,55 @@
+# =============================================================================
+# SECURITY.TXT - MR LAW ASSOCIATES
+# https://mrlawassociates.com/.well-known/security.txt
+# =============================================================================
+
+# Contact Information
+Contact: mailto:info@mrlawassociates.com
+Contact: tel:+92-336-3120798
+
+# Expiration
+Expires: 2027-02-25T00:00:00.000Z
+
+# Preferred Languages
+Preferred-Languages: en, ur
+
+# Acknowledgments
+Acknowledgments: https://mrlawassociates.com/security-acknowledgments.html
+
+# Policy
+Policy: https://mrlawassociates.com/security-policy.html
+
+# Hiring
+Hiring: https://mrlawassociates.com/careers.html
+
+# =============================================================================
+# SECURITY POLICY SUMMARY
+# =============================================================================
+
+We take the security of our website and client data seriously.
+
+If you discover a security vulnerability, please report it to us immediately
+at info@mrlawassociates.com. We appreciate responsible disclosure and will
+work with you to resolve any issues promptly.
+
+Please DO NOT:
+- Access or modify data without authorization
+- Disrupt or degrade our services
+- Use automated tools that could cause harm
+
+We DO appreciate:
+- Reports of potential security vulnerabilities
+- Suggestions for improving our security posture
+- Responsible disclosure practices
+
+We will:
+- Acknowledge receipt of your report within 48 hours
+- Investigate and validate reported issues promptly
+- Work to remediate confirmed vulnerabilities
+- Recognize researchers who report valid issues (with permission)
+
+Thank you for helping keep MR Law Associates and our clients secure.
+
+# =============================================================================
+# LAST UPDATED: 2026-02-25
+# =============================================================================

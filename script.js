@@ -46,33 +46,53 @@ function initGoogleAdsTracking() {
     gtag('config', 'AW-16610551759');
 }
 
-// Conversion tracking functions
-function gtag_report_whatsapp_conversion(url) {
-    var callback = function () {
-        if (typeof url !== 'undefined') {
+// Conversion action send_to IDs (Google Ads AW-16610551759)
+var WA_CONVERSIONS = {
+    header:   { send_to: 'AW-16610551759/d-BtCJCLwMwZEM_Pw_A9' },
+    footer:   { send_to: 'AW-16610551759/Fm8ICIH6t58cEM_Pw_A9', value: 1.0, currency: 'PKR' },
+    floating: { send_to: 'AW-16610551759/T-K3CIT6t58cEM_Pw_A9', value: 1.0, currency: 'PKR' }
+};
+var PHONE_CONVERSION = { send_to: 'AW-16610551759/5uYBCIf6t58cEM_Pw_A9', value: 1.0, currency: 'PKR' };
+
+// Detect which WhatsApp conversion to fire based on click location
+function getWhatsAppLocation(element) {
+    if (!element) return 'floating';
+    if (element.closest('header.navbar, .navbar, .mobile-menu-panel, .mobile-menu-overlay')) return 'header';
+    if (element.closest('footer, .footer-premium, #site-footer')) return 'footer';
+    // Floating widget AND body CTAs both report as "Body/Floating Click"
+    return 'floating';
+}
+
+// Generic conversion firing helper. Navigates to url after conversion is logged.
+// openInNewTab: matches existing target="_blank" links so we don't break new-tab behavior.
+function fireConversion(params, url, openInNewTab) {
+    var navigated = false;
+    var doNavigate = function() {
+        if (navigated) return;
+        navigated = true;
+        if (typeof url === 'undefined' || !url) return;
+        if (openInNewTab) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+        } else {
             window.location = url;
         }
     };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-16610551759/d-BtCJCLwMwZEM_Pw_A9',
-        'event_callback': callback
-    });
+    var payload = Object.assign({}, params, { event_callback: doNavigate });
+    if (typeof gtag === 'function') {
+        gtag('event', 'conversion', payload);
+    }
+    // Fallback if gtag is blocked (adblocker) or callback never fires
+    setTimeout(doNavigate, 1000);
     return false;
 }
 
+function gtag_report_whatsapp_conversion(url, element, openInNewTab) {
+    var location = getWhatsAppLocation(element);
+    return fireConversion(WA_CONVERSIONS[location], url, openInNewTab);
+}
+
 function gtag_report_phone_conversion(url) {
-    var callback = function () {
-        if (typeof url !== 'undefined') {
-            window.location = url;
-        }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-16610551759/ppMvCKbdzP8bEM_Pw_A9',
-        'value': 1.0,
-        'currency': 'PKR',
-        'event_callback': callback
-    });
-    return false;
+    return fireConversion(PHONE_CONVERSION, url, false);
 }
 
 // Attach conversion tracking to all WhatsApp and phone links
@@ -83,16 +103,19 @@ function attachConversionTracking() {
         link.dataset.conversionAttached = 'true';
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            gtag_report_whatsapp_conversion(this.href);
+            var openInNewTab = this.target === '_blank';
+            gtag_report_whatsapp_conversion(this.href, this, openInNewTab);
         });
     });
-    // Phone links (tel:)
+    // Phone links (tel:) - tel: URIs are handled by the OS; preventDefault would block dialer.
+    // We fire the conversion on click but let the browser handle the dialer launch natively.
     document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
         if (link.dataset.conversionAttached) return;
         link.dataset.conversionAttached = 'true';
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            gtag_report_phone_conversion(this.href);
+        link.addEventListener('click', function() {
+            if (typeof gtag === 'function') {
+                gtag('event', 'conversion', PHONE_CONVERSION);
+            }
         });
     });
 }
@@ -725,7 +748,13 @@ function initWhatsAppWidget() {
     if (isMobile) {
         floatBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            window.open(`https://wa.me/${CONFIG.phone}?text=Hello Advocate Reema, I need legal assistance.`, '_blank', 'noopener,noreferrer');
+            const waUrl = `https://wa.me/${CONFIG.phone}?text=Hello Advocate Reema, I need legal assistance.`;
+            // Fire Body/Floating conversion before opening WhatsApp
+            if (typeof fireConversion === 'function' && WA_CONVERSIONS && WA_CONVERSIONS.floating) {
+                fireConversion(WA_CONVERSIONS.floating, waUrl, true);
+            } else {
+                window.open(waUrl, '_blank', 'noopener,noreferrer');
+            }
         });
     } else {
         // Desktop: Show popup after delay

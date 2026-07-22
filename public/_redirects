@@ -1,0 +1,42 @@
+# =============================================================================
+# MR Law Associates - 301 redirects (family-law refocus, 2026-07)
+# Cloudflare Pages _redirects. Format: <from> <to> <status>
+# =============================================================================
+
+# --- Legacy family URLs still ranking -> current family pages (recover equity) ---
+/divorce-lawyers-in-karachi/         /services/family-lawyer/                 301
+/child-support-lawyers-in-karachi/   /services/maintenance-alimony-lawyer/    301
+/court-marriage-in-karachi/          /services/court-marriage-lawyer/         301
+/family-dispute-lawyers-in-karachi/  /services/family-lawyer/                 301
+/home/                               /                                        301
+
+# --- Killed off-topic SERVICE pages -> services hub ---
+/services/cheque-bounce-case/            /services/  301
+/services/civil-suit/                    /services/  301
+/services/partition-suit/                /services/  301
+/services/property-dispute-case/         /services/  301
+/services/criminal-case-fir/             /services/  301
+/services/bail-application/              /services/  301
+/services/company-registration/          /services/  301
+/services/ntn-registration/              /services/  301
+/services/fbr-tax-return-filing/         /services/  301
+/services/labor-law/                     /services/  301
+/services/birth-certificate/             /services/  301
+/services/death-certificate/             /services/  301
+/services/karachi-board-certificates/    /services/  301
+/services/lost-matric-inter-documents/   /services/  301
+/services/university-degrees-verification/ /services/ 301
+
+# --- Killed off-topic BLOG posts -> blog hub ---
+/blog/posts/property-dispute-resolution-karachi  /blog/  301
+/blog/posts/bail-application-pakistan            /blog/  301
+/blog/posts/fir-registration-defense             /blog/  301
+/blog/posts/company-registration-pakistan        /blog/  301
+/blog/posts/nadra-documentation-guide            /blog/  301
+/blog/posts/legal-notice-importance              /blog/  301
+
+# --- Legacy non-family URLs -> homepage ---
+/services/criminal-lawyer/            /  301
+/services/legal-advisory-lawyer/      /  301
+/services/legal-documents-lawyer/     /  301
+/how-to-become-a-tax-filer-in-pakistan-a-step-by-step-guide/  /  301

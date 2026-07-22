@@ -102,27 +102,6 @@
 
 <!-- Property & Civil Law -->
 <url>
-    <loc>https://mrlawassociates.com/services/property-dispute-case/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/civil-suit/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/partition-suit/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-</url>
-
-<url>
     <loc>https://mrlawassociates.com/services/succession-case/</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -130,90 +109,6 @@
 </url>
 
 <!-- Criminal Law -->
-<url>
-    <loc>https://mrlawassociates.com/services/criminal-case-fir/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/bail-application/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/cheque-bounce-case/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-</url>
-
 <!-- Corporate & Tax -->
-<url>
-    <loc>https://mrlawassociates.com/services/company-registration/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/ntn-registration/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/fbr-tax-return-filing/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/labor-law/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-</url>
-
 <!-- Documentation Services -->
-<url>
-    <loc>https://mrlawassociates.com/services/birth-certificate/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/death-certificate/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/karachi-board-certificates/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/lost-matric-inter-documents/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-</url>
-
-<url>
-    <loc>https://mrlawassociates.com/services/university-degrees-verification/</loc>
-    <lastmod>2026-02-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-</url>
-
 </urlset>

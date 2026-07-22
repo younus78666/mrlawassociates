@@ -11211,3 +11211,7 @@ html {
     height: 100px;
     margin-top: -100px;
 }
+
+/* Progressive enhancement: reveal-on-scroll content stays fully visible when
+   JS is unavailable (crawlers, no-JS). Hidden state applies only once JS runs. */
+html:not(.js) .reveal { opacity: 1 !important; transform: none !important; }

@@ -1,0 +1,382 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Services Karachi | Civil, Family Law | MR Law</title>
+    <meta name="description" content="Expert legal services in Karachi. Civil litigation, family law, corporate registration, property disputes & criminal defense. Free consultation. Call now.">
+    <meta name="keywords" content="legal services Karachi, lawyer Karachi, law firm Karachi, family lawyer, criminal lawyer, civil lawyer, documentation services, business registration, Advocate Reema Jawed, MR Law Associates">
+    <meta property="og:title" content="Legal Services in Karachi | Civil, Family, Corporate Law | MR Law Associates">
+    <meta property="og:description" content="Expert legal services in Karachi. Civil litigation, family law, corporate registration, property disputes & NADRA documentation. Advocate High Court.">
+    <meta property="og:url" content="https://mrlawassociates.com/services/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mrlawassociates.com/assets/logo-icon.png">
+    <meta property="og:site_name" content="MR Law Associates">
+    <meta property="og:locale" content="en_PK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Legal Services in Karachi | Civil, Family, Corporate Law">
+    <meta name="twitter:description" content="Expert legal services in Karachi. Civil litigation, family law, corporate registration & property disputes.">
+    <meta name="twitter:image" content="https://mrlawassociates.com/assets/logo-icon.png">
+    <link rel="canonical" href="https://mrlawassociates.com/services/">
+
+    <!-- Google Analytics 4 -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', {
+        'send_page_view': true,
+        'anonymize_ip': true,
+        'allow_google_signals': true,
+        'allow_ad_personalization_signals': false,
+        'custom_map': {
+          'custom_parameter_1': 'service_type',
+          'custom_parameter_2': 'location'
+        }
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script is:inline type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mrlawassociates.com/#organization",
+          "name": "MR Law Associates",
+          "url": "https://mrlawassociates.com",
+          "logo": "https://mrlawassociates.com/assets/logo-icon.png",
+          "image": "https://mrlawassociates.com/assets/logo-icon.png",
+          "description": "Leading law firm in Karachi providing expert legal services in civil, family, criminal, property, and corporate law. Led by Advocate High Court Reema Jawed.",
+          "foundingDate": "2010",
+          "founders": [{ "@type": "Person", "name": "Reema Jawed" }],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court",
+            "addressLocality": "Karachi",
+            "addressRegion": "Sindh",
+            "postalCode": "74200",
+            "addressCountry": "PK"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+92-336-3120798",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Urdu"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/mrlawassociates",
+            "https://www.linkedin.com/company/mrlawassociates"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mrlawassociates.com/#website",
+          "url": "https://mrlawassociates.com",
+          "name": "MR Law Associates",
+          "publisher": { "@id": "https://mrlawassociates.com/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mrlawassociates.com/services/#webpage",
+          "url": "https://mrlawassociates.com/services/",
+          "name": "Legal Services in Karachi | Civil, Family, Corporate Law | MR Law Associates",
+          "isPartOf": { "@id": "https://mrlawassociates.com/#website" },
+          "about": { "@id": "https://mrlawassociates.com/#organization" },
+          "description": "Expert legal services in Karachi: civil litigation, family law, corporate registration, property disputes, criminal defense & NADRA documentation.",
+          "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".speakable-intro"] }
+        },
+        {
+          "@type": "ItemList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://mrlawassociates.com/services/civil-suit/", "name": "Civil Suit Litigation" },
+            { "@type": "ListItem", "position": 2, "url": "https://mrlawassociates.com/services/family-lawyer/", "name": "Family Law & Divorce" },
+            { "@type": "ListItem", "position": 3, "url": "https://mrlawassociates.com/services/property-dispute-case/", "name": "Property Disputes" },
+            { "@type": "ListItem", "position": 4, "url": "https://mrlawassociates.com/services/company-registration/", "name": "Corporate Registration" }
+          ]
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Legal Services",
+          "provider": { "@id": "https://mrlawassociates.com/#organization" },
+          "areaServed": { "@type": "City", "name": "Karachi" },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Legal Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Civil Litigation", "description": "Suits for declaration, stay orders, recovery cases" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Law", "description": "Divorce, khula, child custody, maintenance" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Property Disputes", "description": "Illegal possession, title verification, partition" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Criminal Defense", "description": "Bail applications, FIR defense, trials" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate Law", "description": "Company registration, SECP compliance, tax filing" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "NADRA Documentation", "description": "CNIC corrections, certificates, lost documents" } }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What legal services does MR Law Associates provide in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "We provide comprehensive legal representation spanning civil litigation, family and divorce law, property dispute resolution, criminal defense (bail and FIR), corporate registration, FBR tax compliance, and municipal documentation procedures." } },
+            { "@type": "Question", "name": "Do you handle NADRA and Union Council document issues?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our document services division manages late entry birth and death certificates, missing marriage registrations, educational duplicate recovery from BSEK/BIEK, and complex civil declaratory suits for CNIC name or date of birth corrections." } },
+            { "@type": "Question", "name": "Can I hire a lawyer for a property dispute in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Property litigation is our core competency. We handle partition suits for inherited properties, cancellation of forged title deeds, stay orders against illegal dispossession, and specific performance suits for breached real estate contracts." } },
+            { "@type": "Question", "name": "Who handles the legal cases at your firm?", "acceptedAnswer": { "@type": "Answer", "text": "All major litigation and legal strategy is directed by Reema Jawed, Advocate High Court. We operate a dedicated team of associate lawyers to manage hearings, draft pleadings, and expedite municipal documentation across various Karachi jurisdictions." } }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mrlawassociates.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mrlawassociates.com/services/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <Header />
+<main>
+        <section class="service-page-hero">
+            <p style="color:var(--accent-gold-dark); font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:1rem;">
+                Practice Areas</p>
+            <h1 class="hero-title">Expert Legal Services in <span class="text-gradient">Karachi</span></h1>
+            <p class="hero-subtitle">Comprehensive representation across civil litigation, family law, property disputes, and corporate compliance by Advocate High Court Reema Jawed.</p>
+            <p style="color:var(--text-secondary); font-size:0.85rem; margin-top:1rem;">Last Updated: February 2026 | MR Law Associates Directory</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">›</span><span class="current">Legal Services</span></nav>
+</section>
+
+        <div class="service-page-content services-listing-page">
+            <article class="service-main">
+
+                <p class="speakable-intro" style="font-size:1.1rem; text-align:center; margin-bottom:2.5rem;"><strong>Securing
+                        reliable legal services in Karachi</strong> demands engaging a law firm possessing deep
+                    jurisdictional expertise across municipal courts, the High Court of Sindh, and administrative
+                    tribunals. MR Law Associates functions as a full-service legal consultancy, aggressively advocating
+                    for clients in complex civil trials, mitigating familial conflict through family courts, structuring
+                    corporate entities for international investment, and legally resolving systemic identification
+                    documentation errors within NADRA and provincial educational boards.</p>
+
+                <!-- Section: Civil & Litigation -->
+                <hr class="section-divider">
+                <h2>Civil & Litigation Services</h2>
+                <p>We litigate aggressively in Karachi's district and high courts to protect your financial, real estate,
+                    and fundamental civil rights through targeted injunctions and comprehensive trial strategy.</p>
+
+                <div class="services-card-grid">
+                    <a href="/services/civil-suit/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#9878;&#65039;</span> Civil Suit Proceedings</h3>
+                            <p>Drafting and litigating comprehensive civil suits under the CPC 1908. We handle breach of contract, specific performance, recovery of damages, and securing immediate permanent injunctions (stay orders).</p>
+                        </div>
+                    </a>
+                    <a href="/services/property-dispute-case/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#127970;</span> Property Disputes</h3>
+                            <p>Resolving illegal dispossession, combating forged title deeds, clearing encroached land, and litigating targeted partition suits for contested inherited real estate assets.</p>
+                        </div>
+                    </a>
+                    <a href="/services/partition-suit/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128208;</span> Partition Suit (Meeras)</h3>
+                            <p>Court-mandated division of jointly inherited properties. We enforce exact Islamic share calculations and compel physical division or public auction when co-heirs refuse to negotiate.</p>
+                        </div>
+                    </a>
+                    <a href="/services/cheque-bounce-case/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128181;</span> Cheque Bounce Recovery</h3>
+                            <p>Executing dual-track legal strategies under Section 489-F PPC and Order 37 summary civil suits to rapidly recover frozen capital from dishonored financial instruments.</p>
+                        </div>
+                    </a>
+                    <a href="/services/criminal-case-fir/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128659;</span> Criminal Defense & FIRs</h3>
+                            <p>Strategic defense against hostile police actions. We draft counter-FIRs, manage trial proceedings, and utilize Section 22-A applications to compel police action against genuine offenders.</p>
+                        </div>
+                    </a>
+                    <a href="/services/bail-application/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128275;</span> Bail Applications</h3>
+                            <p>Securing pre-arrest and post-arrest bail from judicial magistrates and sessions courts to prevent illegal harassment and safeguard the fundamental liberty of the accused.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Section: Family & Inheritance -->
+                <hr class="section-divider">
+                <h2>Family & Inheritance Law</h2>
+                <p>We navigate deeply sensitive familial disputes using precision and discretion, fiercely advocating for
+                    your custodial rights and legitimate inheritance shares under Pakistani jurisdiction.</p>
+
+                <div class="services-card-grid">
+                    <a href="/services/family-lawyer/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128106;</span> Family Attorney Services</h3>
+                            <p>Complete representation in family courts for spousal maintenance, restitution of conjugal rights, domestic violence protection, and execution of delayed dowry article recoveries.</p>
+                        </div>
+                    </a>
+                    <a href="/services/divorce-custody-case/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128148;</span> Divorce (Talaq) Procedures</h3>
+                            <p>Defending against unilateral Talaq, managing Union Council arbitration notices, and securing final NADRA effectiveness certificates.</p>
+                        </div>
+                    </a>
+                    <a href="/services/khula-procedure/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128220;</span> Khula Procedure</h3>
+                            <p>Strategic, fast-track execution of Khula lawsuits in Karachi's Family Courts, guaranteeing your fundamental right to dissolve an unworkable marriage.</p>
+                        </div>
+                    </a>
+                    <a href="/services/court-marriage-lawyer/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128141;</span> Court Marriage Registry</h3>
+                            <p>Confidential court marriage execution, Free Will Affidavits, verified Nikah Khawan, and automatic NADRA MRC generation.</p>
+                        </div>
+                    </a>
+                    <a href="/services/child-custody-lawyer/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128737;&#65039;</span> Child Custody (Hizanat)</h3>
+                            <p>Defending maternal Hizanat, enforcing robust paternal visitation schedules, and executing Habeas Corpus against child abduction.</p>
+                        </div>
+                    </a>
+                    <a href="/services/maintenance-alimony-lawyer/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128176;</span> Maintenance & Alimony</h3>
+                            <p>Aggressive lawsuits for wife and child maintenance (Nafqa), discovering hidden income, and enforcing arrest against defaulting fathers.</p>
+                        </div>
+                    </a>
+                    <a href="/services/restitution-conjugal-rights/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#9878;&#65039;</span> Conjugal Rights (Ada-e-Haqooq)</h3>
+                            <p>Strategic defense against retaliatory Restitution of Conjugal Rights suits. We paralyse claims using prompt dower and cruelty precedents.</p>
+                        </div>
+                    </a>
+                    <a href="/services/dower-haq-mehr-recovery/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128142;</span> Dower (Haq Mehr) Recovery</h3>
+                            <p>Unyielding legal execution ensuring the immediate monetary recovery of your Prompt (Moajjal) and Deferred (Mowajjal) Dower against defiant ex-spouses.</p>
+                        </div>
+                    </a>
+                    <a href="/services/dowry-articles-recovery/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128715;&#65039;</span> Dowry Articles (Saman-e-Jahez)</h3>
+                            <p>Aggressive lawsuit filings and court bailiff dispatch to physically reclaim your bridal gold, furniture, electronics, or their total cash equivalent.</p>
+                        </div>
+                    </a>
+                    <a href="/services/guardianship-certificate-lawyer/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128737;&#65039;</span> Guardianship Certificates</h3>
+                            <p>Procuring absolute legal Guardianship Certificates to manage minor properties, unlock bank accounts, and fulfill foreign family visa protocols.</p>
+                        </div>
+                    </a>
+                    <a href="/services/succession-case/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128220;</span> Succession Certificates</h3>
+                            <p>Acquiring court-ordered succession certificates to instantly unlock and distribute a deceased family member's frozen bank accounts, National Savings, and liquid investment portfolios.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Section: Business & Tax -->
+                <hr class="section-divider">
+                <h2>Business & Tax Compliance</h2>
+                <p>We architect robust corporate entities and manage continuous FBR tax compliance, enabling entrepreneurs
+                    to scale legally while minimizing their annual liability exposure.</p>
+
+                <div class="services-card-grid">
+                    <a href="/services/company-registration/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#127963;&#65039;</span> SECP Company Formation</h3>
+                            <p>End-to-end electronic incorporation of Private Limited Companies, Single Member Companies (SMC), and LLPs. Includes drafting Memorandums and Articles of Association.</p>
+                        </div>
+                    </a>
+                    <a href="/services/ntn-registration/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#127380;</span> FBR NTN Registration</h3>
+                            <p>Procuring National Tax Numbers for individuals, Association of Persons (AOP), and corporate entities. Crucial for banking operations, property acquisition, and avoiding non-filer levies.</p>
+                        </div>
+                    </a>
+                    <a href="/services/fbr-tax-return-filing/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128202;</span> Annual Tax Return Filing</h3>
+                            <p>Filing impeccable income tax returns and complex wealth statements via the IRIS portal to maintain Active Taxpayer List (ATL) status and drastically reduce withholding tax burdens.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Section: Documents -->
+                <hr class="section-divider">
+                <h2>Municipal & Educational Documents</h2>
+                <p>We eradicate bureaucratic friction by compelling municipal offices and educational boards to finalize
+                    late registrations, correct legacy errors, and authenticate critical identity certificates.</p>
+
+                <div class="services-card-grid">
+                    <a href="/services/birth-certificate/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128118;</span> Birth Certificates</h3>
+                            <p>Processing NADRA birth certificates, securing DC approvals for extremely delayed entries, procuring NOCs, and litigating civil suits for CNIC date-of-birth corrections.</p>
+                        </div>
+                    </a>
+                    <a href="/services/marriage-certificate/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128141;</span> Marriage Certificates</h3>
+                            <p>Translating traditional Nikah Namas into computerized NADRA certificates, facilitating court marriages for adult couples, and handling MOFA attestations for spouse visas.</p>
+                        </div>
+                    </a>
+                    <a href="/services/death-certificate/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128334;&#65039;</span> Death Certificates</h3>
+                            <p>Securing crucial late entry death certificates, managing the mandatory CNIC cancellation protocol, and fulfilling inheritance documentation prerequisites for successions.</p>
+                        </div>
+                    </a>
+                    <a href="/services/lost-matric-inter-documents/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#128196;</span> Lost Matric/Inter Certificates</h3>
+                            <p>Replacing lost educational documents by filing the required police FIRs, executing newspaper publications, drafting magistrate affidavits, and navigating BSEK/BIEK duplications.</p>
+                        </div>
+                    </a>
+                    <a href="/services/karachi-board-certificates/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#9989;</span> Board Attestations</h3>
+                            <p>Processing the mandatory sequence of Karachi Board Verification followed by IBCC attestation and MOFA apostille stamps to validate secondary education credentials abroad.</p>
+                        </div>
+                    </a>
+                    <a href="/services/university-degrees-verification/">
+                        <div class="feature-box reveal">
+                            <h3><span class="emoji">&#127891;</span> Degree Verification & WES</h3>
+                            <p>Managing comprehensive HEC attestation cycles and coordinating perfectly sealed transcript envelopes from KU, NED, and IBA directly dispatched to World Education Services.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CTA -->
+                <div class="reveal" style="margin-top:3.5rem; padding:3rem; background:linear-gradient(165deg, #2D2420 0%, #1A1612 100%); border:1px solid rgba(196,155,107,0.3); border-radius:20px; text-align:center; position:relative; overflow:hidden;">
+                    <div style="position:absolute; top:-50%; right:-30%; width:400px; height:400px; background:radial-gradient(circle, rgba(196,155,107,0.1) 0%, transparent 60%); pointer-events:none;"></div>
+                    <h2 style="font-size:clamp(1.4rem, 3vw, 1.8rem); margin-bottom:1rem; color:#FFFFFF; position:relative; z-index:1;">Select MR Law Associates for Guaranteed Representation</h2>
+                    <p style="color:rgba(255,255,255,0.7); margin-bottom:2rem; max-width:700px; margin-left:auto; margin-right:auto; font-size:1rem; line-height:1.7; position:relative; z-index:1;">
+                        Whether you require an aggressive civil litigation strategy, sensitive divorce negotiations, or immediate corporation formation, our Karachi chambers provide decisive, accountable advocacy.</p>
+                    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; position:relative; z-index:1;">
+                        <a href="tel:03363120798" class="btn btn-primary">Call: 0336 3120798</a>
+                        <a href="https://wa.me/923363120798" class="btn btn-secondary" target="_blank" rel="noopener">Discuss via WhatsApp</a>
+                        <a href="/contact/" class="btn btn-outline">Schedule Consultation</a>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </main>
+    <Footer />
+    <script is:inline src="/script.js"></script>
+</body>
+
+</html>

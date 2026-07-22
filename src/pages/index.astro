@@ -70,107 +70,190 @@ import Footer from '../components/Footer.astro';
     <!-- Schema Markup -->
     <script is:inline type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mrlawassociates.com/#organization",
+      "name": "MR Law Associates",
+      "url": "https://mrlawassociates.com",
+      "logo": "https://mrlawassociates.com/assets/logo-icon.png",
+      "image": "https://mrlawassociates.com/assets/logo-icon.png",
+      "description": "Leading law firm in Karachi providing expert legal services in civil, family, criminal, property, and corporate law. Led by Advocate High Court Reema Jawed.",
+      "foundingDate": "2010",
+      "founders": [
         {
-          "@type": "Organization",
-          "@id": "https://mrlawassociates.com/#organization",
-          "name": "MR Law Associates",
-          "url": "https://mrlawassociates.com",
-          "logo": "https://mrlawassociates.com/assets/logo-icon.png",
-          "image": "https://mrlawassociates.com/assets/logo-icon.png",
-          "description": "Leading law firm in Karachi providing expert legal services in civil, family, criminal, property, and corporate law. Led by Advocate High Court Reema Jawed.",
-          "foundingDate": "2010",
-          "founders": [{ "@type": "Person", "name": "Reema Jawed" }],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court",
-            "addressLocality": "Karachi",
-            "addressRegion": "Sindh",
-            "postalCode": "74200",
-            "addressCountry": "PK"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+92-336-3120798",
-            "contactType": "customer service",
-            "availableLanguage": ["English", "Urdu"]
-          },
-          "sameAs": [
-            "https://www.facebook.com/mrlawassociates",
-            "https://www.linkedin.com/company/mrlawassociates"
-          ]
-        },
+          "@type": "Person",
+          "name": "Reema Jawed"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "postalCode": "74200",
+        "addressCountry": "PK"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-336-3120798",
+        "contactType": "customer service",
+        "availableLanguage": [
+          "English",
+          "Urdu"
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/mrlawassociates",
+        "https://www.linkedin.com/company/mrlawassociates"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mrlawassociates.com/#reema-jawed",
+      "name": "Reema Jawed",
+      "gender": "Female",
+      "jobTitle": "Advocate High Court, Family Lawyer",
+      "worksFor": {
+        "@id": "https://mrlawassociates.com/#organization"
+      },
+      "knowsAbout": [
+        "Family Law",
+        "Divorce",
+        "Khula",
+        "Child Custody",
+        "Maintenance",
+        "Dower",
+        "Domestic Violence",
+        "Guardianship"
+      ],
+      "hasCredential": "Sindh Bar Council 19378/HC/KHI",
+      "areaServed": {
+        "@type": "City",
+        "name": "Karachi"
+      },
+      "description": "Advocate High Court Reema Jawed is a female family lawyer in Karachi helping women with divorce, khula, child custody, maintenance and dower."
+    },
+    {
+      "@type": "LegalService",
+      "@id": "https://mrlawassociates.com/#legalservice",
+      "name": "MR Law Associates",
+      "description": "Expert lawyer in Karachi specializing in civil litigation, family law, property disputes, and corporate compliance. Led by Advocate High Court Reema Jawed.",
+      "url": "https://mrlawassociates.com",
+      "telephone": "+92-336-3120798",
+      "email": "info@mrlawassociates.com",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "City",
+        "name": "Karachi",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Sindh"
+        }
+      },
+      "founder": {
+        "@id": "https://mrlawassociates.com/#reema-jawed"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "postalCode": "74200",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "24.8569",
+        "longitude": "67.0052"
+      },
+      "openingHoursSpecification": [
         {
-          "@type": "LegalService",
-          "@id": "https://mrlawassociates.com/#legalservice",
-          "name": "MR Law Associates",
-          "description": "Expert lawyer in Karachi specializing in civil litigation, family law, property disputes, and corporate compliance. Led by Advocate High Court Reema Jawed.",
-          "url": "https://mrlawassociates.com",
-          "telephone": "+92-336-3120798",
-          "email": "info@mrlawassociates.com",
-          "priceRange": "$$",
-          "areaServed": {
-            "@type": "City",
-            "name": "Karachi",
-            "containedInPlace": { "@type": "AdministrativeArea", "name": "Sindh" }
-          },
-          "founder": {
-            "@type": "Person",
-            "@id": "https://mrlawassociates.com/#reemajawed",
-            "name": "Reema Jawed",
-            "jobTitle": "Advocate High Court",
-            "alumniOf": "Sindh High Court",
-            "knowsAbout": ["Civil Litigation", "Family Law", "Property Disputes", "Corporate Law", "Criminal Defense", "NADRA Documentation"],
-            "hasCredential": "Advocate High Court",
-            "memberOf": ["Karachi Bar Association", "Sindh High Court Bar Association"]
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court",
-            "addressLocality": "Karachi",
-            "addressRegion": "Sindh",
-            "postalCode": "74200",
-            "addressCountry": "PK"
-          },
-          "geo": { "@type": "GeoCoordinates", "latitude": "24.8569", "longitude": "67.0052" },
-          "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "09:00", "closes": "18:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "13:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "16:00" }
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
           ],
-          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "500" },
-          "knowsLanguage": ["English", "Urdu"]
+          "opens": "09:00",
+          "closes": "18:00"
         },
         {
-          "@type": "WebSite",
-          "@id": "https://mrlawassociates.com/#website",
-          "url": "https://mrlawassociates.com",
-          "name": "MR Law Associates",
-          "publisher": { "@id": "https://mrlawassociates.com/#organization" },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://mrlawassociates.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "09:00",
+          "closes": "13:00"
         },
         {
-          "@type": "WebPage",
-          "@id": "https://mrlawassociates.com/#webpage",
-          "url": "https://mrlawassociates.com/",
-          "name": "Lawyer in Karachi | Best Advocate High Court | MR Law Associates",
-          "isPartOf": { "@id": "https://mrlawassociates.com/#website" },
-          "about": { "@id": "https://mrlawassociates.com/#organization" },
-          "primaryImageOfPage": "https://mrlawassociates.com/assets/logo-icon.png",
-          "description": "Expert lawyer in Karachi providing legal services in civil litigation, family law, property disputes, and corporate compliance. Advocate High Court Reema Jawed.",
-          "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".hero-description", ".faq-item"] }
-        },
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "11:00",
+          "closes": "16:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "500"
+      },
+      "knowsLanguage": [
+        "English",
+        "Urdu"
+      ],
+      "provider": {
+        "@id": "https://mrlawassociates.com/#reema-jawed"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mrlawassociates.com/#website",
+      "url": "https://mrlawassociates.com",
+      "name": "MR Law Associates",
+      "publisher": {
+        "@id": "https://mrlawassociates.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mrlawassociates.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mrlawassociates.com/#webpage",
+      "url": "https://mrlawassociates.com/",
+      "name": "Lawyer in Karachi | Best Advocate High Court | MR Law Associates",
+      "isPartOf": {
+        "@id": "https://mrlawassociates.com/#website"
+      },
+      "about": {
+        "@id": "https://mrlawassociates.com/#organization"
+      },
+      "primaryImageOfPage": "https://mrlawassociates.com/assets/logo-icon.png",
+      "description": "Expert lawyer in Karachi providing legal services in civil litigation, family law, property disputes, and corporate compliance. Advocate High Court Reema Jawed.",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero-description",
+          ".faq-item"
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mrlawassociates.com/" }]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mrlawassociates.com/"
         }
       ]
     }
+  ]
+}
     </script>
 </head>
 <body class="home-page">

@@ -58,7 +58,6 @@ import Footer from '../components/Footer.astro';
     
     <!-- Google Fonts with display=swap for faster rendering -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- Critical CSS inlined -->
     <style is:global>
@@ -357,93 +356,79 @@ import Footer from '../components/Footer.astro';
       @media(max-width:768px){ .advocate-grid{ grid-template-columns:1fr; text-align:center; } .advocate-creds{ display:inline-block; } }
     </style>
 
-    <!-- ============ HOMEPAGE PROTOTYPE 2: "EDITORIAL GRACE" (scoped, homepage only) ============ -->
+    <!-- ============ SECTION WIREFRAMES + BACKGROUNDS (original palette, layout-only) ============ -->
     <style>
-      main{ --ink:#1E2B24; --paper:#F7F4EE; --paper-alt:#EDE7DB; --card:#FFFFFF;
-            --green:#2E5D4B; --green-deep:#1F3F32; --brass:#B08D57;
-            --text:#34403A; --muted:#63706A; --line:rgba(30,43,36,0.14);
-            --shadow:0 18px 50px -28px rgba(24,40,32,.42); --r:6px;
-            font-family:'Karla', var(--font-sans); }
+      main{ --sand:#F3ECE0; --cream:#F5EEE3; --gold-tint:#FBF6EE; --ink-dark:#2B2118;
+            --gd:var(--accent-gold-dark); }
 
-      main p, main li, main .section-header p, main .hero-description, main .hero-trust,
-      main .stat-label, main .btn, main .hero-badge, main .service-features li{ font-family:'Karla', var(--font-sans); }
-      main h1, main h2, main h3, main h4, main .hero-title, main .stat-num, main .faq-box-question,
-      main .advocate-avatar, main .cta-headline{ font-family:'Fraunces', var(--font-serif) !important;
-        color:var(--ink); font-weight:600; letter-spacing:-.01em; }
-      main p, main li{ color:var(--text); font-size:1.0625rem; line-height:1.8; }
+      /* ---- distinct background per section (never same as its neighbour) ---- */
+      main .services-section{ background:#FFFFFF !important; }
+      main .advocate-section{ background:var(--cream) !important; }
+      main .why-us-section{ background:var(--gold-tint) !important; }
+      main #protection{ background:var(--sand) !important; }
+      main #family-selection{ background:#FFFFFF !important; }
+      main #what-to-expect{ background:var(--ink-dark) !important; }
+      main .location-section{ background:#FAFAF8 !important; }
+      main .testimonials-section{ background:var(--cream) !important; }
+      main .faq-section{ background:#FFFFFF !important; }
+      main .blog-section{ background:var(--sand) !important; }
 
-      /* editorial rhythm - left aligned */
-      main section{ padding-block:clamp(3.75rem,8vw,6.75rem) !important; }
-      main .section-header{ max-width:840px; margin-inline:0; text-align:left; margin-bottom:clamp(2.25rem,4vw,3.4rem); }
-      main .section-kicker{ display:inline-block; font-family:'Karla',sans-serif; font-weight:700; font-size:.74rem;
-        letter-spacing:.24em; text-transform:uppercase; color:var(--green); border-bottom:2px solid var(--brass);
-        padding-bottom:.4rem; margin-bottom:1.05rem; }
-      main .section-kicker::after{ display:none !important; }
-      main h2{ font-size:clamp(2rem,3.9vw,3rem) !important; line-height:1.1; }
-      main .highlight{ background:none !important; -webkit-text-fill-color:currentColor; color:var(--green) !important; font-style:italic; }
+      /* ================= WIREFRAME 1 - SERVICES: clean 3-col vertical cards ============ */
+      main .services-grid{ grid-template-columns:repeat(3,1fr) !important; }
 
-      /* hero - editorial */
-      main .home-hero{ background:linear-gradient(180deg,#FBF9F4,#EDE7DB) !important; border-bottom:1px solid var(--line); }
-      main .hero-badge{ background:transparent !important; border:1px solid var(--green) !important; color:var(--green) !important;
-        border-radius:2px !important; letter-spacing:.12em; text-transform:uppercase; font-size:.7rem !important; padding:.5rem 1rem !important; }
-      main .hero-title{ font-size:clamp(2.6rem,5.7vw,4.35rem) !important; font-weight:600; line-height:1.03 !important; letter-spacing:-.02em; }
-      main .hero-description{ font-size:clamp(1.05rem,1.6vw,1.2rem) !important; }
-      main .hero-visual img{ border-radius:4px !important; box-shadow:var(--shadow) !important; border:1px solid var(--line); }
-      main .hero-stats{ display:flex !important; gap:0 !important; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-      main .stat-box{ background:transparent !important; border:none !important; border-right:1px solid var(--line) !important;
-        box-shadow:none !important; border-radius:0 !important; padding:1.1rem 1.4rem !important; text-align:left; }
-      main .stat-box:last-child{ border-right:none !important; }
-      main .stat-num{ color:var(--green) !important; }
-      main .hero-areas a{ background:transparent !important; border:1px solid var(--line) !important; color:var(--green) !important; border-radius:2px !important; }
-      main .hero-areas a:hover{ background:var(--green) !important; color:#fff !important; border-color:var(--green) !important; }
+      /* ================= WIREFRAME 2 - WHY US: horizontal icon-left cards, 2-col ======== */
+      main .why-us-grid{ grid-template-columns:repeat(2,1fr) !important; gap:clamp(1rem,2vw,1.5rem) !important; }
+      main .why-us-card{ display:grid !important; grid-template-columns:auto 1fr !important;
+        column-gap:1.1rem !important; row-gap:.3rem !important; align-items:start !important;
+        text-align:left !important; padding:clamp(1.4rem,2vw,1.8rem) !important; }
+      main .why-us-card .why-icon{ grid-row:1 / 3 !important; margin:0 !important; align-self:start; }
+      main .why-us-card h3{ margin:0 !important; align-self:center; }
 
-      /* cards - flat editorial */
-      main .service-card, main .why-us-card, main .selection-card, main .testimonial-card,
-      main .faq-box, main .blog-card, main .sidebar-card, main .advocate-cred-card{
-        background:var(--card) !important; border:1px solid var(--line) !important; border-radius:var(--r) !important;
-        box-shadow:none !important; transition:transform .3s, box-shadow .3s, border-color .3s !important; }
-      main .service-card{ border-top:3px solid var(--green) !important; padding:clamp(1.6rem,2.4vw,2.15rem) !important; }
-      main .service-card:hover, main .why-us-card:hover, main .blog-card:hover, main .testimonial-card:hover{
-        transform:translateY(-4px) !important; box-shadow:var(--shadow) !important; border-color:var(--green) !important; }
+      /* ================= WIREFRAME 3 - PROTECTION: highlighted advisory panel, 2-col list = */
+      main #protection .detail-content-wide{ background:#FFFFFF; border:1px solid var(--border-glass);
+        border-left:4px solid var(--gd); border-radius:var(--radius-lg);
+        padding:clamp(1.75rem,3vw,2.75rem) !important; max-width:1000px; margin-inline:auto;
+        box-shadow:0 14px 40px -22px rgba(96,62,34,.3); }
+      main #protection .detail-content-wide > ul{ display:grid !important; grid-template-columns:1fr 1fr;
+        gap:.4rem 2.25rem; margin-top:1.25rem; }
 
-      /* icons - minimal, no gradient tile */
-      main .service-icon-wrapper, main .why-icon{ width:auto !important; height:auto !important; background:none !important;
-        border-radius:0 !important; margin-bottom:1rem; color:var(--green) !important; display:block !important; }
-      main .service-icon-wrapper svg, main .why-icon svg{ width:34px !important; height:34px !important; }
+      /* ================= WIREFRAME 4 - HOW TO CHOOSE: 2x2 numbered cards ================= */
+      main #family-selection .selection-grid{ grid-template-columns:repeat(2,1fr) !important; }
 
-      /* signature: oversized serif numerals */
-      main .selection-card .num{ font-family:'Fraunces',serif !important; font-size:2.7rem !important; color:var(--brass) !important; opacity:.55; font-weight:600; }
+      /* ================= WIREFRAME 5 - WHAT TO EXPECT: dark 4-step horizontal flow ======= */
+      main #what-to-expect .section-kicker{ color:#E5B87E !important; }
+      main #what-to-expect h2{ color:#FFFFFF !important; }
+      main #what-to-expect .highlight{ -webkit-text-fill-color:#E5B87E; }
+      main #what-to-expect .detail-content-wide > p{ color:#D9CFC2 !important; }
+      main #what-to-expect .selection-grid{ grid-template-columns:repeat(4,1fr) !important; }
+      main #what-to-expect .selection-card{ background:rgba(255,255,255,.045) !important;
+        border:1px solid rgba(255,255,255,.14) !important; border-radius:var(--radius-lg) !important; }
+      main #what-to-expect .selection-card h4{ color:#FFFFFF !important; }
+      main #what-to-expect .selection-card p{ color:#C9BEB0 !important; }
+      main #what-to-expect .selection-card .num{ color:#E5B87E !important; opacity:.5; }
 
-      /* section backgrounds */
-      main .why-us-section, main .detail-section--alt, main .faq-section{ background:var(--paper-alt) !important; }
-      main .services-section, main .advocate-section, main .detail-section, main .location-section,
-      main .testimonials-section, main .blog-section{ background:var(--paper) !important; }
+      /* ================= WIREFRAME 6 - FAQ: 2-column grid (was single column) =========== */
+      main .faq-grid-simple{ display:grid !important; grid-template-columns:1fr 1fr !important;
+        gap:1rem 1.5rem !important; max-width:var(--max-width) !important; align-items:start; }
 
-      /* buttons - squared editorial */
-      main .btn{ border-radius:3px !important; padding:14px 30px !important; font-weight:700 !important;
-        letter-spacing:.06em; text-transform:uppercase; font-size:.82rem !important; }
-      main .btn-primary{ background:var(--green) !important; box-shadow:none !important; color:#fff !important; }
-      main .btn-primary:hover{ background:var(--green-deep) !important; transform:translateY(-2px); }
-      main .btn-outline{ border:1.5px solid var(--green) !important; color:var(--green) !important; background:transparent !important; }
-      main .btn-outline:hover{ background:var(--green) !important; color:#fff !important; }
+      /* ================= WIREFRAME 7 - BLOG: featured-first (first card wider) =========== */
+      main .blog-grid{ grid-template-columns:repeat(3,1fr) !important; }
 
-      /* advocate avatar */
-      main .advocate-avatar{ background:var(--green) !important; border-radius:4px !important; }
+      /* section rhythm consistency */
+      main section{ padding-block:clamp(3.5rem,7vw,5.75rem); }
 
-      /* CTA - full-bleed emerald */
-      main .cta-section{ background:linear-gradient(135deg,var(--green-deep),#16332A) !important; color:#EDE7DB; }
-      main .cta-section h2, main .cta-headline{ color:#fff !important; }
-      main .cta-section .highlight{ color:#D9B98A !important; -webkit-text-fill-color:#D9B98A; }
-      main .cta-benefit-item, main .cta-subheadline{ color:#D7DED8 !important; }
-      main .cta-card{ background:#FCFAF5 !important; border-radius:var(--r) !important; box-shadow:var(--shadow) !important; }
-
-      /* faq */
-      main .faq-box{ padding:1.5rem 1.65rem !important; }
-      main .faq-box-question{ font-size:1.15rem; }
-
-      @media(max-width:640px){ main .hero-stats{ flex-wrap:wrap; } }
+      @media(max-width:900px){
+        main .why-us-grid{ grid-template-columns:1fr !important; }
+        main #what-to-expect .selection-grid{ grid-template-columns:repeat(2,1fr) !important; }
+        main .faq-grid-simple{ grid-template-columns:1fr !important; }
+      }
+      @media(max-width:640px){
+        main #protection .detail-content-wide > ul{ grid-template-columns:1fr; }
+        main #family-selection .selection-grid, main #what-to-expect .selection-grid{ grid-template-columns:1fr !important; }
+      }
     </style>
-    <!-- ============ END PROTOTYPE 2 ============ -->
+    <!-- ============ END WIREFRAMES ============ -->
+
 
     <main>
         <!-- Hero Section -->

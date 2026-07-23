@@ -8,20 +8,20 @@ import Footer from '../../../components/Footer.astro';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divorce Lawyer Karachi | Talaq, Khula & Custody | MR Law</title>
-    <meta name="description" content="Expert divorce lawyer in Karachi. Professional khula, talaq, child custody & maintenance representation services. Advocate Reema Jawed. Call 0336 3120798.">
-    <meta name="keywords" content="divorce lawyer Karachi, talaq lawyer, khula lawyer, child custody lawyer Karachi, maintenance lawyer, family court Karachi, divorce procedure Pakistan, Muslim divorce, Reema Jawed">
-    <meta property="og:title" content="Divorce Lawyer in Karachi | Talaq, Khula & Custody | MR Law">
+    <title>Divorce Lawyer in Karachi | Khula, Talaq & Custody Help</title>
+    <meta name="description" content="Caring female divorce lawyer in Karachi for khula, talaq, custody, maintenance and dower. A lady advocate guides you in confidence. Call 0336 3120798.">
+    <meta name="keywords" content="divorce lawyer in Karachi, female divorce lawyer Karachi, khula lawyer, talaq lawyer, child custody lawyer Karachi, maintenance lawyer, family court Karachi, Reema Jawed">
+    <meta property="og:title" content="Divorce Lawyer in Karachi | Khula, Talaq & Custody Help">
     <meta property="og:description"
-        content="Expert divorce lawyer in Karachi. Khula, talaq, child custody & maintenance. Advocate Reema Jawed. Call 0336 3120798.">
+        content="Caring female divorce lawyer in Karachi. A lady advocate handles your khula, talaq, custody and maintenance case in confidence. Call 0336 3120798.">
     <meta property="og:image" content="https://mrlawassociates.com/images/og-divorce-lawyer.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="MR Law Associates">
     <meta property="og:locale" content="en_PK">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Divorce Lawyer in Karachi | Talaq, Khula & Custody | MR Law">
-    <meta name="twitter:description" content="Expert divorce lawyer. Khula, talaq, child custody. Call 0336 3120798.">
+    <meta name="twitter:title" content="Divorce Lawyer in Karachi | Khula, Talaq & Custody Help">
+    <meta name="twitter:description" content="Caring female divorce lawyer in Karachi. Khula, talaq, custody, maintenance. Call 0336 3120798.">
     <meta name="twitter:image" content="https://mrlawassociates.com/images/og-divorce-lawyer.jpg">
     <meta property="og:url" content="https://mrlawassociates.com/services/divorce-custody-case/">
     <meta property="og:type" content="website">
@@ -54,38 +54,68 @@ import Footer from '../../../components/Footer.astro';
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LegalService", "name": "Divorce Lawyer in Karachi – MR Law Associates",
-          "description": "Divorce case filing, khula petitions, talaq procedures, child custody, and maintenance claims in Karachi Family Courts.",
-          "url": "https://mrlawassociates.com/services/divorce-custody-case/",
-          "telephone": ["+923363120798"], "serviceType": "Divorce and Custody Law",
+          "@type": "Person",
+          "@id": "https://mrlawassociates.com/#reema-jawed",
+          "name": "Reema Jawed",
+          "gender": "Female",
+          "jobTitle": "Advocate High Court, Family Lawyer",
+          "hasCredential": "Sindh Bar Council 19378/HC/KHI",
+          "worksFor": { "@id": "https://mrlawassociates.com/#organization" },
+          "knowsAbout": ["Divorce Law", "Khula", "Talaq", "Child Custody", "Maintenance", "Dower", "Domestic Violence", "Guardianship"],
           "areaServed": { "@type": "City", "name": "Karachi" },
-          "provider": { "@type": "Person", "@id": "https://mrlawassociates.com/#reema-jawed", "name": "Reema Jawed", "jobTitle": "Advocate High Court", "worksFor": { "@id": "https://mrlawassociates.com/#organization" }, "knowsAbout": ["Divorce Law", "Khula", "Talaq", "Child Custody", "Muslim Family Laws"] },
+          "description": "Advocate High Court Reema Jawed is a female divorce lawyer in Karachi helping women with khula, talaq, child custody, maintenance and dower."
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://mrlawassociates.com/#organization",
+          "name": "MR Law Associates",
+          "url": "https://mrlawassociates.com",
+          "telephone": ["+923363120798"],
+          "founder": { "@id": "https://mrlawassociates.com/#reema-jawed" },
+          "address": { "@type": "PostalAddress", "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court", "addressLocality": "Karachi", "addressRegion": "Sindh", "addressCountry": "PK" }
+        },
+        {
+          "@type": "LegalService",
+          "@id": "https://mrlawassociates.com/services/divorce-custody-case/#legalservice",
+          "name": "Divorce Lawyer in Karachi - MR Law Associates",
+          "description": "Divorce case filing, khula petitions, talaq procedures, child custody, and maintenance claims in Karachi Family Courts, handled by a female advocate.",
+          "url": "https://mrlawassociates.com/services/divorce-custody-case/",
+          "telephone": ["+923363120798"],
+          "serviceType": "Divorce and Child Custody Law",
+          "areaServed": { "@type": "City", "name": "Karachi", "containedInPlace": { "@type": "AdministrativeArea", "name": "Sindh" } },
+          "provider": { "@id": "https://mrlawassociates.com/#reema-jawed" },
+          "founder": { "@id": "https://mrlawassociates.com/#reema-jawed" },
           "about": { "@type": "Thing", "name": "Divorce", "sameAs": "https://en.wikipedia.org/wiki/Divorce" },
           "mentions": [
             { "@type": "Thing", "name": "Muslim Family Laws Ordinance 1961" },
             { "@type": "Thing", "name": "Dissolution of Muslim Marriages Act 1939" },
-            { "@type": "Thing", "name": "Family Courts Act 1964" }
+            { "@type": "Thing", "name": "West Pakistan Family Courts Act 1964" },
+            { "@type": "Thing", "name": "Guardians and Wards Act 1890" }
           ],
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "123" },
           "isPartOf": { "@type": "WebSite", "@id": "https://mrlawassociates.com/#website", "name": "MR Law Associates", "url": "https://mrlawassociates.com" }
         },
-        { "@type": "Organization", "@id": "https://mrlawassociates.com/#organization", "name": "MR Law Associates", "url": "https://mrlawassociates.com", "telephone": ["+923363120798"], "address": { "@type": "PostalAddress", "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court", "addressLocality": "Karachi", "addressCountry": "PK" } },
         {
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "What is the difference between khula and talaq in Pakistan?", "acceptedAnswer": { "@type": "Answer", "text": "Talaq is husband-initiated divorce by verbal or written declaration, requiring notice to the Union Council Chairman and a 90-day reconciliation period. Khula is wife-initiated dissolution through Family Court by returning her dower (haq mehr). Talaq does not require court involvement. Khula requires a court decree." } },
-            { "@type": "Question", "name": "How long does a divorce case take in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "Contested khula cases take 6 to 18 months. Uncontested khula where dower is returned may conclude in 3 to 6 months. Talaq takes 90 days from the Union Council notice. Custody disputes combined with divorce add additional time depending on evidence and mediation outcomes." } },
-            { "@type": "Question", "name": "Does a wife lose dower (haq mehr) in khula?", "acceptedAnswer": { "@type": "Answer", "text": "In khula, the wife typically returns or forfeits her dower as consideration for dissolution. However, courts have discretion. If the husband is at fault (domestic violence, adultery, failure to maintain), courts may grant khula without requiring full dower return. The 2015 amendment strengthened women's khula rights." } },
-            { "@type": "Question", "name": "What are the grounds for divorce under Pakistani law?", "acceptedAnswer": { "@type": "Answer", "text": "Grounds under the Dissolution of Muslim Marriages Act 1939 include: husband's whereabouts unknown for 4 years, failure to maintain for 2 years, imprisonment for 7+ years, impotence, insanity for 2+ years, cruelty, and exercising option of puberty. Khula requires no specific fault ground." } },
-            { "@type": "Question", "name": "Who gets child custody after divorce in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "Custody follows the child's welfare principle. Under Islamic law, mothers have hizanat rights for boys until age 7 and girls until puberty. Courts can override these defaults if child welfare requires it. Fathers retain financial responsibility regardless of custody. Visitation rights are always preserved." } },
-            { "@type": "Question", "name": "Is iddat maintenance mandatory after divorce?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The husband must provide maintenance during the iddat period (3 menstrual cycles or 3 months after divorce). Iddat maintenance includes housing, food, clothing, and medical expenses at the same standard as during marriage. Family Courts enforce payment through attachment of salary or property." } }
+            { "@type": "Question", "name": "What is the difference between khula and talaq in Pakistan?", "acceptedAnswer": { "@type": "Answer", "text": "Talaq is husband-initiated divorce by verbal or written declaration, requiring notice to the Union Council Chairman and a 90-day reconciliation period. Khula is wife-initiated dissolution through the Family Court, usually by returning her dower (haq mehr). Talaq does not need a court decree. Khula does." } },
+            { "@type": "Question", "name": "Can I speak to a female divorce lawyer about my case?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Advocate Reema Jawed is a lady advocate who handles your case personally. Many women feel more comfortable explaining a painful marriage to another woman, and every consultation stays confidential. Call 0336 3120798 for a private appointment." } },
+            { "@type": "Question", "name": "How long does a divorce case take in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "Contested khula cases take 6 to 18 months. Uncontested khula where the dower is returned may conclude in 3 to 6 months. Talaq takes 90 days from the Union Council notice. Custody disputes added to a divorce can extend the timeline depending on evidence and mediation." } },
+            { "@type": "Question", "name": "Does a wife lose her dower (haq mehr) in khula?", "acceptedAnswer": { "@type": "Answer", "text": "In khula, the wife usually returns or forfeits her dower as consideration for the dissolution. Courts do have discretion, though. If the husband is at fault through cruelty, desertion, or failure to maintain, the court may grant khula without full dower return." } },
+            { "@type": "Question", "name": "What are the grounds for divorce under Pakistani law?", "acceptedAnswer": { "@type": "Answer", "text": "Grounds under the Dissolution of Muslim Marriages Act 1939 include the husband's whereabouts unknown for 4 years, failure to maintain for 2 years, imprisonment for 7 or more years, impotence, insanity, and cruelty. Khula needs no specific fault ground." } },
+            { "@type": "Question", "name": "Who gets child custody after divorce in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "Custody follows the welfare of the child. Under Islamic law, mothers hold hizanat for boys until about age 7 and girls until puberty, and courts can extend this where the child's welfare requires it. Fathers keep financial responsibility whoever has custody, and visitation is preserved." } },
+            { "@type": "Question", "name": "Can the court protect me from domestic violence during a divorce?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Alongside a divorce or khula suit, the court can pass protection and residence orders under domestic violence law so an abusive husband cannot harass or evict you. Keep any medical reports, messages, or photos, because they help us secure faster protection." } },
+            { "@type": "Question", "name": "How much does a divorce lawyer in Karachi cost?", "acceptedAnswer": { "@type": "Answer", "text": "Every case is different, so we discuss the scope openly before you commit to anything. Please call 0336 3120798 for a confidential consultation and a clear picture of what your matter involves." } },
+            { "@type": "Question", "name": "What documents do I need to file for divorce or khula in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "Ideally your nikah nama (marriage certificate), CNIC copies, the children's B-forms or birth certificates, and any proof of dower or of the ground you're claiming, such as medical reports. If documents are missing, a lawyer can help you gather or reconstruct them, so your case still moves forward." } },
+            { "@type": "Question", "name": "Can I get a divorce in Karachi if I live abroad?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Through a special power of attorney, MR Law Associates represents overseas Pakistanis in the Karachi Family Courts without you flying back for hearings. Your first consultation can happen by phone or video call. Call 0336 3120798 to arrange it." } }
           ]
         },
         { "@type": "BreadcrumbList", "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mrlawassociates.com/" },
           { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mrlawassociates.com/services/" },
-          { "@type": "ListItem", "position": 3, "name": "Divorce Lawyer Karachi", "item": "https://mrlawassociates.com/services/divorce-custody-case/" }
+          { "@type": "ListItem", "position": 3, "name": "Divorce Lawyer in Karachi", "item": "https://mrlawassociates.com/services/divorce-custody-case/" }
         ]},
-        { "@type": "WebPage", "name": "Divorce Lawyer in Karachi 2026 – MR Law Associates", "datePublished": "2026-02-24", "dateModified": "2026-02-24", "inLanguage": "en", "isPartOf": { "@id": "https://mrlawassociates.com/#website" }, "about": { "@type": "Thing", "name": "Divorce Law" }, "author": { "@id": "https://mrlawassociates.com/#reema-jawed" }, "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".speakable-answer"] } }
+        { "@type": "WebPage", "name": "Divorce Lawyer in Karachi - MR Law Associates", "datePublished": "2026-02-24", "dateModified": "2026-07-23", "inLanguage": "en", "isPartOf": { "@id": "https://mrlawassociates.com/#website" }, "about": { "@type": "Thing", "name": "Divorce Law" }, "author": { "@id": "https://mrlawassociates.com/#reema-jawed" }, "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".speakable-answer"] } }
       ]
     }
     </script>
@@ -99,97 +129,105 @@ import Footer from '../../../components/Footer.astro';
                 style="color:var(--accent-gold-dark); font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:1rem;">
                 Legal Services</p>
             <h1 class="hero-title">Divorce Lawyer in <span class="text-gradient">Karachi</span></h1>
-            <p class="hero-subtitle" style="margin:0 auto;">Professional divorce and child custody representation
-                including khula, talaq, maintenance recovery, and visitation rights in Karachi Family Courts.</p>
-            <p style="color:var(--text-secondary); font-size:0.85rem; margin-top:1rem;">Last Updated: February 2026 |
+            <p class="hero-subtitle" style="margin:0 auto;">A caring female divorce lawyer in Karachi handling khula,
+                talaq, child custody, maintenance and dower before the Family Courts. Confidential help, led by a lady
+                advocate.</p>
+            <p style="color:var(--text-secondary); font-size:0.85rem; margin-top:1rem;">Last Updated: July 2026 |
                 Reviewed by Reema Jawed, Advocate High Court</p>
-            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">›</span><a href="/services/">Services</a><span class="sep">›</span><span class="current">Divorce Lawyer Karachi</span></nav>
+            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">›</span><a href="/services/">Services</a><span class="sep">›</span><span class="current">Divorce Lawyer in Karachi</span></nav>
         </section>
 
         <div class="service-page-content">
             <article class="service-main">
 
                 <p class="speakable-answer"><strong>A divorce lawyer in Karachi</strong> represents spouses seeking
-                    dissolution of marriage through khula (wife-initiated) or talaq (husband-initiated) proceedings and
-                    handles connected custody, maintenance, and dower disputes. MR Law Associates, led by Advocate Reema
-                    Jawed, files divorce cases before Karachi's Family Courts under the Dissolution of Muslim Marriages
-                    Act 1939, the Muslim Family Laws Ordinance 1961, and the Family Courts Act 1964. Our firm handles
-                    contested and uncontested divorces, child custody arrangements, maintenance claims, and post-divorce
-                    property settlement.</p>
+                    dissolution of marriage through khula (wife-initiated) or talaq (husband-initiated) proceedings, and
+                    handles the custody, maintenance, and dower disputes that come with it. MR Law Associates is led by
+                    Advocate Reema Jawed, a female family lawyer who files divorce cases before Karachi's Family Courts
+                    under the Dissolution of Muslim Marriages Act 1939, the Muslim Family Laws Ordinance 1961, and the
+                    West Pakistan Family Courts Act 1964. If you're a woman worried about where to even begin, you can
+                    speak to a lady advocate first, in complete confidence, before deciding anything.</p>
 
-                <p>Divorce proceedings in Pakistan follow Islamic family law principles enforced through the Family
-                    Court system. Whether you are a wife seeking khula or a husband initiating talaq, proper legal
-                    procedure must be followed for the divorce to be legally valid. The process involves Union Council
-                    notification, mandatory reconciliation attempts, and court oversight.</p>
+                <p>I know how frightening it feels to think about divorce. You're not just dealing with paperwork, you're
+                    dealing with your children, your home, and your peace of mind. That's why our firm treats every
+                    client as a person, not a file number. Whether you're a wife seeking khula or a husband initiating
+                    talaq, the divorce only becomes legally valid when the correct procedure is followed, and that's
+                    exactly where we guide you step by step. The process involves Union Council notification, a mandatory
+                    reconciliation attempt, and court oversight, and we'll be beside you at each stage.</p>
 
-                <h2>What Types of Divorce Cases Does MR Law Associates Handle?</h2>
+                <h2>What Types of Divorce Cases Does a Divorce Lawyer in Karachi Handle?</h2>
 
-                <p>MR Law Associates handles all forms of marital dissolution recognized under Pakistani law. Each type
-                    has different procedural requirements, timelines, and financial implications for both spouses.</p>
+                <p>MR Law Associates handles every form of marital dissolution recognised under Pakistani law. Each type
+                    has its own procedure, timeline, and financial consequences for both spouses, so the first thing we
+                    do is help you understand which route actually fits your situation.</p>
 
                 <div class="service-features">
                     <div class="feature-box reveal">
                         <h3>Khula (Wife-Initiated Divorce)</h3>
                         <p>Filing <strong>khula petitions before the Family Court</strong> under Section 10(4) of the
                             Family Courts Act. The wife seeks dissolution by offering to return her dower. The husband's
-                            consent is not required after the 2015 amendment. Courts grant khula if satisfied the wife
-                            cannot live within the marriage prescribed by Islamic law.</p>
+                            consent isn't required after the 2015 amendment. Courts grant khula once satisfied that the
+                            wife cannot live within the limits ordained by Allah, and we handle the whole
+                            <a href="/services/khula-procedure/" style="color:var(--accent-gold-dark);">khula procedure</a>
+                            for you.</p>
                     </div>
                     <div class="feature-box reveal">
                         <h3>Talaq (Husband-Initiated Divorce)</h3>
                         <p>Assisting with <strong>proper talaq procedures</strong> under Section 7 of the Muslim Family
                             Laws Ordinance 1961. The husband must send written notice to the Union Council Chairman and
-                            the wife. A 90-day reconciliation period follows. If reconciliation fails, the divorce
-                            becomes effective on the 91st day.</p>
+                            to the wife. A 90-day reconciliation period follows. If reconciliation fails, the divorce
+                            becomes effective on the 91st day, and we make sure the notice is valid so it can't be
+                            challenged later.</p>
                     </div>
                     <div class="feature-box reveal">
                         <h3>Judicial Divorce (Dissolution of Marriage)</h3>
                         <p>Filing for <strong>court-ordered divorce on specific grounds</strong> under the Dissolution
-                            of Muslim Marriages Act 1939. Grounds include husband's disappearance (4 years), failure to
-                            maintain (2 years), imprisonment (7+ years), impotence, insanity, and cruelty. The court
-                            grants divorce after verifying the claimed ground.</p>
+                            of Muslim Marriages Act 1939. Grounds include the husband's disappearance (4 years), failure
+                            to maintain (2 years), imprisonment (7 or more years), impotence, insanity, and cruelty. The
+                            court grants the divorce once it verifies the ground you've claimed.</p>
                     </div>
                     <div class="feature-box reveal">
                         <h3>Custody & Visitation</h3>
                         <p>Handling <strong>child custody disputes during and after divorce</strong>. Under Islamic law,
-                            mothers retain custody (hizanat) for boys until age 7 and girls until puberty. Courts
-                            prioritize the child's welfare. We negotiate <a href="/services/family-lawyer/"
-                                style="color:var(--accent-gold-dark);">custody arrangements</a> and secure visitation
-                            rights for non-custodial parents.</p>
+                            mothers keep custody (hizanat) for boys until age 7 and girls until puberty, and courts put
+                            the child's welfare first. We negotiate
+                            <a href="/services/child-custody-lawyer/" style="color:var(--accent-gold-dark);">custody arrangements</a>
+                            and secure visitation rights for the non-custodial parent.</p>
                     </div>
                 </div>
 
                 <h2>How Does the Khula Process Work in Karachi?</h2>
 
-                <p>Khula is the most common form of wife-initiated divorce in Karachi's Family Courts. The process
-                    involves filing a suit, mandatory reconciliation attempts, and a court decree dissolving the
-                    marriage. Under the 2015 amendment, the husband's consent is no longer required.</p>
+                <p>Khula is the most common form of wife-initiated divorce in Karachi's Family Courts. The process runs
+                    through filing a suit, a mandatory reconciliation attempt, and a court decree that dissolves the
+                    marriage. Under the 2015 amendment the husband's consent is no longer needed, which means a woman is
+                    no longer trapped simply because her husband refuses to let go.</p>
 
                 <ol style="color:var(--text-secondary); padding-left:1.5rem; line-height:2.2;">
-                    <li><strong>Legal consultation:</strong> Your divorce lawyer evaluates your situation, identifies
-                        applicable grounds, and calculates the financial implications (dower return, maintenance,
-                        property).</li>
-                    <li><strong>Suit filing:</strong> A khula petition is filed in the Family Court with jurisdiction
-                        over the wife's current residence or the place of marriage. The petition includes grounds for
-                        dissolution and dower details.</li>
-                    <li><strong>Court summons:</strong> The court issues notice to the husband to appear and respond
-                        within 30 days.</li>
-                    <li><strong>Reconciliation attempt:</strong> The court mandates a reconciliation hearing where both
-                        parties and their families attempt to resolve differences. If reconciliation fails, the case
-                        proceeds.</li>
-                    <li><strong>Evidence and arguments:</strong> Both sides present their case. The wife explains why
-                        she cannot live within the marriage. The husband may contest or negotiate terms.</li>
-                    <li><strong>Decree:</strong> The court grants a khula decree upon satisfaction. The decree specifies
-                        dower return requirements, custody arrangements, and maintenance obligations.</li>
-                    <li><strong>Iddat period:</strong> The wife observes iddat (3 menstrual cycles or 3 months). She
-                        cannot remarry during this period.</li>
+                    <li><strong>Legal consultation:</strong> Your divorce lawyer listens to your situation, identifies
+                        the applicable grounds, and explains the financial picture (dower return, maintenance,
+                        property) in plain language.</li>
+                    <li><strong>Suit filing:</strong> A khula petition is filed in the Family Court that has
+                        jurisdiction over where the wife currently lives or where the marriage took place. The petition
+                        sets out the grounds for dissolution and the dower details.</li>
+                    <li><strong>Court summons:</strong> The court issues notice to the husband to appear and respond,
+                        usually within 30 days.</li>
+                    <li><strong>Reconciliation attempt:</strong> The court holds a reconciliation hearing where both
+                        parties, and often their families, try to resolve differences. If reconciliation fails, the case
+                        moves ahead.</li>
+                    <li><strong>Evidence and arguments:</strong> Both sides present their case. The wife explains why she
+                        cannot continue the marriage, and the husband may contest or negotiate terms.</li>
+                    <li><strong>Decree:</strong> The court grants a khula decree once satisfied. The decree records the
+                        dower position, custody arrangements, and maintenance obligations.</li>
+                    <li><strong>Iddat period:</strong> The wife observes iddat (3 menstrual cycles or 3 months) and
+                        cannot remarry during this time.</li>
                 </ol>
 
-                <h2>What Is the Difference Between Khula and Talaq?</h2>
+                <h2>Khula vs Talaq: What Is the Difference?</h2>
 
-                <p>Khula and talaq are the two primary methods of divorce in Pakistan, initiated by different parties
-                    with different procedures and financial consequences. Understanding the distinction helps you choose
-                    the appropriate legal route.</p>
+                <p>Khula and talaq are the two primary routes to divorce in Pakistan, started by different spouses with
+                    different procedures and financial results. Understanding the distinction helps you choose the right
+                    legal path, and it's one of the first things we walk you through.</p>
 
                 <table style="width:100%; border-collapse:collapse; margin:1.5rem 0; color:var(--text-secondary);">
                     <thead>
@@ -236,114 +274,271 @@ import Footer from '../../../components/Footer.astro';
                 <h2>What Are the Legal Grounds for Divorce in Pakistan?</h2>
 
                 <p>The Dissolution of Muslim Marriages Act 1939 lists specific grounds on which a wife can seek judicial
-                    divorce. These grounds are separate from khula and do not require the wife to return her dower. The
-                    court dissolves the marriage if the claimed ground is proven.</p>
+                    divorce. These grounds are separate from khula and don't require the wife to return her dower. The
+                    court dissolves the marriage once the claimed ground is proven.</p>
 
                 <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
                     <li><strong>Husband missing for 4+ years:</strong> Whereabouts unknown and no maintenance provided.
                     </li>
-                    <li><strong>Failure to maintain for 2+ years:</strong> Husband has not provided financial support
-                        without valid reason.</li>
-                    <li><strong>Imprisonment for 7+ years:</strong> Husband has been sentenced to imprisonment of 7
+                    <li><strong>Failure to maintain for 2+ years:</strong> The husband hasn't provided financial support
+                        without a valid reason.</li>
+                    <li><strong>Imprisonment for 7+ years:</strong> The husband has been sentenced to imprisonment of 7
                         years or more.</li>
-                    <li><strong>Impotence:</strong> Husband is impotent and the condition existed at the time of
+                    <li><strong>Impotence:</strong> The husband is impotent and the condition existed at the time of
                         marriage.</li>
-                    <li><strong>Insanity for 2+ years:</strong> Husband has been of unsound mind for at least 2 years.
-                    </li>
-                    <li><strong>Cruelty:</strong> Physical violence, mental torture, forcing into immoral conduct,
-                        disposal of wife's property, obstructing religious practice, or unequal treatment among multiple
-                        wives.</li>
-                    <li><strong>Option of puberty:</strong> If the girl was married before age 16 by a guardian (not the
-                        father), she can repudiate the marriage before age 18.</li>
-                    <li><strong>Any other ground recognized under Islamic law:</strong> Courts have discretion to
-                        recognize additional grounds based on Sharia principles.</li>
+                    <li><strong>Insanity for 2+ years:</strong> The husband has been of unsound mind for at least 2
+                        years.</li>
+                    <li><strong>Cruelty:</strong> Physical violence, mental torture, forcing you into immoral conduct,
+                        disposing of your property, obstructing your religious practice, or unequal treatment among
+                        multiple wives.</li>
+                    <li><strong>Option of puberty:</strong> If a girl was married before age 16 by a guardian other than
+                        the father, she can repudiate the marriage before age 18.</li>
+                    <li><strong>Any other ground recognised under Islamic law:</strong> Courts have discretion to
+                        recognise additional grounds based on Sharia principles.</li>
                 </ul>
 
                 <h2>What Happens to Children After Divorce in Karachi?</h2>
 
-                <p>Child custody after divorce follows the welfare-of-the-child principle, supplemented by Islamic law
-                    guidelines on hizanat (custody rights). Courts design custody arrangements that serve the child's
-                    best interests, often including shared custody elements and guaranteed visitation rights.</p>
-
-                <p>Key custody principles:</p>
+                <p>Child custody after divorce follows the welfare-of-the-child principle, supported by Islamic law
+                    guidelines on hizanat. Courts design arrangements that serve the child's best interests, and that
+                    often means shared elements and guaranteed visitation rather than shutting one parent out.</p>
 
                 <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
                     <li><strong>Mother's preference:</strong> Under Islamic law, mothers have preferential custody for
-                        boys until age 7 and girls until puberty. This is the starting point, not the final
-                        determination.</li>
-                    <li><strong>Father's financial obligation:</strong> Regardless of who has custody, the father
-                        remains financially responsible for children's food, education, healthcare, and clothing.</li>
-                    <li><strong>Visitation rights:</strong> The non-custodial parent receives court-ordered visitation.
-                        Typical arrangements include alternate weekends, half of school holidays, and shared religious
-                        celebrations.</li>
-                    <li><strong>Guardian ad litem:</strong> For contested custody, courts may appoint an independent
-                        person to assess both parents' homes and recommend the arrangement serving the child's welfare.
-                    </li>
-                    <li><strong>Child's preference:</strong> Children old enough to express a preference (typically 10+)
-                        are heard by the court, though their wish is not automatically binding.</li>
+                        boys until age 7 and girls until puberty. That's the starting point, not the final word.</li>
+                    <li><strong>Father's financial obligation:</strong> Whoever has custody, the father stays
+                        financially responsible for the children's food, education, healthcare, and clothing.</li>
+                    <li><strong>Visitation rights:</strong> The non-custodial parent receives court-ordered visitation,
+                        commonly alternate weekends, part of school holidays, and shared religious celebrations.</li>
+                    <li><strong>Guardian assessment:</strong> In a contested custody dispute, the court may look closely
+                        at both parents' homes before deciding the arrangement that serves the child's welfare.</li>
+                    <li><strong>Child's preference:</strong> A child old enough to express a view is heard by the court,
+                        though the wish isn't automatically binding.</li>
                 </ul>
 
-                <h2>Why Choose MR Law Associates for Divorce Cases in Karachi?</h2>
+                <h2>Divorce, Domestic Violence and Your Protection</h2>
 
-                <p>MR Law Associates provides experienced divorce representation before Karachi's Family Courts.
-                    Advocate Reema Jawed handles both contested and uncontested divorces with focus on achieving fair
-                    outcomes for custody, maintenance, and dower matters.</p>
+                <p>For many women, the hardest part isn't the paperwork, it's the fear of what an angry husband might do.
+                    You don't have to stay in danger while your case is pending. Alongside a divorce or khula suit, the
+                    court can pass protection and residence orders so an abusive husband can't harass you, hurt you, or
+                    throw you out of the home. If you've faced beating, threats, or emotional abuse, please keep any
+                    medical reports, messages, photos, or witness details, because that evidence helps us secure faster
+                    protection for you and your children. This is confidential, and a female advocate handles it with
+                    the care it deserves.</p>
+
+                <h2>Maintenance, Dower and Financial Support After Divorce</h2>
+
+                <p>Divorce isn't only about ending a marriage, it's about making sure you and your children aren't left
+                    without support. We pursue the financial claims that Pakistani law gives you, so you can rebuild with
+                    some stability.</p>
 
                 <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
-                    <li><strong>Comprehensive family law:</strong> We handle divorce alongside connected matters
-                        including <a href="/services/family-lawyer/">maintenance claims</a>, dower recovery,
-                        guardianship, and property division.</li>
-                    <li><strong>Document support:</strong> Divorce proceedings require various certificates. We assist
-                        with <a href="/services/marriage-certificate/">marriage certificates</a>, birth certificates, and NADRA record verification.
-                    </li>
-                    <li><strong>Sensitive approach:</strong> Divorce cases involve emotional stress. We provide clear,
-                        honest legal advice while maintaining professional sensitivity.</li>
-                    <li><strong>Post-divorce enforcement:</strong> If the ex-spouse fails to comply with maintenance or
-                        custody orders, we file execution proceedings for enforcement.</li>
+                    <li><strong>Iddat maintenance:</strong> The husband must maintain the wife during the iddat period,
+                        covering housing, food, clothing, and medical costs at the standard she was used to.</li>
+                    <li><strong>Child maintenance:</strong> We claim regular monthly
+                        <a href="/services/maintenance-alimony-lawyer/" style="color:var(--accent-gold-dark);">maintenance and alimony</a>
+                        for your children, with the amount tied to the father's means and the children's needs.</li>
+                    <li><strong>Dower (haq mehr) recovery:</strong> Any unpaid deferred dower can be recovered through
+                        the court. Our <a href="/services/dower-haq-mehr-recovery/" style="color:var(--accent-gold-dark);">dower recovery</a>
+                        work makes sure a woman gets what she's owed.</li>
+                    <li><strong>Dowry articles:</strong> The jahez and personal belongings you brought into the marriage
+                        can be recovered through a <a href="/services/dowry-articles-recovery/" style="color:var(--accent-gold-dark);">dowry articles recovery</a>
+                        claim.</li>
                 </ul>
+
+                <h2>Family Courts and Jurisdiction in Divorce Cases</h2>
+
+                <p>Divorce and khula suits are decided by the Family Courts, and the right court usually depends on where
+                    the wife currently resides. Getting jurisdiction correct matters, because a case filed in the wrong
+                    court wastes precious months. We file in the proper court from the start and handle every hearing, so
+                    you're not running from counter to counter on your own. If the other spouse ignores a maintenance or
+                    custody order after the decree, we move quickly to enforcement, filing execution proceedings so the
+                    order is actually obeyed and not just written on paper.</p>
+
+                <h2>What Documents Do You Need to File for Divorce or Khula in Karachi?</h2>
+
+                <p>Walking into court prepared saves you weeks of delay, so I always give clients a simple checklist at
+                    our first meeting. You don't need every paper on day one, and if something's missing or lost, we work
+                    around it. Here's what usually helps your divorce or khula case move faster.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Nikah nama (marriage certificate):</strong> The registered marriage contract. If you
+                        can't find your copy, the Union Council that recorded the nikah can issue a certified one.</li>
+                    <li><strong>CNIC copies:</strong> Your national identity card, and the husband's if you have it.</li>
+                    <li><strong>Children's documents:</strong> B-forms or birth certificates, since custody and
+                        maintenance for the children are decided alongside the divorce.</li>
+                    <li><strong>Dower proof:</strong> Anything showing the agreed haq mehr and whether it was paid, which
+                        matters for both khula and dower recovery.</li>
+                    <li><strong>Evidence of the ground:</strong> For a judicial divorce, papers that support your claim,
+                        such as medical reports for cruelty, or proof the husband hasn't maintained you.</li>
+                    <li><strong>Contact details:</strong> The husband's current address so the court can serve notice
+                        without months of delay.</li>
+                </ul>
+
+                <p>Don't worry if your file is incomplete. Part of our job is helping you gather or reconstruct what the
+                    court needs, and we never turn a woman away because a paper's gone missing.</p>
+
+                <h2>Guardianship and the Guardian Courts in Karachi</h2>
+
+                <p>People often mix up custody and guardianship, and the difference genuinely matters. Custody (hizanat)
+                    is about who the child lives with day to day. Guardianship is about who holds legal authority over the
+                    child's property and major decisions, and it's dealt with under the Guardians and Wards Act 1890,
+                    usually before the Guardian Court. A mother can keep custody while the father stays the natural
+                    guardian, and there are times a mother needs a formal
+                    <a href="/services/guardianship-certificate-lawyer/" style="color:var(--accent-gold-dark);">guardianship certificate</a>
+                    to act for her child, whether that's for a passport, a bank account, or an inheritance. If your
+                    divorce touches any of this, we handle the guardianship side too, so nothing falls through the
+                    cracks.</p>
+
+                <h2>Property and Financial Rights After Divorce in Pakistan</h2>
+
+                <p>A worry I hear often is whether a woman loses everything when a marriage ends. Under Pakistani law
+                    there's no automatic 50-50 split of the husband's property the way some other countries do, but that
+                    doesn't mean you walk away with nothing. What's legally yours stays yours, and we make sure you claim
+                    it in full.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Your own property:</strong> Anything in your name, your savings, your gold, and gifts made
+                        to you stay yours after divorce.</li>
+                    <li><strong>Dower (haq mehr):</strong> Unpaid deferred dower is a debt the husband owes you, and the
+                        court can order him to pay it.</li>
+                    <li><strong>Dowry articles (jahez):</strong> The belongings you brought into the marriage can be
+                        recovered, so they aren't kept back out of spite.</li>
+                    <li><strong>Maintenance:</strong> Support during iddat for you, and ongoing maintenance for your
+                        children, tied to the father's means.</li>
+                    <li><strong>The family home:</strong> If you fear being thrown out, a residence order can protect your
+                        right to stay while matters are settled.</li>
+                </ul>
+
+                <h2>Help for Overseas Pakistanis Seeking Divorce in Karachi</h2>
+
+                <p>Plenty of our clients live abroad, in the Gulf, the UK, or the United States, and can't fly back to
+                    sit through hearings. You don't have to. Through a special power of attorney, we represent you in the
+                    Karachi Family Courts while you stay where you are, and we keep you updated at every step. Your first
+                    consultation can happen over a call or a video meeting, whatever feels comfortable, so distance never
+                    stops a woman from getting the divorce or khula she needs.</p>
+
+                <h2>Mediation, Reconciliation and Settlement</h2>
+
+                <p>Not every divorce has to be a war. Where there's room, we explore reconciliation and court-approved
+                    settlement, because a dignified agreement on custody, maintenance, and dower is often kinder to
+                    children than years of bitter litigation. That said, if the other side won't be reasonable or if
+                    there's abuse involved, we don't hesitate to fight your case firmly in court. You decide the goal,
+                    and we give you honest guidance on what's realistic.</p>
+
+                <h2>Why Choose a Female Divorce Lawyer in Karachi at MR Law Associates?</h2>
+
+                <p>MR Law Associates provides experienced divorce representation before Karachi's Family Courts.
+                    Advocate Reema Jawed handles both contested and uncontested divorces, with a focus on fair outcomes
+                    for custody, maintenance, and dower. Because she's a woman, many clients find it easier to open up
+                    about a painful marriage, and that trust helps us build a stronger case.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Complete family law cover:</strong> We handle divorce alongside connected matters
+                        including <a href="/services/family-lawyer/">general family suits</a>, maintenance, dower
+                        recovery, guardianship, and property division.</li>
+                    <li><strong>Guidance you can act on:</strong> We give realistic advice based on the nature of your
+                        dispute, not empty promises. You'll always know where your case stands.</li>
+                    <li><strong>Sensitive, confidential approach:</strong> Divorce brings real emotional stress. We
+                        offer clear legal advice while treating your privacy and dignity with respect.</li>
+                    <li><strong>Post-divorce enforcement:</strong> If the ex-spouse ignores a maintenance or custody
+                        order, we file execution proceedings to enforce it.</li>
+                    <li><strong>Proven experience:</strong> With over 14 years in practice, 500+ family cases handled,
+                        and a 4.9 rating from more than 123 clients, you're in steady hands.</li>
+                </ul>
+
+                <h2>Common Mistakes to Avoid in a Divorce or Khula Case</h2>
+
+                <p>Over the years I've watched avoidable errors cost women time, money, and peace of mind. A little
+                    guidance early on saves a great deal of heartache later, so here are the slips we help you sidestep.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Filing in the wrong court:</strong> A suit lodged where the court has no jurisdiction can
+                        be dismissed, and you're back to square one. We get this right the first time.</li>
+                    <li><strong>Giving up dower without advice:</strong> Some women forfeit their haq mehr under pressure
+                        when the law might have let them keep it. Talk to a lawyer before you agree to anything.</li>
+                    <li><strong>Ignoring maintenance for the children:</strong> Ending the marriage quickly feels urgent,
+                        but don't sign away your children's right to support just to get it over with.</li>
+                    <li><strong>Not keeping evidence:</strong> Messages, medical reports, and photos matter. Deleting them
+                        weakens a cruelty or protection claim.</li>
+                    <li><strong>Facing an abusive spouse alone:</strong> If you feel unsafe, ask the court for protection
+                        early. You don't have to wait until the divorce is final.</li>
+                </ul>
+
+                <h2>After the Divorce: Iddat, Remarriage and Moving Forward</h2>
+
+                <p>Once the decree is granted, a woman observes iddat, roughly three menstrual cycles or three months,
+                    and can't remarry during that window. After iddat ends, you're free to remarry if you choose. We also
+                    help you collect the certified divorce or khula decree, update your records, and register the decree
+                    with the Union Council so there's no confusion about your status later. Closing this chapter properly
+                    matters, and we make sure the paperwork protects you down the road.</p>
 
                 <h2>Frequently Asked Questions About Divorce in Karachi</h2>
 
                 <div class="service-features" style="grid-template-columns:1fr;">
                     <div class="feature-box reveal">
                         <h3>What is the difference between khula and talaq?</h3>
-                        <p><strong>Khula is wife-initiated</strong> (court decree, dower returned). <strong>Talaq is
-                                husband-initiated</strong> (Union Council notice, dower paid). Khula takes 3-18 months.
-                            Talaq takes 90 days from notice. Neither requires the other spouse's consent.</p>
+                        <p><strong>Khula is wife-initiated</strong> (court decree, dower usually returned). <strong>Talaq
+                                is husband-initiated</strong> (Union Council notice, dower paid). Khula takes 3 to 18
+                            months. Talaq takes 90 days from notice. Neither needs the other spouse's consent.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>Can I speak to a female divorce lawyer about my case?</h3>
+                        <p>Yes. Advocate Reema Jawed is a <strong>lady advocate</strong> who handles your case herself.
+                            Many women feel safer explaining a difficult marriage to another woman, and every
+                            conversation stays <strong>confidential</strong>. Call 0336 3120798 for a private
+                            appointment.</p>
                     </div>
                     <div class="feature-box reveal">
                         <h3>How long does a divorce case take in Karachi?</h3>
                         <p>Contested khula: <strong>6 to 18 months</strong>. Uncontested khula with dower return:
-                            <strong>3 to 6 months</strong>. Talaq: <strong>90 days</strong> from Union Council notice.
-                            Custody disputes combined with divorce extend the timeline.
-                        </p>
+                            <strong>3 to 6 months</strong>. Talaq: <strong>90 days</strong> from the Union Council
+                            notice. Custody disputes joined to a divorce extend the timeline.</p>
                     </div>
                     <div class="feature-box reveal">
-                        <h3>Does a wife lose dower in khula?</h3>
-                        <p>Typically, the wife <strong>returns or forfeits her dower</strong>. However, if the husband
-                            is at fault (violence, adultery, abandonment), courts may grant khula <strong>without
-                                requiring full dower return</strong>. The 2015 amendment strengthened this discretion.
+                        <h3>Does a wife lose her dower in khula?</h3>
+                        <p>Usually the wife <strong>returns or forfeits her dower</strong>. But if the husband is at
+                            fault through violence, desertion, or failure to maintain, the court may grant khula
+                            <strong>without full dower return</strong>. The 2015 amendment strengthened this discretion.
                         </p>
-                    </div>
-                    <div class="feature-box reveal">
-                        <h3>Who gets child custody after divorce?</h3>
-                        <p>Mothers have custody for boys until <strong>age 7</strong> and girls until
-                            <strong>puberty</strong>. Courts prioritize child welfare and can override defaults. Fathers
-                            retain financial responsibility regardless. <strong>Visitation rights are always
-                                preserved</strong>.
-                        </p>
-                    </div>
-                    <div class="feature-box reveal">
-                        <h3>Is iddat maintenance mandatory after divorce?</h3>
-                        <p><strong>Yes.</strong> The husband must provide maintenance during iddat (3 menstrual cycles
-                            or 3 months). This includes housing, food, clothing, and medical expenses at the same
-                            standard as during marriage. Family Courts enforce compliance.</p>
                     </div>
                     <div class="feature-box reveal">
                         <h3>What are the grounds for divorce under Pakistani law?</h3>
-                        <p>Grounds include: <strong>husband missing 4+ years, no maintenance for 2+ years, imprisonment
-                                7+ years, impotence, insanity, cruelty</strong>, and option of puberty. Khula does not
-                            require a specific fault ground.</p>
+                        <p>Under the <strong>Dissolution of Muslim Marriages Act 1939</strong>, grounds include the
+                            husband missing for 4 years, failure to maintain for 2 years, imprisonment for 7 or more
+                            years, impotence, insanity, and cruelty. <strong>Khula</strong> needs no specific fault
+                            ground.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>Can the court protect me from domestic violence?</h3>
+                        <p><strong>Yes.</strong> Alongside your divorce or khula suit, the court can pass protection and
+                            residence orders so an abusive husband can't harass or evict you. Keep any medical reports,
+                            messages, or photos, as they help us secure faster protection.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>Who gets child custody after divorce?</h3>
+                        <p>Mothers hold custody for boys until <strong>age 7</strong> and girls until
+                            <strong>puberty</strong>. Courts prioritise the child's welfare and can extend these
+                            defaults. Fathers keep financial responsibility regardless, and <strong>visitation rights
+                                are preserved</strong>.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>How much does a divorce lawyer in Karachi cost?</h3>
+                        <p>Every case is different, so we talk it through openly before you commit to anything. Please
+                            call <strong>0336 3120798</strong> for a confidential consultation and a clear idea of what
+                            your matter involves.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>What documents do I need to file for divorce or khula?</h3>
+                        <p>Ideally your <strong>nikah nama</strong>, CNIC copies, the children's B-forms, and any proof
+                            of dower or of the ground you're claiming. If papers are missing, don't worry, we help you
+                            gather or reconstruct them so your case still moves forward.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>Can I get a divorce in Karachi if I live abroad?</h3>
+                        <p>Yes. Through a <strong>special power of attorney</strong>, we represent overseas Pakistanis in
+                            the Karachi Family Courts without you flying back. Your first consultation can happen by call
+                            or video. Call <strong>0336 3120798</strong> to arrange it.</p>
                     </div>
                 </div>
 
@@ -352,8 +547,8 @@ import Footer from '../../../components/Footer.astro';
                     <h2 style="font-size:1.5rem; margin-bottom:1rem;">Need a Divorce Lawyer in Karachi?</h2>
                     <p
                         style="color:var(--text-secondary); margin-bottom:1.5rem; max-width:600px; margin-left:auto; margin-right:auto;">
-                        Schedule a confidential consultation for khula, talaq, custody, or maintenance matters with
-                        Advocate Reema Jawed.</p>
+                        Book a confidential consultation for khula, talaq, custody, or maintenance with Advocate Reema
+                        Jawed, a female family lawyer who'll handle your case personally.</p>
                     <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
                         <a href="tel:03363120798" class="btn btn-primary">Call: 0336 3120798</a>
                         <a href="https://wa.me/923363120798" class="btn btn-secondary" target="_blank"
@@ -365,9 +560,9 @@ import Footer from '../../../components/Footer.astro';
                 <p
                     style="color:var(--text-secondary); font-size:0.8rem; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border-glass); line-height:1.6;">
                     <strong>Disclaimer:</strong> This page provides general information about divorce law in Pakistan.
-                    Divorce outcomes depend on specific circumstances, evidence, and applicable law. Consult Advocate
-                    Reema Jawed at 0336 3120798 for case-specific guidance. MR Law Associates practices in Karachi,
-                    Pakistan.
+                    Divorce outcomes depend on your specific circumstances, evidence, and the applicable law. Consult
+                    Advocate Reema Jawed at 0336 3120798 for case-specific guidance. MR Law Associates practises in
+                    Karachi, Pakistan.
                 </p>
             </article>
 
@@ -389,8 +584,8 @@ import Footer from '../../../components/Footer.astro';
                 </div>
                 <div class="sidebar-card sidebar-cta">
                     <h3>Confidential Help</h3>
-                    <p>Discuss your divorce or custody matter with Advocate Reema Jawed. Private, professional guidance.
-                    </p>
+                    <p>Discuss your divorce or custody matter with Advocate Reema Jawed. Private, professional guidance
+                        from a lady advocate.</p>
                     <a href="tel:03363120798" class="btn btn-outline" style="width:100%; margin-bottom:0.8rem;">Call:
                         0336 3120798</a>
                     <a href="https://wa.me/923363120798" class="btn btn-secondary" style="width:100%;" target="_blank"

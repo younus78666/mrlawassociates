@@ -356,6 +356,91 @@ import Footer from '../components/Footer.astro';
       @media(max-width:768px){ .advocate-grid{ grid-template-columns:1fr; text-align:center; } .advocate-creds{ display:inline-block; } }
     </style>
 
+    <!-- ============ HOMEPAGE MODERN REDESIGN LAYER (scoped, homepage only) ============ -->
+    <style>
+      main{ --ink:#241C14; --paper:#FBF9F5; --paper-alt:#F5EFE7; --card:#FFFFFF;
+            --gold:#B0824E; --gold-deep:#7A4E2A; --line:rgba(122,78,42,0.12);
+            --shadow-sm:0 2px 8px rgba(60,40,24,0.05);
+            --shadow:0 14px 40px -18px rgba(96,62,34,0.28);
+            --shadow-lg:0 26px 60px -24px rgba(96,62,34,0.34);
+            --r:20px; }
+
+      /* rhythm + typography */
+      main section{ padding-block:clamp(3.75rem,8vw,6.5rem) !important; }
+      main .section-header{ max-width:760px; margin-inline:auto; margin-bottom:clamp(2.25rem,4vw,3.25rem); text-align:center; }
+      main .section-kicker{ display:inline-block; font-family:var(--font-sans); font-weight:700;
+        font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-deep);
+        padding-bottom:.5rem; margin-bottom:.9rem; position:relative; }
+      main .section-kicker::after{ content:""; display:block; width:30px; height:2px;
+        background:linear-gradient(90deg,var(--gold),var(--gold-deep)); margin:.6rem auto 0; border-radius:2px; }
+      main h2{ font-size:clamp(1.9rem,3.6vw,2.85rem) !important; letter-spacing:-.02em; line-height:1.12; color:var(--ink); }
+      main .section-header p{ color:var(--text-secondary); font-size:clamp(1rem,1.4vw,1.12rem); line-height:1.7; margin-top:.85rem; }
+      main p{ font-size:1.0625rem; line-height:1.78; }
+
+      /* hero */
+      main .home-hero{ background:
+        radial-gradient(1100px 520px at 88% -8%, rgba(176,130,78,.14), transparent 60%),
+        linear-gradient(180deg, var(--paper) 0%, var(--paper-alt) 100%) !important; }
+      main .hero-badge{ background:#fff !important; border:1px solid var(--line); box-shadow:var(--shadow-sm);
+        border-radius:100px; padding:.55rem 1.1rem !important; }
+      main .hero-title{ font-size:clamp(2.5rem,5.4vw,4rem) !important; letter-spacing:-.025em; line-height:1.06 !important; color:var(--ink); }
+      main .hero-description{ font-size:clamp(1.05rem,1.6vw,1.2rem) !important; }
+      main .hero-visual img{ border-radius:24px !important; box-shadow:var(--shadow-lg) !important; }
+      main .stat-box{ border-radius:16px !important; border:1px solid var(--line) !important; box-shadow:var(--shadow-sm) !important;
+        transition:transform .35s cubic-bezier(.4,0,.2,1), box-shadow .35s; }
+      main .stat-box:hover{ transform:translateY(-4px); box-shadow:var(--shadow); }
+      main .hero-areas a:hover{ background:var(--gold-deep) !important; color:#fff !important; }
+
+      /* premium cards, unified */
+      main .service-card, main .why-us-card, main .selection-card, main .testimonial-card,
+      main .faq-box, main .blog-card, main .advocate-cred-card, main .sidebar-card{
+        background:var(--card) !important; border:1px solid var(--line) !important;
+        border-radius:var(--r) !important; box-shadow:var(--shadow-sm) !important;
+        transition:transform .38s cubic-bezier(.4,0,.2,1), box-shadow .38s, border-color .38s !important; }
+      main .service-card:hover, main .why-us-card:hover, main .blog-card:hover, main .testimonial-card:hover{
+        transform:translateY(-6px) !important; box-shadow:var(--shadow) !important; border-color:rgba(176,130,78,.35) !important; }
+      main .service-card{ padding:clamp(1.6rem,2.4vw,2.1rem) !important; }
+
+      /* icon treatment */
+      main .service-icon-wrapper, main .why-icon{ width:56px !important; height:56px !important; border-radius:16px !important;
+        display:flex !important; align-items:center; justify-content:center; margin-bottom:1.15rem;
+        background:linear-gradient(135deg, rgba(176,130,78,.16), rgba(122,78,42,.08)) !important;
+        color:var(--gold-deep) !important; }
+      main .service-icon-wrapper svg, main .why-icon svg{ width:28px !important; height:28px !important; }
+      main .selection-card .num{ color:var(--gold) !important; opacity:.9; font-family:var(--font-serif); }
+
+      /* section backgrounds alternate for rhythm */
+      main .why-us-section, main .testimonials-section, main .detail-section--alt, main .blog-section{
+        background:var(--paper-alt) !important; }
+      main .services-section, main .advocate-section, main .detail-section, main .location-section, main .faq-section{
+        background:var(--paper) !important; }
+
+      /* buttons: refined, tactile */
+      main .btn{ border-radius:12px !important; padding:14px 30px !important; font-weight:600 !important; letter-spacing:.2px; }
+      main .btn-primary{ background:linear-gradient(135deg,var(--gold-deep),#5E3A1E) !important;
+        box-shadow:0 10px 24px -8px rgba(122,78,42,.5) !important; }
+      main .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 16px 30px -8px rgba(122,78,42,.55) !important; }
+      main .btn-outline{ border:1.5px solid var(--gold-deep) !important; color:var(--gold-deep) !important; background:transparent !important; }
+      main .btn-outline:hover{ background:var(--gold-deep) !important; color:#fff !important; }
+
+      /* CTA band: rich, modern */
+      main .cta-section{ background:linear-gradient(135deg,#2A1F16,#3E2A18) !important; color:#F5EFE7; }
+      main .cta-section h2, main .cta-headline{ color:#fff !important; }
+      main .cta-section .highlight{ -webkit-text-fill-color:#E5B87E; background:none; }
+      main .cta-card{ background:#fff !important; border-radius:var(--r) !important; box-shadow:var(--shadow-lg) !important; }
+      main .cta-benefit-item, main .cta-subheadline{ color:#Eadfd0 !important; }
+
+      /* faq: cleaner */
+      main .faq-box{ padding:1.5rem 1.65rem !important; }
+      main .faq-box-question{ font-family:var(--font-serif); font-size:1.12rem; color:var(--ink); }
+
+      /* the advocate section a touch more premium */
+      main .advocate-cred-card{ box-shadow:var(--shadow) !important; }
+
+      @media(max-width:640px){ main .section-header{ text-align:left; } main .section-kicker::after{ margin-inline:0; } }
+    </style>
+    <!-- ============ END REDESIGN LAYER ============ -->
+
     <main>
         <!-- Hero Section -->
         <section class="home-hero" itemscope itemtype="https://schema.org/LegalService">

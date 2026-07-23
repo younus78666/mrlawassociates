@@ -411,8 +411,8 @@ import Footer from '../components/Footer.astro';
       main .faq-grid-simple{ display:grid !important; grid-template-columns:1fr 1fr !important;
         gap:1rem 1.5rem !important; max-width:var(--max-width) !important; align-items:start; }
 
-      /* ================= WIREFRAME 7 - BLOG: featured-first (first card wider) =========== */
-      main .blog-grid{ grid-template-columns:repeat(3,1fr) !important; }
+      /* ================= WIREFRAME 7 - BLOG: balanced 2x2 grid =========== */
+      main .blog-grid{ grid-template-columns:repeat(2,1fr) !important; max-width:940px; margin-inline:auto !important; }
 
       /* section rhythm consistency */
       main section{ padding-block:clamp(3.5rem,7vw,5.75rem); }
@@ -425,6 +425,7 @@ import Footer from '../components/Footer.astro';
       @media(max-width:640px){
         main #protection .detail-content-wide > ul{ grid-template-columns:1fr; }
         main #family-selection .selection-grid, main #what-to-expect .selection-grid{ grid-template-columns:1fr !important; }
+        main .blog-grid{ grid-template-columns:1fr !important; max-width:480px; }
       }
     </style>
     <!-- ============ END WIREFRAMES ============ -->

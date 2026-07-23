@@ -8,8 +8,8 @@ import Footer from '../../../components/Footer.astro';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khula Lawyer Karachi | Islamic Divorce Law | MR Law</title>
-    <meta name="description" content="Expert khula lawyer in Karachi. Fast-track khula procedure in Pakistan Family Courts. Wife-initiated divorce without husband consent. Call 0336 3120798.">
+    <title>Khula Lawyer in Karachi | Divorce & Khula | MR Law</title>
+    <meta name="description" content="Caring female khula lawyer in Karachi. File khula without your husband's consent through the Family Courts, quickly and in confidence. Call 0336 3120798.">
     <meta name="keywords" content="khula lawyer Karachi, khula procedure Pakistan, wife divorce Pakistan, khula without consent, family court Karachi, Muslim divorce lawyer, khula decree, dissolution of marriage, Reema Jawed">
     <meta property="og:title" content="Khula Lawyer in Karachi | Khula Procedure Pakistan | MR Law">
     <meta property="og:description"
@@ -56,16 +56,35 @@ import Footer from '../../../components/Footer.astro';
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Service", "name": "Khula Procedure Legal Counsel – MR Law Associates",
-          "description": "Filing and executing Khula lawsuits under the Family Courts Act 1964 in Karachi, including drafting the plaint, managing evidence, and securing final dissolution decrees.",
-          "url": "https://mrlawassociates.com/services/khula-procedure/",
-          "telephone": ["+923363120798"], "serviceType": "Family Law - Khula",
+          "@type": "Person",
+          "@id": "https://mrlawassociates.com/#reema-jawed",
+          "name": "Reema Jawed",
+          "gender": "Female",
+          "jobTitle": "Advocate High Court, Family Lawyer",
+          "hasCredential": "Sindh Bar Council 19378/HC/KHI",
+          "worksFor": { "@id": "https://mrlawassociates.com/#organization" },
+          "knowsAbout": ["Khula", "Divorce", "Talaq", "Child Custody", "Maintenance", "Dower", "Domestic Violence", "Guardianship"],
           "areaServed": { "@type": "City", "name": "Karachi" },
-          "provider": { "@type": "Organization", "@id": "https://mrlawassociates.com/#organization" },
+          "description": "Advocate High Court Reema Jawed is a female family lawyer in Karachi who helps women file khula and handle custody, maintenance, and dower."
+        },
+        {
+          "@type": "LegalService",
+          "@id": "https://mrlawassociates.com/services/khula-procedure/#legalservice",
+          "name": "Khula Lawyer in Karachi - MR Law Associates",
+          "description": "Filing and executing khula petitions under the Family Courts Act 1964 in Karachi, handled by a female advocate, including drafting the plaint, managing evidence, and securing the final dissolution decree.",
+          "url": "https://mrlawassociates.com/services/khula-procedure/",
+          "telephone": ["+923363120798"],
+          "serviceType": "Khula and Family Law",
+          "areaServed": { "@type": "City", "name": "Karachi", "containedInPlace": { "@type": "AdministrativeArea", "name": "Sindh" } },
+          "provider": { "@id": "https://mrlawassociates.com/#reema-jawed" },
+          "founder": { "@id": "https://mrlawassociates.com/#reema-jawed" },
+          "about": { "@type": "Thing", "name": "Khula" },
           "mentions": [
             { "@type": "Thing", "name": "Family Courts Act 1964" },
-            { "@type": "Thing", "name": "Muslim Family Laws Ordinance 1961" }
+            { "@type": "Thing", "name": "Muslim Family Laws Ordinance 1961" },
+            { "@type": "Thing", "name": "Dissolution of Muslim Marriages Act 1939" }
           ],
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "123" },
           "isPartOf": { "@type": "WebSite", "@id": "https://mrlawassociates.com/#website" }
         },
         { "@type": "Organization", "@id": "https://mrlawassociates.com/#organization", "name": "MR Law Associates", "url": "https://mrlawassociates.com", "telephone": ["+923363120798"], "address": { "@type": "PostalAddress", "streetAddress": "Suite # 504, 5th Floor Tahir Plaza, Near City Court", "addressLocality": "Karachi", "addressCountry": "PK" } },
@@ -77,7 +96,9 @@ import Footer from '../../../components/Footer.astro';
             { "@type": "Question", "name": "Do I have to return my Haq Mehr to get Khula?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, generally. Since Khula is initiated by the wife, she must forego her right to any unpaid dower (Haq Mehr) or return the received dower as 'Zar-e-Khula' in exchange for her release. However, she does not forfeit her right to claim past maintenance for her children." } },
             { "@type": "Question", "name": "Can my husband stop me from getting Khula?", "acceptedAnswer": { "@type": "Answer", "text": "No. A fundamental legal principle in Pakistan establishes that a husband cannot forcibly restrain a wife from obtaining Khula. Even if he stubbornly refuses to divorce her or physically ignores the court summons, the Family Court will proceed ex-parte and legally dissolve the marriage." } },
             { "@type": "Question", "name": "Does a Khula decree affect my child custody rights?", "acceptedAnswer": { "@type": "Answer", "text": "No. The procedure of Khula strictly dissolves the marital bond. It holds zero adverse effect on your independent right to seek child custody (Hizanat) or demand child maintenance from the father. Custody depends solely on the welfare of the minor." } },
-            { "@type": "Question", "name": "What is the role of the Union Council after a Khula decree?", "acceptedAnswer": { "@type": "Answer", "text": "Following the judicial decree, a certified copy must be submitted to the relevant Union Council or Arbitration Council. They issue a legal notice, observe a mandatory 90-day Iddat (waiting) period, and subsequently issue the final, computerized NADRA Divorce Effectiveness Certificate." } }
+            { "@type": "Question", "name": "What is the role of the Union Council after a Khula decree?", "acceptedAnswer": { "@type": "Answer", "text": "Following the judicial decree, a certified copy is submitted to the relevant Union Council or Arbitration Council. They issue a notice, observe a mandatory 90-day iddat period, and then issue the final divorce certificate that formally completes the khula." } },
+            { "@type": "Question", "name": "What documents do I need to file for khula in Karachi?", "acceptedAnswer": { "@type": "Answer", "text": "Ideally your nikah nama (marriage certificate), CNIC copies, and your children's B-forms if you also want custody decided. Proof of dower and any evidence of cruelty or neglect help too. If documents are missing, a lawyer can help you gather or reconstruct them, so your khula still moves forward." } },
+            { "@type": "Question", "name": "Can I file for khula from abroad as an overseas Pakistani?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Through a special power of attorney, MR Law Associates handles your khula in the Karachi Family Courts without you flying back for hearings. Your first consultation can happen by phone or video call. Call 0336 3120798 to arrange it." } }
           ]
         },
         { "@type": "BreadcrumbList", "itemListElement": [
@@ -85,7 +106,7 @@ import Footer from '../../../components/Footer.astro';
           { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mrlawassociates.com/services/" },
           { "@type": "ListItem", "position": 3, "name": "Khula Procedure", "item": "https://mrlawassociates.com/services/khula-procedure/" }
         ]},
-        { "@type": "WebPage", "name": "Khula Procedure in Pakistan 2026", "datePublished": "2026-02-24", "dateModified": "2026-02-24", "inLanguage": "en", "isPartOf": { "@id": "https://mrlawassociates.com/#website" }, "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".speakable-answer"] } }
+        { "@type": "WebPage", "name": "Khula Lawyer in Karachi - MR Law Associates", "datePublished": "2026-02-24", "dateModified": "2026-07-23", "inLanguage": "en", "isPartOf": { "@id": "https://mrlawassociates.com/#website" }, "about": { "@type": "Thing", "name": "Khula" }, "author": { "@id": "https://mrlawassociates.com/#reema-jawed" }, "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".speakable-answer"] } }
       ]
     }
     </script>
@@ -97,30 +118,32 @@ import Footer from '../../../components/Footer.astro';
         <section class="service-page-hero">
             <p
                 style="color:var(--accent-gold-dark); font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:1rem;">
-                Family Law Representation</p>
-            <h1 class="hero-title">Khula Procedure in <span class="text-gradient">Pakistan</span></h1>
-            <p class="hero-subtitle" style="margin:0 auto;">Strategic, fast-track execution of Khula lawsuits in
-                Karachi's Family Courts, guaranteeing your fundamental right to dissolve an unworkable marriage.</p>
-            <p style="color:var(--text-secondary); font-size:0.85rem; margin-top:1rem;">Last Updated: February 2026 | MR
-                Law Associates Legal Reference</p>
+                Family Law for Women</p>
+            <h1 class="hero-title">Khula Lawyer in <span class="text-gradient">Karachi</span></h1>
+            <p class="hero-subtitle" style="margin:0 auto;">A caring female khula lawyer in Karachi who helps you file
+                for khula and dissolve an unworkable marriage through the Family Courts, gently and in complete
+                confidence.</p>
+            <p style="color:var(--text-secondary); font-size:0.85rem; margin-top:1rem;">Last Updated: July 2026 |
+                Reviewed by Reema Jawed, Advocate High Court</p>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">›</span><a href="/services/">Services</a><span class="sep">›</span><span class="current">Khula Procedure</span></nav>
         </section>
 
         <div class="service-page-content">
             <article class="service-main">
 
-                <p class="speakable-answer"><strong>The Khula procedure in Pakistan</strong> represents a woman's
-                    statutory and Islamic right to dissolve her marriage through a formalized judicial decree when
-                    coexistence becomes impossible. MR Law Associates manages the complete litigation cycle, formally
-                    drafting the plaint, managing violent or uncooperative spouses through court summons, successfully
-                    bypassing failed conciliation stages, and enforcing the final union council effectiveness
-                    certificate to fully untether your legal identity.</p>
+                <p class="speakable-answer">A <strong>khula lawyer in Karachi</strong> helps a Muslim wife dissolve her
+                    marriage through the Family Court when living together has become impossible, even if the husband
+                    refuses. MR Law Associates is led by Advocate Reema Jawed, a female family lawyer who files khula
+                    petitions under the Family Courts Act 1964, handles the plaint, the summons to your husband, the
+                    reconciliation stage, and the final decree, and stays beside you until the union council issues your
+                    divorce certificate. If you are a woman wondering whether you even have the right to leave, you can
+                    talk to a lady advocate first, in confidence, before you decide anything.</p>
 
-                <p>An alarming number of women endure toxic marriages under the false assumption that their husband
-                    "must agree" before a divorce can occur. Under Pakistani jurisprudence governed by the Family Courts
-                    Act 1964, a husband possesses zero veto power over a Khula petition. If a wife asserts before the
-                    presiding judge that she harbors a deep aversion toward her spouse, the court is legally bound to
-                    dissolve the union.</p>
+                <p>So many women stay in painful marriages because they have been told their husband "must agree" before
+                    they can be free. That simply isn't true. Under the Family Courts Act 1964, your husband has no veto
+                    over khula. If you tell the judge honestly that you can no longer live with him within the limits set
+                    by Allah, the court can dissolve the marriage, whether he agrees or not. My job is to make that
+                    process feel less frightening and to carry the legal weight for you.</p>
 
                 <h2>What Are the Core Legal Grounds for Seeking Khula?</h2>
 
@@ -141,7 +164,7 @@ import Footer from '../../../components/Footer.astro';
                         <h3>Cruelty & Domestic Violence</h3>
                         <p>Documented instances of physical abuse, severe mental torture, or continuous psychological
                             harassment. If proven via medico-legal reports or witness testimonies, this heavily
-                            expedites the court’s decision to terminate the relationship to prevent further harm.</p>
+                            expedites the court's decision to terminate the relationship to prevent further harm.</p>
                     </div>
                     <div class="feature-box reveal">
                         <h3>Failure to Maintain</h3>
@@ -151,7 +174,7 @@ import Footer from '../../../components/Footer.astro';
                     </div>
                     <div class="feature-box reveal">
                         <h3>Desertion & Disappearance</h3>
-                        <p>The husband’s whereabouts have remained entirely unknown for a successive period exceeding
+                        <p>The husband's whereabouts have remained entirely unknown for a successive period exceeding
                             four years, or he has deliberately deserted his marital obligations leaving his wife
                             effectively stranded.</p>
                     </div>
@@ -210,9 +233,11 @@ import Footer from '../../../components/Footer.astro';
                     Mehr) established during the Nikah. Because the wife initiates the dissolution (unlike a <a
                         href="/services/divorce-custody-case/" style="color:var(--accent-gold-dark);">Talaq initiated by
                         the husband</a>), Pakistani courts mandate she must compensate the husband for her release.</p>
-                <p>This compensation is legally termed <strong>Zar-e-Khula</strong>. If the Haq Mehr is "prompt" and was
-                    paid at the time of marriage, the court usually directs the wife to return 25% or up to 100% of it.
-                    If the Haq Mehr is "deferred" and remains unpaid, she simply waives her legal right to claim it.</p>
+                <p>This compensation is legally termed <strong>Zar-e-Khula</strong>. If the Haq Mehr was "prompt" and
+                    paid at the time of marriage, the court may direct the wife to return some or all of it, and the exact
+                    amount is at the judge's discretion based on the facts of the case. If the Haq Mehr is "deferred" and
+                    still unpaid, she usually just waives her right to claim it. Where the husband has been cruel or has
+                    failed to maintain you, we argue for you to keep as much as the law allows.</p>
 
                 <h2>Navigating the Post-Decree Union Council Process</h2>
 
@@ -225,28 +250,126 @@ import Footer from '../../../components/Footer.astro';
                     <li><strong>MFLO 1961 Compliance:</strong> The council issues notices to the husband, attempting
                         administrative reconciliation across a 90-day period.</li>
                     <li><strong>Iddat Observation:</strong> These 90 days constitute the mandatory Iddat period.</li>
-                    <li><strong>Final Certificate:</strong> Upon concluding 90 days without reconciliation, the council
-                        issues the computerized Divorce Effectiveness Certificate, definitively terminating the marriage
-                        and permitting you to alter your CNIC status through <a
-                            href="/services/marriage-certificate/">NADRA registries</a>.</li>
+                    <li><strong>Final Certificate:</strong> After 90 days pass without reconciliation, the council issues
+                        the divorce certificate that formally completes your khula, so your records reflect your new
+                        status. We guide you through this last step so nothing is left hanging.</li>
                 </ul>
 
-                <h2>Why Retain MR Law Associates for Your Khula?</h2>
+                <h2>Khula or Talaq: Which One Applies to You?</h2>
 
-                <p>Family litigation in Karachi frequently devolves into aggressive, retaliatory tactics by the opposing
-                    party. You require a legal shield that refuses intimidation.</p>
+                <p>Women often ask me whether they need khula or talaq. The simple answer is that khula is the route a
+                    wife takes, while talaq is started by the husband. If you are the one who wants out of the marriage,
+                    khula is almost always your path, and you don't need to wait for your husband to act.</p>
 
                 <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
-                    <li><strong>Consolidated Litigation:</strong> We simultaneously file for Khula, <a
-                            href="/services/child-custody-lawyer/">child custody</a>, and maintenance in a single
-                        aggressive sweep, preventing the husband from leveraging your children as negotiating assets.
-                    </li>
-                    <li><strong>Ex-Parte Dominance:</strong> If your husband attempts to stall proceedings by hiding
-                        from court summons, we rapidly execute newspaper publications and enforce <em>ex-parte</em>
-                        (one-sided) decrees without his presence.</li>
-                    <li><strong>Overseas Pakistanis:</strong> If you reside in the US, UK, or GCC, we act as your
-                        Special Power of Attorney (SPA), executing your Khula through the Sindh courts without demanding
-                        your physical return to Karachi.</li>
+                    <li><strong>Khula:</strong> Filed by the wife in the Family Court. The court grants it even without
+                        the husband's consent, usually in exchange for returning or waiving dower.</li>
+                    <li><strong>Talaq:</strong> Pronounced by the husband, with written notice to the Union Council and a
+                        90-day reconciliation period. You can read more on our
+                        <a href="/services/divorce-custody-case/" style="color:var(--accent-gold-dark);">divorce and talaq</a>
+                        page.</li>
+                    <li><strong>Not sure which fits?</strong> That's completely normal. Tell us your situation and we'll
+                        point you to the right route, honestly and without pressure.</li>
+                </ul>
+
+                <h2>Why Choose MR Law Associates for Your Khula?</h2>
+
+                <p>Khula cases can get tense, especially when the other side tries to pressure or stall. You deserve a
+                    lawyer who stands firmly in your corner and treats you with kindness while doing it. As a female
+                    advocate, Reema Jawed understands how much courage it takes to walk into court, and she makes the
+                    path as gentle as the law allows.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Everything handled together:</strong> We can file your khula alongside
+                        <a href="/services/child-custody-lawyer/" style="color:var(--accent-gold-dark);">child custody</a>
+                        and maintenance in one coordinated move, so your husband can't use your children as bargaining
+                        chips.</li>
+                    <li><strong>When he won't show up:</strong> If your husband hides from the court summons to drag
+                        things out, we serve notice through newspaper publication and ask the court to proceed ex-parte,
+                        so his absence can't trap you.</li>
+                    <li><strong>Help for overseas Pakistanis:</strong> If you live in the Gulf, the UK, or the US, we act
+                        on a special power of attorney and handle your khula in the Karachi courts without you flying
+                        back. Your first talk can be a call or video meeting.</li>
+                    <li><strong>Confidential and kind:</strong> Every detail you share stays private, and you always know
+                        where your case stands.</li>
+                </ul>
+
+                <h2>What Documents Do You Need to File for Khula in Karachi?</h2>
+
+                <p>Coming to your first meeting with a few papers ready helps your khula move faster, though don't worry
+                    if some are missing. We help you gather or reconstruct whatever the court needs.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Nikah nama:</strong> Your registered marriage contract. If it's lost, the Union Council
+                        that recorded the nikah can issue a certified copy.</li>
+                    <li><strong>CNIC copies:</strong> Yours, and your husband's if you have it.</li>
+                    <li><strong>Children's B-forms:</strong> If you also want custody and maintenance decided with the
+                        khula.</li>
+                    <li><strong>Dower details:</strong> Anything showing the agreed Haq Mehr and whether it was paid.</li>
+                    <li><strong>Husband's address:</strong> So the court can serve the summons quickly.</li>
+                    <li><strong>Any evidence of cruelty or neglect:</strong> Medical reports, messages, or witness names,
+                        which strengthen your case if the marriage turned abusive.</li>
+                </ul>
+
+                <h2>Maintenance and Custody Alongside Your Khula</h2>
+
+                <p>Choosing khula never means giving up your children or their support. These are separate rights, and we
+                    protect them at the same time as your dissolution.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Child custody (hizanat):</strong> Mothers usually keep custody of young children, and
+                        khula has no effect on that right. We file for
+                        <a href="/services/child-custody-lawyer/" style="color:var(--accent-gold-dark);">custody</a>
+                        together with your khula.</li>
+                    <li><strong>Child maintenance:</strong> The father stays responsible for your children's food,
+                        schooling, and health, whatever the outcome of the marriage.</li>
+                    <li><strong>Iddat maintenance:</strong> You are entitled to support during the iddat period after the
+                        decree.</li>
+                    <li><strong>Dowry articles:</strong> The jahez you brought into the marriage stays yours, and we
+                        recover it if the in-laws hold it back.</li>
+                </ul>
+
+                <h2>What If Your Nikah Wasn't Registered or the Nikah Nama Is Lost?</h2>
+
+                <p>A missing or unregistered marriage doesn't shut the door on khula, so please don't lose heart. Courts
+                    in Karachi see this often, and there are ways forward.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>Lost nikah nama:</strong> We can obtain a certified copy from the Union Council where your
+                        marriage was recorded, so the original going missing isn't a dead end.</li>
+                    <li><strong>Unregistered nikah:</strong> If the marriage was never registered, it can still be proven
+                        through witnesses, photographs, and other evidence, and the court can proceed on that basis.</li>
+                    <li><strong>Disputed marriage:</strong> If the husband denies the marriage altogether, we gather the
+                        proof needed to establish it before pursuing your khula.</li>
+                </ul>
+
+                <p>Whatever your paperwork situation, the first step is the same: talk to us, and we'll tell you honestly
+                    what your case needs.</p>
+
+                <h2>What Will Your Khula Case Involve?</h2>
+
+                <p>Every khula is a little different, so we talk everything through honestly at the start. The fee
+                    depends on the type of case and how complex it is, and we explain it openly before you commit to
+                    anything, with no pressure. What never changes is that a female advocate handles your matter with
+                    care and keeps it confidential. To talk it through privately, please call
+                    <a href="tel:03363120798" style="color:var(--accent-gold-dark);">0336 3120798</a>.</p>
+
+                <h2>Common Worries Women Have About Khula</h2>
+
+                <p>Deciding on khula is rarely just a legal step, it's an emotional one too. Here are the fears I hear
+                    most often, and the honest reassurance that goes with each.</p>
+
+                <ul style="color:var(--text-secondary); padding-left:1.5rem; line-height:2;">
+                    <li><strong>"Will I lose my children?"</strong> No. Khula ends the marriage, not your right to your
+                        children. Mothers usually keep custody of young ones, and we protect that alongside your khula.</li>
+                    <li><strong>"My family is pressuring me to stay."</strong> The decision is yours by law. Whatever you
+                        choose, our conversations stay confidential, and we never judge you.</li>
+                    <li><strong>"I'm scared of my husband."</strong> If you feel unsafe, tell us. The court can grant
+                        protection orders so he can't harass or threaten you while your case runs.</li>
+                    <li><strong>"What if he won't agree?"</strong> He doesn't have to. The court can grant khula without
+                        his consent, even if he refuses to attend the hearings.</li>
+                    <li><strong>"Is it too expensive for me?"</strong> We talk the fee through openly before you commit,
+                        so there aren't any surprises. Call us and we'll be straight with you.</li>
                 </ul>
 
                 <h2>Frequently Asked Questions About Khula</h2>
@@ -285,19 +408,31 @@ import Footer from '../../../components/Footer.astro';
                     </div>
                     <div class="feature-box reveal">
                         <h3>What is the role of the Union Council afterward?</h3>
-                        <p>The Union Council enforces a mandatory <strong>90-day Iddat period</strong> post-decree
-                            before issuing the final computerized Divorce Certificate required to alter your NADRA CNIC
+                        <p>The Union Council observes a mandatory <strong>90-day iddat period</strong> after the decree,
+                            then issues the final divorce certificate that formally completes your khula and updates your
                             marital status.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>What documents do I need to file for khula?</h3>
+                        <p>Ideally your <strong>nikah nama</strong>, CNIC copies, and your children's B-forms if custody
+                            is involved. If papers are missing, don't worry, we help you gather or reconstruct them so
+                            your khula still moves forward.</p>
+                    </div>
+                    <div class="feature-box reveal">
+                        <h3>Can I file for khula from abroad?</h3>
+                        <p>Yes. Through a <strong>special power of attorney</strong>, we handle your khula in the Karachi
+                            Family Courts without you flying back. Your first consultation can be a call or video meeting.
+                            Call <strong>0336 3120798</strong>.</p>
                     </div>
                 </div>
 
                 <div style="margin-top:3rem; padding:2.5rem; background:var(--bg-card); border:1px solid var(--border-glass); border-radius:var(--radius-lg); text-align:center;"
                     class="reveal">
-                    <h2 style="font-size:1.5rem; margin-bottom:1rem;">Trapped in an Unworkable Marriage?</h2>
+                    <h2 style="font-size:1.5rem; margin-bottom:1rem;">Ready to Talk About Khula?</h2>
                     <p
                         style="color:var(--text-secondary); margin-bottom:1.5rem; max-width:600px; margin-left:auto; margin-right:auto;">
-                        Cease negotiating with hostility. Direct MR Law Associates to swiftly execute a Khula petition
-                        in the Karachi Family Courts and permanently secure your legal autonomy.</p>
+                        You don't have to face this alone. Speak with Advocate Reema Jawed, a female khula lawyer in
+                        Karachi, for confidential, caring guidance on filing your khula and protecting your rights.</p>
                     <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
                         <a href="tel:03363120798" class="btn btn-primary">Call Advocate Reema: 0336 3120798</a>
                         <a href="https://wa.me/923363120798" class="btn btn-secondary" target="_blank"

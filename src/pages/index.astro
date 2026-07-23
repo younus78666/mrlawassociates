@@ -79,7 +79,7 @@ import Footer from '../components/Footer.astro';
       "url": "https://mrlawassociates.com",
       "logo": "https://mrlawassociates.com/assets/logo-icon.png",
       "image": "https://mrlawassociates.com/assets/logo-icon.png",
-      "description": "Leading law firm in Karachi providing expert legal services in civil, family, criminal, property, and corporate law. Led by Advocate High Court Reema Jawed.",
+      "description": "A female-led family law firm in Karachi providing caring, confidential help with divorce, khula, child custody, maintenance, and dower. Led by Advocate High Court Reema Jawed.",
       "foundingDate": "2010",
       "founders": [
         {
@@ -139,7 +139,7 @@ import Footer from '../components/Footer.astro';
       "@type": "LegalService",
       "@id": "https://mrlawassociates.com/#legalservice",
       "name": "MR Law Associates",
-      "description": "Expert lawyer in Karachi specializing in civil litigation, family law, property disputes, and corporate compliance. Led by Advocate High Court Reema Jawed.",
+      "description": "Female family lawyer in Karachi specialising in divorce, khula, child custody, maintenance, and dower recovery. Led by Advocate High Court Reema Jawed.",
       "url": "https://mrlawassociates.com",
       "telephone": "+92-336-3120798",
       "email": "info@mrlawassociates.com",
@@ -196,7 +196,7 @@ import Footer from '../components/Footer.astro';
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "500"
+        "reviewCount": "127"
       },
       "knowsLanguage": [
         "English",
@@ -232,7 +232,7 @@ import Footer from '../components/Footer.astro';
         "@id": "https://mrlawassociates.com/#organization"
       },
       "primaryImageOfPage": "https://mrlawassociates.com/assets/logo-icon.png",
-      "description": "Expert lawyer in Karachi providing legal services in civil litigation, family law, property disputes, and corporate compliance. Advocate High Court Reema Jawed.",
+      "description": "Female family lawyer in Karachi helping women with divorce, khula, child custody, maintenance, and dower. Advocate High Court Reema Jawed.",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [
@@ -258,6 +258,15 @@ import Footer from '../components/Footer.astro';
 </head>
 <body class="home-page">
     <Header />
+
+    <style>
+      .icon-inline { display:inline-block; vertical-align:-0.18em; flex-shrink:0; }
+      .hero-trust svg { width:16px; height:16px; vertical-align:-0.18em; }
+      .why-icon svg { width:30px; height:30px; display:block; margin:auto; }
+      .trust-badge-item__icon svg { width:20px; height:20px; vertical-align:-0.2em; }
+      .trust-badge-legal svg { width:16px; height:16px; vertical-align:-0.18em; }
+      .cta-btn-primary svg, .cta-btn-secondary svg { width:20px; height:20px; vertical-align:-0.22em; }
+    </style>
 
     <main>
         <!-- Hero Section -->
@@ -293,16 +302,16 @@ import Footer from '../components/Footer.astro';
                         <!-- Primary CTA -->
                         <div class="hero-actions reveal">
                             <a href="tel:03363120798" class="btn btn-primary ltr-content" dir="ltr" itemprop="telephone">
-                                <span>📞</span> <span class="phone-number">Call 0336 3120798</span>
+                                <svg class="icon-inline" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <span class="phone-number">Call 0336 3120798</span>
                             </a>
-                            <a href="/contact/" class="btn btn-outline">Schedule Consultation</a>
+                            <a href="/contact/" class="btn btn-outline">Book a Free Consultation</a>
                         </div>
 
                         <!-- Trust Points -->
                         <div class="hero-trust reveal">
-                            <span>✓ Free Consultation</span>
-                            <span>✓ 24/7 Emergency Support</span>
-                            <span>✓ Near City Court</span>
+                            <span><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Free First Consultation</span>
+                            <span><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Confidential &amp; Caring</span>
+                            <span><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Near City Court</span>
                         </div>
                     </div>
 
@@ -343,7 +352,7 @@ import Footer from '../components/Footer.astro';
                 </div>
 
                 <div class="services-grid">
-                    <!-- Civil Litigation -->
+                    <!-- Divorce -->
                     <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
                         <div class="service-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2m0 14v2M5.5 8l-1.7-1M20.2 17l-1.7-1M3 12H1m22 0h-2M5.5 16l-1.7 1M20.2 7l-1.7 1"/><circle cx="12" cy="12" r="4"/><path d="M2 20h8l2-3 2 3h8"/></svg>
@@ -389,7 +398,7 @@ import Footer from '../components/Footer.astro';
                         <meta itemprop="areaServed" content="Karachi">
                     </article>
 
-                    <!-- Property Disputes -->
+                    <!-- Child Custody -->
                     <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
                         <div class="service-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -412,7 +421,7 @@ import Footer from '../components/Footer.astro';
                         <meta itemprop="areaServed" content="Karachi">
                     </article>
 
-                    <!-- Criminal Defense -->
+                    <!-- Court Marriage -->
                     <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
                         <div class="service-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -435,7 +444,7 @@ import Footer from '../components/Footer.astro';
                         <meta itemprop="areaServed" content="Karachi">
                     </article>
 
-                    <!-- Corporate Law -->
+                    <!-- Maintenance -->
                     <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
                         <div class="service-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
@@ -494,39 +503,39 @@ import Footer from '../components/Footer.astro';
 
                 <div class="why-us-grid">
                     <div class="why-us-card reveal">
-                        <div class="why-icon">⚖️</div>
+                        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M5 21h14"/><path d="M3 7h18"/><path d="M7 3h10"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></div>
                         <h3>Advocate High Court</h3>
-                        <p>Licensed to practice in all Karachi courts including Sindh High Court, ensuring comprehensive representation from trial through appeal.</p>
+                        <p>Enrolled with the Sindh Bar Council and licensed before the High Court, so your family matter is handled from the first hearing through to appeal.</p>
                     </div>
 
                     <div class="why-us-card reveal">
-                        <div class="why-icon">📍</div>
-                        <h3>City Court Location</h3>
-                        <p>Office at Tahir Plaza, adjacent to City Court Karachi. Enables rapid filing of urgent applications and immediate court attendance.</p>
+                        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <h3>Beside the City Court</h3>
+                        <p>Our office at Tahir Plaza sits right next to City Court Karachi, so we can file your applications and attend hearings quickly when timing matters.</p>
                     </div>
 
                     <div class="why-us-card reveal">
-                        <div class="why-icon">👩‍⚖️</div>
+                        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
                         <h3>Female-Led Practice</h3>
-                        <p>Unique advantage for family law matters. Female clients feel comfortable discussing sensitive issues with Advocate Reema Jawed.</p>
+                        <p>Many women feel safer sharing sensitive matters with another woman. Advocate Reema Jawed handles your case personally, with warmth and discretion.</p>
                     </div>
 
                     <div class="why-us-card reveal">
-                        <div class="why-icon">🌍</div>
-                        <h3>Overseas Pakistani Services</h3>
-                        <p>Specialized in representing overseas Pakistanis through Power of Attorney. Handle property, divorce, and inheritance matters remotely.</p>
+                        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <h3>Overseas Pakistanis Welcome</h3>
+                        <p>Living abroad? Through a Power of Attorney we handle your divorce, khula, or custody case in Karachi without you flying back for hearings.</p>
                     </div>
 
                     <div class="why-us-card reveal">
-                        <div class="why-icon">⚡</div>
-                        <h3>24/7 Emergency Support</h3>
-                        <p>Legal emergencies don't wait. Immediate assistance for bail applications, stay orders, and urgent court matters any time.</p>
+                        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+                        <h3>Fast, Caring Response</h3>
+                        <p>When you're frightened or unsafe, waiting is the hardest part. We reply quickly and move fast on urgent protection and custody matters.</p>
                     </div>
 
                     <div class="why-us-card reveal">
-                        <div class="why-icon">💰</div>
-                        <h3>Transparent Fees</h3>
-                        <p>Clear milestone-based billing with no hidden charges. Initial consultation fee credited toward retainer upon engagement.</p>
+                        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+                        <h3>Honest, Clear Fees</h3>
+                        <p>We explain your fees openly before you commit, with no hidden charges. Your first consultation is free, so you can talk to us with no pressure.</p>
                     </div>
                 </div>
             </div>
@@ -586,7 +595,7 @@ import Footer from '../components/Footer.astro';
                 <div class="location-grid">
                     <div class="location-content reveal">
                         <h2>Where is Your Law Firm Located in <span class="highlight">Karachi</span>?</h2>
-                        <p>Conveniently located at <strong>Tahir Plaza, 5th Floor, Suite 504</strong>, immediately adjacent to City Court Karachi. This strategic location allows us to provide rapid response for urgent legal matters including emergency bail applications and stay orders.</p>
+                        <p>Conveniently located at <strong>Tahir Plaza, 5th Floor, Suite 504</strong>, right beside City Court Karachi. Being this close to the court lets us file your family matters quickly and attend hearings without delay, including urgent protection and custody applications.</p>
                         
                         <div class="location-details">
                             <div class="location-item">
@@ -684,7 +693,7 @@ import Footer from '../components/Footer.astro';
                                 <div class="testimonial-card__header">
                                     <div class="testimonial-card__badges">
                                         <span class="badge badge--property">Property</span>
-                                        <span class="badge badge--verified">✓ Verified</span>
+                                        <span class="badge badge--verified">Verified</span>
                                     </div>
                                     <div class="testimonial-card__stars" itemprop="reviewRating" content="5">★★★★★</div>
                                 </div>
@@ -753,21 +762,21 @@ import Footer from '../components/Footer.astro';
                         <div class="trust-badges-vertical">
                             <h4 class="trust-badges__title">Verified & Certified</h4>
                             <div class="trust-badge-item">
-                                <span class="trust-badge-item__icon">✓</span>
+                                <span class="trust-badge-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
                                 <div class="trust-badge-item__text">
                                     <strong>Google Verified</strong>
                                     <span>Business Profile</span>
                                 </div>
                             </div>
                             <div class="trust-badge-item">
-                                <span class="trust-badge-item__icon">⚖️</span>
+                                <span class="trust-badge-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M5 21h14"/><path d="M3 7h18"/><path d="M7 3h10"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></span>
                                 <div class="trust-badge-item__text">
                                     <strong>Sindh Bar Council</strong>
                                     <span>Enrolled Member</span>
                                 </div>
                             </div>
                             <div class="trust-badge-item">
-                                <span class="trust-badge-item__icon">★</span>
+                                <span class="trust-badge-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg></span>
                                 <div class="trust-badge-item__text">
                                     <strong>Advocate High Court</strong>
                                     <span>Licensed Practitioner</span>
@@ -794,8 +803,8 @@ import Footer from '../components/Footer.astro';
                                     <span class="stats-mini-card__label">Years Experience</span>
                                 </div>
                                 <div class="stats-mini-card">
-                                    <span class="stats-mini-card__num">24/7</span>
-                                    <span class="stats-mini-card__label">Emergency Support</span>
+                                    <span class="stats-mini-card__num">4.9</span>
+                                    <span class="stats-mini-card__label">Client Rating</span>
                                 </div>
                             </div>
                         </div>
@@ -829,33 +838,33 @@ import Footer from '../components/Footer.astro';
                 <div class="faq-grid-simple">
                     <!-- FAQ Item 1 -->
                     <div class="faq-box reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="faq-box-question" itemprop="name">How do I choose the best lawyer in Karachi for my case?</div>
+                        <div class="faq-box-question" itemprop="name">How do I choose the best family lawyer in Karachi?</div>
                         <div class="faq-box-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">To choose the best lawyer in Karachi, verify their enrollment with the Sindh Bar Council, confirm they are an Advocate High Court for complex matters, check their specialization in your specific case type (civil, family, criminal), review their track record and success rate, and ensure their office location provides convenient access to relevant courts. Always request an initial consultation to assess communication and comfort level.</p>
+                            <p itemprop="text">Look for a lawyer who focuses on family law rather than general practice, check that they are enrolled with the Sindh Bar Council, and ask about their experience with cases like yours, whether that's khula, custody, or maintenance. Many women feel more comfortable with a female advocate for sensitive matters. Use the first free consultation to see how clearly they explain things and how comfortable you feel with them.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 2 -->
                     <div class="faq-box reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="faq-box-question" itemprop="name">What are the legal fees for hiring a lawyer in Karachi?</div>
+                        <div class="faq-box-question" itemprop="name">What does a family lawyer in Karachi cost?</div>
                         <div class="faq-box-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Legal fees in Karachi vary by case complexity and lawyer experience. Initial consultations typically range from PKR 5,000-15,000. Family law cases cost PKR 50,000-300,000, civil litigation PKR 70,000-500,000, property disputes PKR 100,000-400,000, and criminal defense PKR 70,000-500,000. Corporate matters typically work on retainer basis. MR Law Associates offers transparent milestone-based billing with the initial consultation fee credited toward your retainer.</p>
+                            <p itemprop="text">Every family matter is different, so the fee depends on the type of case, how complex it is, and how many connected claims are involved. We talk it through openly and honestly before you commit to anything, with no hidden charges. Your first consultation is free, so please call 0336 3120798 to discuss your specific matter in confidence.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 3 -->
                     <div class="faq-box reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="faq-box-question" itemprop="name">Can a lawyer in Karachi help with property disputes and stay orders?</div>
+                        <div class="faq-box-question" itemprop="name">Can a wife get khula without her husband's consent?</div>
                         <div class="faq-box-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Yes, a property lawyer in Karachi can file for stay orders under Order 39 Rule 1 & 2 CPC of the Civil Procedure Code to prevent illegal dispossession. They can handle illegal possession cases under the Illegal Dispossession Act 2005, file suits for declaration to establish title, pursue partition suits for inheritance matters, and represent you in Sindh High Court for property-related constitutional petitions. Emergency stay orders can often be obtained within 24-48 hours.</p>
+                            <p itemprop="text">Yes. Under Pakistani law a wife can obtain khula through the Family Court without her husband's consent. The 2015 amendment to the Family Courts Act strengthened this right. Even if the husband refuses to attend, the court can proceed and dissolve the marriage. Khula usually involves returning or waiving the dower, and we guide you through every step so you understand exactly what to expect.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 4 -->
                     <div class="faq-box reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="faq-box-question" itemprop="name">How long does a civil case take in Karachi courts?</div>
+                        <div class="faq-box-question" itemprop="name">How long does a family case take in Karachi?</div>
                         <div class="faq-box-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">The duration of civil cases in Karachi varies by complexity. Simple recovery suits may resolve in 6-12 months, while complex property disputes can take 2-4 years. Cases involving multiple parties or requiring extensive evidence take longer. Interim relief like stay orders can be obtained quickly (24-72 hours). Our proximity to City Court allows for efficient case management and faster filing of urgent applications.</p>
+                            <p itemprop="text">It varies with the type of case. An uncontested khula often concludes in 3 to 6 months, while a contested divorce can take 6 to 18 months. Custody matters usually take 4 to 12 months, and interim relief like a visitation schedule can start much sooner. Our office sits right beside the City Court, which helps us file and move your case quickly.</p>
                         </div>
                     </div>
 
@@ -869,25 +878,25 @@ import Footer from '../components/Footer.astro';
 
                     <!-- FAQ Item 6 -->
                     <div class="faq-box reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="faq-box-question" itemprop="name">Can I get bail immediately after arrest in Karachi?</div>
+                        <div class="faq-box-question" itemprop="name">Who gets child custody after divorce in Karachi?</div>
                         <div class="faq-box-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Bail availability depends on the offense type. For bailable offenses, bail is a right and can be obtained the same day. For non-bailable offenses, the court considers factors like offense severity, evidence strength, and flight risk. MR Law Associates provides 24/7 emergency bail services with same-day court appearances for urgent matters.</p>
+                            <p itemprop="text">Custody follows the welfare of the child. Under Islamic law, mothers usually keep custody of boys until about age 7 and girls until puberty, and courts can extend this where it serves the child. The father stays financially responsible whoever has custody, and the other parent keeps visitation rights. We help you protect both your bond with your children and their support.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 7 -->
                     <div class="faq-box reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="faq-box-question" itemprop="name">Can overseas Pakistanis hire a lawyer in Karachi without visiting?</div>
+                        <div class="faq-box-question" itemprop="name">Can overseas Pakistanis handle a divorce or custody case in Karachi without visiting?</div>
                         <div class="faq-box-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Yes, overseas Pakistanis can hire a lawyer in Karachi remotely. You need to execute a Special Power of Attorney (SPA) attested at the Pakistani Embassy/Consulate in your country of residence. This document is then verified and registered in Pakistan. Your appointed lawyer can then handle property matters, divorce proceedings, inheritance cases, and litigation on your behalf without requiring your physical presence in Karachi.</p>
+                            <p itemprop="text">Yes. Through a Special Power of Attorney, attested at the Pakistani Embassy or Consulate where you live, we can represent you in the Karachi Family Courts without you flying back for hearings. We handle divorce, khula, custody, and maintenance matters on your behalf, and your first consultation can happen over a call or video meeting, whatever feels comfortable.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 8 -->
                     <div class="faq-box reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="faq-box-question" itemprop="name">What should I do if an FIR is registered against me?</div>
+                        <div class="faq-box-question" itemprop="name">Can the court protect me from domestic violence during my case?</div>
                         <div class="faq-box-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">If an FIR is registered against you, immediately contact a criminal defense lawyer before speaking to police. Do not sign any documents without legal counsel present. Your lawyer can file for pre-arrest bail if needed, challenge the FIR's validity, and guide you through the investigation process. Early legal intervention is crucial for protecting your rights.</p>
+                            <p itemprop="text">Yes. Alongside a divorce, khula, or maintenance case, the court can pass protection and residence orders so an abusive husband cannot harass you or throw you out of the home. If you have faced violence or threats, please keep any medical reports, messages, or photos, because that evidence helps us secure faster protection for you and your children. A female advocate handles this with the care it deserves.</p>
                         </div>
                     </div>
                 </div>
@@ -932,11 +941,11 @@ import Footer from '../components/Footer.astro';
                         <meta itemprop="author" content="Reema Jawed">
                         <meta itemprop="datePublished" content="2025-02-10">
                         <div class="blog-card-content">
-                            <span class="blog-category">Property Law</span>
+                            <span class="blog-category">Family Law</span>
                             <h3 itemprop="headline">
                                 <a href="/blog/posts/divorce-procedure-pakistan">Divorce Procedure in Pakistan: Talaq, Khula &amp; Requirements</a>
                             </h3>
-                            <p itemprop="description">Comprehensive guide to resolving property disputes in Karachi courts. Learn about stay orders, partition suits, and legal remedies for property protection.</p>
+                            <p itemprop="description">A clear guide to divorce in Pakistan, covering talaq and khula, the Union Council process, the reconciliation period, and what the Family Court needs to grant your divorce.</p>
                             <div class="blog-meta">
                                 <div class="blog-author">
                                     <span class="author-avatar">RJ</span>
@@ -955,11 +964,11 @@ import Footer from '../components/Footer.astro';
                         <meta itemprop="author" content="Reema Jawed">
                         <meta itemprop="datePublished" content="2025-02-05">
                         <div class="blog-card-content">
-                            <span class="blog-category">Legal Procedure</span>
+                            <span class="blog-category">Family Law</span>
                             <h3 itemprop="headline">
                                 <a href="/blog/posts/court-marriage-process-karachi">Court Marriage Process in Karachi: Complete Legal Guide</a>
                             </h3>
-                            <p itemprop="description">Understanding when and why to send a legal notice before filing a case in Pakistan. Learn about format, response time, and legal requirements.</p>
+                            <p itemprop="description">Everything a couple needs to know about court marriage in Karachi, including the free-will nikah, the paperwork involved, Union Council registration, and how privacy is protected.</p>
                             <div class="blog-meta">
                                 <div class="blog-author">
                                     <span class="author-avatar">RJ</span>
@@ -978,11 +987,11 @@ import Footer from '../components/Footer.astro';
                         <meta itemprop="author" content="Reema Jawed">
                         <meta itemprop="datePublished" content="2025-01-28">
                         <div class="blog-card-content">
-                            <span class="blog-category">Criminal Law</span>
+                            <span class="blog-category">Family Law</span>
                             <h3 itemprop="headline">
                                 <a href="/blog/posts/child-custody-laws-pakistan">Child Custody Laws in Pakistan: Rights of Mothers &amp; Fathers</a>
                             </h3>
-                            <p itemprop="description">Comprehensive guide to bail procedures in Pakistan including pre-arrest bail, post-arrest bail, and your legal rights during criminal proceedings.</p>
+                            <p itemprop="description">How custody works in Pakistan, from a mother's hizanat rights and a father's guardianship to visitation, child maintenance, and the welfare-of-the-child rule courts apply.</p>
                             <div class="blog-meta">
                                 <div class="blog-author">
                                     <span class="author-avatar">RJ</span>
@@ -1016,10 +1025,10 @@ import Footer from '../components/Footer.astro';
                         
                         <!-- Benefits List -->
                         <div class="cta-benefits">
-                            <div class="cta-benefit-item">Free 30-minute consultation</div>
-                            <div class="cta-benefit-item">No hidden fees - transparent pricing</div>
-                            <div class="cta-benefit-item">24/7 availability for emergencies</div>
-                            <div class="cta-benefit-item">Office near City Court Karachi</div>
+                            <div class="cta-benefit-item">Free first consultation</div>
+                            <div class="cta-benefit-item">Honest fees, no hidden charges</div>
+                            <div class="cta-benefit-item">A female advocate handles your case</div>
+                            <div class="cta-benefit-item">Confidential, and near City Court</div>
                         </div>
                         
                         <!-- Trust Bar -->
@@ -1039,33 +1048,33 @@ import Footer from '../components/Footer.astro';
                                 <span class="trust-stat-label">Success</span>
                             </div>
                             <div class="trust-divider"></div>
-                            <div class="trust-badge-legal">⚖️ Sindh Bar Council</div>
+                            <div class="trust-badge-legal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M5 21h14"/><path d="M3 7h18"/><path d="M7 3h10"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg> Sindh Bar Council</div>
                         </div>
                     </div>
                     
                     <!-- Right Column: CTA Card -->
                     <div class="cta-card">
-                        <!-- Urgency Banner -->
-                        <div class="cta-urgency">Limited consultation spots this week</div>
-                        
-                        <h3>Get Help Now</h3>
-                        <p class="cta-card-subtext">Emergency? We respond within minutes.</p>
-                        
+                        <!-- Availability note -->
+                        <div class="cta-urgency">Same-day appointments often available</div>
+
+                        <h3>Talk to Us Today</h3>
+                        <p class="cta-card-subtext">Need to talk soon? We usually reply the same day.</p>
+
                         <!-- Primary CTA Button -->
                         <a href="tel:03363120798" class="cta-btn-primary ltr-content" dir="ltr">
-                            <span class="phone-icon">📞</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             <span class="phone-number">Call 0336 3120798</span>
                         </a>
-                        
+
                         <!-- Secondary Button -->
                         <a href="/contact/" class="cta-btn-secondary">
-                            <span>📅</span>
-                            <span>Schedule a Consultation</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            <span>Book a Free Consultation</span>
                         </a>
-                        
+
                         <!-- Response Promise -->
                         <div class="cta-response">
-                            <span>Response within 24 hours guaranteed</span>
+                            <span>We reply within 24 hours</span>
                         </div>
                         
                         <!-- Client Avatars & Social Proof -->

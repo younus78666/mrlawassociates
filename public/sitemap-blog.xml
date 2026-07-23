@@ -7,14 +7,14 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- 
     MR Law Associates - Blog Sitemap
-    Generated: 2026-02-25
+    Generated: 2026-07-23
     Total URLs: 11
 -->
 
 <!-- Main Blog Page -->
 <url>
     <loc>https://mrlawassociates.com/blog/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
 </url>
@@ -22,7 +22,7 @@
 <!-- Blog Posts - Family Law -->
 <url>
     <loc>https://mrlawassociates.com/blog/posts/female-family-lawyer-divorce-karachi</loc>
-    <lastmod>2026-02-27</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
     <news:news>
@@ -37,7 +37,7 @@
 
 <url>
     <loc>https://mrlawassociates.com/blog/posts/how-to-file-khula-pakistan</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <news:news>
@@ -52,7 +52,7 @@
 
 <url>
     <loc>https://mrlawassociates.com/blog/posts/divorce-procedure-pakistan</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <news:news>
@@ -67,7 +67,7 @@
 
 <url>
     <loc>https://mrlawassociates.com/blog/posts/child-custody-laws-pakistan</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <news:news>
@@ -82,7 +82,7 @@
 
 <url>
     <loc>https://mrlawassociates.com/blog/posts/court-marriage-process-karachi</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <news:news>
@@ -95,9 +95,9 @@
     </news:news>
 </url>
 
-<!-- Blog Posts - Criminal Law -->
+<!-- Blog Posts - Child Custody -->
 <!-- Blog Posts - Property Law -->
-<!-- Blog Posts - Corporate Law -->
+<!-- Blog Posts - Family Law -->
 <!-- Blog Posts - Documentation -->
 <!-- Blog Posts - General Legal -->
 </urlset>

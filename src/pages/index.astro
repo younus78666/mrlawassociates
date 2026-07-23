@@ -356,66 +356,114 @@ import Footer from '../components/Footer.astro';
       @media(max-width:768px){ .advocate-grid{ grid-template-columns:1fr; text-align:center; } .advocate-creds{ display:inline-block; } }
     </style>
 
-    <!-- ============ SECTION WIREFRAMES + BACKGROUNDS (original palette, layout-only) ============ -->
+    <!-- ============ HOMEPAGE REVAMP (premium, original palette + Playfair/Inter) ============ -->
     <style>
-      main{ --sand:#F3ECE0; --cream:#F5EEE3; --gold-tint:#FBF6EE; --ink-dark:#2B2118;
-            --gd:var(--accent-gold-dark); }
+      main{
+        --ink:#241C14; --paper:#FBF9F5; --cream:#F6F0E7; --sand:#F1E9DC; --gold-tint:#FBF5EC;
+        --card:#FFFFFF; --gold:#B0824E; --gd:#7A4E2A; --line:rgba(122,78,42,.12);
+        --sh-sm:0 2px 10px rgba(60,40,24,.05);
+        --sh:0 16px 44px -20px rgba(96,62,34,.30);
+        --sh-lg:0 28px 64px -26px rgba(96,62,34,.36);
+      }
 
-      /* ---- distinct background per section (never same as its neighbour) ---- */
-      main .services-section{ background:#FFFFFF !important; }
+      /* typography + rhythm */
+      main section{ padding-block:clamp(3.75rem,8vw,6.5rem); }
+      main .section-header{ max-width:720px; margin-inline:auto; text-align:center; margin-bottom:clamp(2.25rem,4vw,3.25rem); }
+      main .section-kicker{ display:inline-block; font-family:var(--font-sans); font-weight:700; font-size:.72rem;
+        letter-spacing:.2em; text-transform:uppercase; color:var(--gd); margin-bottom:.85rem; }
+      main .section-kicker::after{ content:""; display:block; width:34px; height:2px; margin:.6rem auto 0;
+        border-radius:2px; background:linear-gradient(90deg,var(--gold),var(--gd)); }
+      main h2{ font-size:clamp(1.95rem,3.7vw,2.9rem) !important; letter-spacing:-.02em; line-height:1.1; color:var(--ink); }
+      main .section-header p{ color:var(--text-secondary); font-size:clamp(1rem,1.4vw,1.12rem); line-height:1.7; margin-top:.85rem; }
+      main p{ font-size:1.0625rem; line-height:1.78; }
+
+      /* distinct section backgrounds */
+      main .services-section{ background:var(--card) !important; }
       main .advocate-section{ background:var(--cream) !important; }
       main .why-us-section{ background:var(--gold-tint) !important; }
       main #protection{ background:var(--sand) !important; }
-      main #family-selection{ background:#FFFFFF !important; }
-      main #what-to-expect{ background:var(--ink-dark) !important; }
-      main .location-section{ background:#FAFAF8 !important; }
+      main #family-selection{ background:var(--card) !important; }
+      main #what-to-expect{ background:#2B2118 !important; }
+      main .location-section{ background:var(--paper) !important; }
       main .testimonials-section{ background:var(--cream) !important; }
-      main .faq-section{ background:#FFFFFF !important; }
+      main .faq-section{ background:var(--card) !important; }
       main .blog-section{ background:var(--sand) !important; }
 
-      /* ================= WIREFRAME 1 - SERVICES: clean 3-col vertical cards ============ */
+      /* hero elevate */
+      main .home-hero{ background:
+        radial-gradient(1100px 520px at 86% -10%, rgba(176,130,78,.14), transparent 60%),
+        linear-gradient(180deg,var(--paper),var(--cream)) !important; }
+      main .hero-badge{ background:#fff !important; border:1px solid var(--line); box-shadow:var(--sh-sm); border-radius:100px; }
+      main .hero-title{ font-size:clamp(2.5rem,5.4vw,4rem) !important; letter-spacing:-.025em; line-height:1.06 !important; color:var(--ink); }
+      main .hero-description{ font-size:clamp(1.05rem,1.6vw,1.2rem) !important; }
+      main .hero-visual img{ border-radius:22px !important; box-shadow:var(--sh-lg) !important; }
+      main .stat-box{ border-radius:16px !important; border:1px solid var(--line) !important; box-shadow:var(--sh-sm) !important;
+        transition:transform .35s cubic-bezier(.4,0,.2,1), box-shadow .35s; }
+      main .stat-box:hover{ transform:translateY(-4px); box-shadow:var(--sh); }
+      main .hero-areas a:hover{ background:var(--gd) !important; color:#fff !important; }
+
+      /* premium unified cards */
+      main .service-card, main .why-us-card, main .blog-card, main .testimonial-card,
+      main .faq-box, main .sidebar-card, main .advocate-cred-card{
+        background:var(--card) !important; border:1px solid var(--line) !important; border-radius:18px !important;
+        box-shadow:var(--sh-sm) !important; transition:transform .38s cubic-bezier(.4,0,.2,1), box-shadow .38s, border-color .38s !important; }
+      main .service-card:hover, main .why-us-card:hover, main .blog-card:hover, main .testimonial-card:hover{
+        transform:translateY(-6px) !important; box-shadow:var(--sh) !important; border-color:rgba(176,130,78,.34) !important; }
+      main .service-card{ padding:clamp(1.6rem,2.4vw,2.1rem) !important; }
+
+      /* wireframe variety */
       main .services-grid{ grid-template-columns:repeat(3,1fr) !important; }
-
-      /* ================= WIREFRAME 2 - WHY US: horizontal icon-left cards, 2-col ======== */
       main .why-us-grid{ grid-template-columns:repeat(2,1fr) !important; gap:clamp(1rem,2vw,1.5rem) !important; }
-      main .why-us-card{ display:grid !important; grid-template-columns:auto 1fr !important;
-        column-gap:1.1rem !important; row-gap:.3rem !important; align-items:start !important;
-        text-align:left !important; padding:clamp(1.4rem,2vw,1.8rem) !important; }
-      main .why-us-card .why-icon{ grid-row:1 / 3 !important; margin:0 !important; align-self:start; }
+      main .why-us-card{ display:grid !important; grid-template-columns:auto 1fr !important; column-gap:1.1rem !important;
+        row-gap:.3rem !important; align-items:start !important; text-align:left !important; padding:clamp(1.4rem,2vw,1.8rem) !important; }
+      main .why-us-card .why-icon{ grid-row:1 / 3 !important; margin:0 !important; }
       main .why-us-card h3{ margin:0 !important; align-self:center; }
+      main .blog-grid{ grid-template-columns:repeat(2,1fr) !important; max-width:940px; margin-inline:auto !important; }
+      main .faq-grid-simple{ display:grid !important; grid-template-columns:1fr 1fr !important; gap:1rem 1.5rem !important;
+        max-width:var(--max-width) !important; align-items:start; }
 
-      /* ================= WIREFRAME 3 - PROTECTION: highlighted advisory panel, 2-col list = */
-      main #protection .detail-content-wide{ background:#FFFFFF; border:1px solid var(--border-glass);
-        border-left:4px solid var(--gd); border-radius:var(--radius-lg);
-        padding:clamp(1.75rem,3vw,2.75rem) !important; max-width:1000px; margin-inline:auto;
-        box-shadow:0 14px 40px -22px rgba(96,62,34,.3); }
-      main #protection .detail-content-wide > ul{ display:grid !important; grid-template-columns:1fr 1fr;
-        gap:.4rem 2.25rem; margin-top:1.25rem; }
+      /* icon tiles */
+      main .service-icon-wrapper, main .why-icon{ width:56px !important; height:56px !important; border-radius:15px !important;
+        display:flex !important; align-items:center; justify-content:center; margin-bottom:1.1rem;
+        background:linear-gradient(135deg,rgba(176,130,78,.16),rgba(122,78,42,.08)) !important; color:var(--gd) !important; }
+      main .service-icon-wrapper svg, main .why-icon svg{ width:28px !important; height:28px !important; }
+      main .selection-card .num{ color:var(--gold) !important; font-family:var(--font-serif); }
 
-      /* ================= WIREFRAME 4 - HOW TO CHOOSE: 2x2 numbered cards ================= */
+      /* protection advisory panel */
+      main #protection .detail-content-wide{ background:var(--card); border:1px solid var(--line); border-left:4px solid var(--gd);
+        border-radius:18px; padding:clamp(1.75rem,3vw,2.75rem) !important; max-width:1000px; margin-inline:auto; box-shadow:var(--sh); }
+      main #protection .detail-content-wide > ul{ display:grid !important; grid-template-columns:1fr 1fr; gap:.4rem 2.25rem; margin-top:1.25rem; }
+
+      /* how-to-choose + what-to-expect (dark step band) */
       main #family-selection .selection-grid{ grid-template-columns:repeat(2,1fr) !important; }
-
-      /* ================= WIREFRAME 5 - WHAT TO EXPECT: dark 4-step horizontal flow ======= */
       main #what-to-expect .section-kicker{ color:#E5B87E !important; }
-      main #what-to-expect h2{ color:#FFFFFF !important; }
+      main #what-to-expect h2{ color:#fff !important; }
       main #what-to-expect .highlight{ -webkit-text-fill-color:#E5B87E; }
       main #what-to-expect .detail-content-wide > p{ color:#D9CFC2 !important; }
       main #what-to-expect .selection-grid{ grid-template-columns:repeat(4,1fr) !important; }
       main #what-to-expect .selection-card{ background:rgba(255,255,255,.045) !important;
-        border:1px solid rgba(255,255,255,.14) !important; border-radius:var(--radius-lg) !important; }
-      main #what-to-expect .selection-card h4{ color:#FFFFFF !important; }
+        border:1px solid rgba(255,255,255,.14) !important; border-radius:16px !important; }
+      main #what-to-expect .selection-card h4{ color:#fff !important; }
       main #what-to-expect .selection-card p{ color:#C9BEB0 !important; }
       main #what-to-expect .selection-card .num{ color:#E5B87E !important; opacity:.5; }
 
-      /* ================= WIREFRAME 6 - FAQ: 2-column grid (was single column) =========== */
-      main .faq-grid-simple{ display:grid !important; grid-template-columns:1fr 1fr !important;
-        gap:1rem 1.5rem !important; max-width:var(--max-width) !important; align-items:start; }
+      /* buttons */
+      main .btn{ border-radius:12px !important; padding:14px 30px !important; font-weight:600 !important; letter-spacing:.2px; }
+      main .btn-primary{ background:linear-gradient(135deg,var(--gd),#5E3A1E) !important; box-shadow:0 10px 24px -8px rgba(122,78,42,.5) !important; }
+      main .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 16px 30px -8px rgba(122,78,42,.55) !important; }
+      main .btn-outline{ border:1.5px solid var(--gd) !important; color:var(--gd) !important; background:transparent !important; }
+      main .btn-outline:hover{ background:var(--gd) !important; color:#fff !important; }
 
-      /* ================= WIREFRAME 7 - BLOG: balanced 2x2 grid =========== */
-      main .blog-grid{ grid-template-columns:repeat(2,1fr) !important; max-width:940px; margin-inline:auto !important; }
+      /* CTA band */
+      main .cta-section{ background:linear-gradient(135deg,#2A1F16,#3E2A18) !important; color:#F5EFE7; }
+      main .cta-section h2, main .cta-headline{ color:#fff !important; }
+      main .cta-section .highlight{ -webkit-text-fill-color:#E5B87E; background:none; }
+      main .cta-card{ background:#fff !important; border-radius:18px !important; box-shadow:var(--sh-lg) !important; }
+      main .cta-benefit-item, main .cta-subheadline{ color:#EADFD0 !important; }
 
-      /* section rhythm consistency */
-      main section{ padding-block:clamp(3.5rem,7vw,5.75rem); }
+      /* faq */
+      main .faq-box{ padding:1.5rem 1.65rem !important; }
+      main .faq-box-question{ font-family:var(--font-serif); font-size:1.12rem; color:var(--ink); }
 
       @media(max-width:900px){
         main .why-us-grid{ grid-template-columns:1fr !important; }
@@ -426,9 +474,10 @@ import Footer from '../components/Footer.astro';
         main #protection .detail-content-wide > ul{ grid-template-columns:1fr; }
         main #family-selection .selection-grid, main #what-to-expect .selection-grid{ grid-template-columns:1fr !important; }
         main .blog-grid{ grid-template-columns:1fr !important; max-width:480px; }
+        main .services-grid{ grid-template-columns:1fr !important; }
       }
     </style>
-    <!-- ============ END WIREFRAMES ============ -->
+    <!-- ============ END REVAMP ============ -->
 
 
     <main>

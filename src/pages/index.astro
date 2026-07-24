@@ -578,6 +578,15 @@ import Footer from '../components/Footer.astro';
       .gc-btn-ghost{ display:inline-flex; align-items:center; justify-content:center; font-family:var(--fd); font-size:14px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:15px 22px; min-height:52px; cursor:pointer; border:1px solid rgba(248,245,238,.4); background:transparent; color:var(--ivory); border-radius:0; transition:border-color .2s,color .2s; flex:0 0 auto; }
       .gc-btn-ghost:hover{ border-color:var(--gold); color:var(--gold-light); }
       .gc-assure{ margin-top:14px; }
+          /* --- fix: clear fixed header, compact hero, seal, step-button hiding --- */
+      .gc-grid{ padding-block:0 !important; }
+      main > section.gc-hero{ padding-top:112px; padding-bottom:clamp(2rem,4vw,3.25rem); }
+      .gc-hero .gc-seal{ top:-8px; right:-14px; }
+      .gc-hero [hidden]{ display:none !important; }
+      @media(max-width:640px){
+        main > section.gc-hero{ padding-top:92px; padding-bottom:26px; }
+        .gc-hero .gc-seal{ top:-6px; right:-6px; }
+      }
     </style>
 
         <section class="gc-hero" itemscope itemtype="https://schema.org/LegalService" aria-labelledby="hero-heading">

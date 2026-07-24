@@ -552,10 +552,9 @@ import Footer from '../components/Footer.astro';
         .gc-consult{ padding:32px 24px; }
         .gc-seal{ width:86px; height:86px; }
       }
-      /* ---- each section fills at least one screen, content vertically centered ---- */
-      main > section{ min-height:100vh; min-height:100svh; display:flex; flex-direction:column; justify-content:center; }
-      main > section > *{ width:100%; }
-      main > section > .section-container, main > section > .gc-wrap{ margin-inline:auto; }
+      /* ---- sections sized to their content (no forced full-screen height) ---- */
+      main > section{ padding-block:clamp(2.5rem,5vw,4rem); }
+      main > section.gc-hero{ padding-block:0; }
     </style>
 
         <section class="gc-hero" itemscope itemtype="https://schema.org/LegalService" aria-labelledby="hero-heading">

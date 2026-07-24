@@ -604,6 +604,12 @@ import Footer from '../components/Footer.astro';
       .gc-assure{ margin-top:12px; font-size:13px; }
       .gc-hero ::selection{ background:#A37C45; color:#F8F5EE; }
       .gc-hero ::-moz-selection{ background:#A37C45; color:#F8F5EE; }
+          /* --- hero column alignment + H1 wrap polish --- */
+      .gc-hero .gc-grid{ align-items:start; gap:56px; }
+      .gc-hero .gc-lead{ padding-top:26px; }          /* line kicker up with the card's START HERE */
+      .gc-hero .gc-h1{ font-size:clamp(30px,3.05vw,44px); line-height:1.06; margin-top:12px; }
+      .gc-hero .gc-copy{ margin-top:16px; }
+      @media(max-width:900px){ .gc-hero .gc-lead{ padding-top:0; } .gc-hero .gc-grid{ gap:40px; } }
     </style>
 
         <section class="gc-hero" itemscope itemtype="https://schema.org/LegalService" aria-labelledby="hero-heading">

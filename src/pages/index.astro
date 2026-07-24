@@ -555,6 +555,29 @@ import Footer from '../components/Footer.astro';
       /* ---- sections sized to their content (no forced full-screen height) ---- */
       main > section{ padding-block:clamp(2.5rem,5vw,4rem); }
       main > section.gc-hero{ padding-block:0; }
+      /* --- multi-step form + tighter hero (shorter section) --- */
+      .gc-hero .gc-h1{ font-size:clamp(34px,3.5vw,50px); margin-top:14px; }
+      .gc-hero .gc-copy{ font-size:17px; line-height:1.55; margin-top:14px; }
+      .gc-hero .gc-stats{ margin-top:20px; padding-top:16px; }
+      .gc-hero .gc-stats b{ font-size:30px; }
+      .gc-hero .gc-actions{ margin-top:20px; }
+      .gc-hero .gc-small{ margin-top:14px; }
+      .gc-hero .gc-areas{ margin-top:16px; padding-top:14px; }
+      .gc-consult{ padding:30px 30px; }
+      .gc-consult-h{ font-size:22px; margin-top:12px; }
+      .gc-consult-sub{ font-size:15px; margin-top:8px; }
+      .gc-form{ margin-top:16px; gap:12px; }
+      .gc-progress{ display:flex; align-items:center; gap:12px; margin-bottom:2px; font-family:var(--fd); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:rgba(248,245,238,.9); }
+      .gc-progress b{ color:var(--gold-light); }
+      .gc-progress-bar{ flex:1; height:3px; background:rgba(248,245,238,.18); display:block; }
+      .gc-progress-bar em{ display:block; height:100%; background:var(--gold); transition:width .3s cubic-bezier(.2,.6,.3,1); }
+      .gc-step{ display:grid; gap:12px; }
+      .gc-step[hidden]{ display:none !important; }
+      .gc-form-nav{ display:flex; gap:12px; margin-top:2px; }
+      .gc-form-nav .gc-btn{ flex:1; margin-top:0; width:auto; }
+      .gc-btn-ghost{ display:inline-flex; align-items:center; justify-content:center; font-family:var(--fd); font-size:14px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:15px 22px; min-height:52px; cursor:pointer; border:1px solid rgba(248,245,238,.4); background:transparent; color:var(--ivory); border-radius:0; transition:border-color .2s,color .2s; flex:0 0 auto; }
+      .gc-btn-ghost:hover{ border-color:var(--gold); color:var(--gold-light); }
+      .gc-assure{ margin-top:14px; }
     </style>
 
         <section class="gc-hero" itemscope itemtype="https://schema.org/LegalService" aria-labelledby="hero-heading">
@@ -593,33 +616,44 @@ import Footer from '../components/Footer.astro';
                     <span class="gc-kicker gc-kicker-light">Start here</span>
                     <h2 class="gc-consult-h">Tell us what you are facing</h2>
                     <p class="gc-consult-sub">Share as much or as little as you feel comfortable with. Reema reads every message herself.</p>
-                    <form class="gc-form" id="gc-consult-form">
-                        <div>
-                            <label for="f-name">Your name</label>
-                            <input id="f-name" name="name" type="text" required placeholder="Name" autocomplete="name">
+                    <form class="gc-form gc-form-steps" id="gc-consult-form" novalidate>
+                        <div class="gc-progress"><span>Step <b id="gc-step-n">1</b> of 3</span><i class="gc-progress-bar"><em id="gc-progress-fill" style="width:33%"></em></i></div>
+                        <div class="gc-step" data-step="1">
+                            <div>
+                                <label for="f-name">Your name</label>
+                                <input id="f-name" name="name" type="text" required placeholder="Name" autocomplete="name">
+                            </div>
+                            <div>
+                                <label for="f-phone">Phone or WhatsApp</label>
+                                <input id="f-phone" name="phone" type="tel" required placeholder="03XX XXXXXXX" autocomplete="tel">
+                            </div>
                         </div>
-                        <div>
-                            <label for="f-phone">Phone or WhatsApp</label>
-                            <input id="f-phone" name="phone" type="tel" required placeholder="03XX XXXXXXX" autocomplete="tel">
+                        <div class="gc-step" data-step="2" hidden>
+                            <div>
+                                <label for="f-matter">What is your matter about</label>
+                                <select id="f-matter" name="matter" required>
+                                    <option value="">Choose one</option>
+                                    <option>Khula</option>
+                                    <option>Divorce and talaq</option>
+                                    <option>Child custody</option>
+                                    <option>Maintenance and alimony</option>
+                                    <option>Dower or dowry recovery</option>
+                                    <option>Court marriage</option>
+                                    <option>Something else</option>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label for="f-matter">What is your matter about</label>
-                            <select id="f-matter" name="matter" required>
-                                <option value="">Choose one</option>
-                                <option>Khula</option>
-                                <option>Divorce and talaq</option>
-                                <option>Child custody</option>
-                                <option>Maintenance and alimony</option>
-                                <option>Dower or dowry recovery</option>
-                                <option>Court marriage</option>
-                                <option>Something else</option>
-                            </select>
+                        <div class="gc-step" data-step="3" hidden>
+                            <div>
+                                <label for="f-msg">Anything you want us to know <span class="gc-optional">(optional)</span></label>
+                                <textarea id="f-msg" name="message" placeholder="Optional"></textarea>
+                            </div>
                         </div>
-                        <div>
-                            <label for="f-msg">Anything you want us to know <span class="gc-optional">(optional)</span></label>
-                            <textarea id="f-msg" name="message" placeholder="Optional"></textarea>
+                        <div class="gc-form-nav">
+                            <button type="button" class="gc-btn-ghost" id="gc-back" hidden>Back</button>
+                            <button type="button" class="gc-btn gc-btn-brass" id="gc-next">Next</button>
+                            <button type="submit" class="gc-btn gc-btn-brass" id="gc-submit" hidden>Request my free consultation</button>
                         </div>
-                        <button class="gc-btn gc-btn-brass" type="submit">Request my free consultation</button>
                         <p class="gc-form-alt">Prefer to talk now? Call <a href="tel:03363120798">0336 3120798</a></p>
                     </form>
                     <p class="gc-assure">
@@ -634,17 +668,38 @@ import Footer from '../components/Footer.astro';
           (function(){
             var f=document.getElementById("gc-consult-form");
             if(!f) return;
+            var steps=[].slice.call(f.querySelectorAll(".gc-step")), total=steps.length, cur=0;
+            var back=f.querySelector("#gc-back"), next=f.querySelector("#gc-next"), submitB=f.querySelector("#gc-submit");
+            var stepN=f.querySelector("#gc-step-n"), fill=f.querySelector("#gc-progress-fill");
+            function render(){
+              for(var i=0;i<steps.length;i++){ steps[i].hidden=(i!==cur); }
+              if(stepN) stepN.textContent=cur+1;
+              if(fill) fill.style.width=((cur+1)/total*100)+"%";
+              if(back) back.hidden=(cur===0);
+              if(next) next.hidden=(cur===total-1);
+              if(submitB) submitB.hidden=(cur!==total-1);
+            }
+            function stepValid(){
+              var req=steps[cur].querySelectorAll("[required]");
+              for(var i=0;i<req.length;i++){
+                if(!req[i].value || !req[i].value.trim()){ if(req[i].reportValidity){req[i].reportValidity();}else{req[i].focus();} return false; }
+              }
+              return true;
+            }
+            if(next) next.addEventListener("click",function(){ if(stepValid() && cur<total-1){ cur++; render(); var el=steps[cur].querySelector("input,select,textarea"); if(el){ try{el.focus();}catch(e){} } } });
+            if(back) back.addEventListener("click",function(){ if(cur>0){ cur--; render(); } });
             f.addEventListener("submit",function(e){
               e.preventDefault();
-              function v(n){ var el=f.elements[n]; return el?el.value.trim():""; }
-              var name=v("name"), phone=v("phone"), matter=v("matter"), msg=v("message");
+              if(!stepValid()) return;
+              function v(n){ var el=f.elements[n]; return el&&el.value?el.value.trim():""; }
               var t="Assalam o Alaikum, I would like a free family law consultation.";
-              if(name)   t+="\nName: "+name;
-              if(phone)  t+="\nPhone: "+phone;
-              if(matter) t+="\nMatter: "+matter;
-              if(msg)    t+="\nDetails: "+msg;
+              if(v("name"))    t+="\nName: "+v("name");
+              if(v("phone"))   t+="\nPhone: "+v("phone");
+              if(v("matter"))  t+="\nMatter: "+v("matter");
+              if(v("message")) t+="\nDetails: "+v("message");
               window.open("https://wa.me/923363120798?text="+encodeURIComponent(t),"_blank","noopener");
             });
+            render();
           })();
         </script>
 
